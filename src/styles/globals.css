@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Design tokens ──────────────────────────────────────────────── */
+:root {
+  --c-navy:    #1B2A4A;
+  --c-gold:    #C9A96E;
+  --c-surface: #F5EDE4;
+  --c-canvas:  #EEF0F3;
+  --c-darkest: #141414;
+  --c-error:   #DC2626;
+  --c-success: #16A34A;
+
+  --ff-ui:    'Geist', system-ui, -apple-system, sans-serif;
+  --ff-serif: 'Playfair Display', Georgia, serif;
+  --ff-coords:'DM Sans', system-ui, sans-serif;
+}
+
+/* ─── Base reset ─────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background-color: var(--c-darkest);
+  font-family: var(--ff-ui);
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── 3D canvas wrapper — never holds readable content ──────────── */
+.hero-canvas-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;  /* CTA/text sit above on z-index 1+ */
+}
+.hero-canvas-wrap canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* ─── Reduced-motion: hide canvas, show static fallback ─────────── */
+@media (prefers-reduced-motion: reduce) {
+  .hero-canvas-wrap { display: none; }
+  .hero-fallback    { display: block !important; }
+}
+
+/* ─── Static fallback ───────────────────────────────────────────── */
+.hero-fallback {
+  display: none;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+/* ─── Focus ring — WCAG AA ──────────────────────────────────────── */
+:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(26, 63, 207, 0.25);
+}
