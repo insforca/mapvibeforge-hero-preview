@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MapVibe Studio · Cinematic Editor Demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.css" />
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" />
+<script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#1B2A4A;--deep:#0D1A30;--gold:#C9A96E;--gold2:#e8c98a;
+  --surf:#F5EDE4;--muted:rgba(245,237,228,.45);
+  --ui:'Geist Sans','DM Sans',sans-serif;
+  --serif:'Playfair Display',Georgia,serif;
+  --expo:cubic-bezier(.16,1,.3,1);
+}
+html,body{width:100%;height:100%;overflow:hidden;background:var(--deep);font-family:var(--ui)}
+
+/* ── EDITOR SHELL ── */
+#shell{position:fixed;inset:0;display:flex;flex-direction:column;transition:opacity .7s,transform .8s var(--expo)}
+#shell.out{opacity:0;transform:scale(.95);pointer-events:none}
+
+/* HEADER */
+#hdr{position:relative;z-index:20;display:flex;align-items:center;gap:10px;padding:0 14px;height:50px;
+  background:rgba(13,26,48,.93);backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(201,169,110,.13);flex-shrink:0}
+.logo{display:flex;align-items:center;gap:7px}
+.lmark{width:26px;height:26px;background:var(--gold);border-radius:6px;display:flex;align-items:center;justify-content:center}
+.lmark svg{fill:var(--deep)}
+.lname{font-family:var(--serif);font-size:14px;font-weight:700;color:var(--surf);letter-spacing:.02em}
+.lsub{font-size:9px;font-weight:700;color:var(--gold);letter-spacing:.14em;text-transform:uppercase}
+.search{flex:1;max-width:320px;display:flex;align-items:center;gap:7px;
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);
+  border-radius:8px;padding:0 11px;height:34px}
+.search svg{color:rgba(245,237,228,.35);flex-shrink:0}
+#stxt{color:var(--surf);font-size:13px;white-space:nowrap;overflow:hidden;flex:1}
+.cursor{display:inline-block;width:1px;height:13px;background:var(--gold);animation:blink 1s step-end infinite;vertical-align:middle}
+@keyframes blink{50%{opacity:0}}
+.hacts{display:flex;gap:7px;margin-left:auto}
+.ibtn{width:30px;height:30px;border-radius:6px;border:1px solid rgba(255,255,255,.1);
+  background:rgba(255,255,255,.05);color:rgba(245,237,228,.55);cursor:pointer;
+  display:flex;align-items:center;justify-content:center;transition:all .15s}
+
+/* MAP */
+#mapwrap{position:relative;flex:1;overflow:hidden}
+#map{position:absolute;inset:0}
+.maplibregl-ctrl-attrib,.maplibregl-ctrl-logo,.maplibregl-ctrl-group{display:none!important}
+#map .maplibregl-canvas{transition:filter .7s ease}
+#map.t-noir .maplibregl-canvas{filter:grayscale(95%) contrast(118%) sepia(22%) brightness(.93)}
+#map.t-gotham .maplibregl-canvas{filter:none}
+#map.t-red .maplibregl-canvas{filter:sepia(100%) saturate(500%) hue-rotate(315deg) brightness(.82)}
+#map.t-pulse .maplibregl-canvas{filter:hue-rotate(168deg) saturate(220%) brightness(1.12)}
+#map.t-med .maplibregl-canvas{filter:hue-rotate(22deg) saturate(155%) brightness(1.07) sepia(18%)}
+#map.t-pastel .maplibregl-canvas{filter:brightness(1.35) saturate(55%) hue-rotate(205deg) contrast(.88)}
+
+/* STYLE PILL */
+#spill{position:absolute;bottom:82px;left:50%;transform:translateX(-50%);z-index:10;
+  display:flex;align-items:center;gap:9px;
+  background:rgba(13,26,48,.87);backdrop-filter:blur(14px);
+  border:1px solid rgba(201,169,110,.28);border-radius:24px;padding:5px 14px 5px 10px;cursor:pointer;
+  transition:border-color .2s,background .2s}
+#spill:hover{border-color:rgba(201,169,110,.6);background:rgba(27,42,74,.9)}
+.sdot{width:9px;height:9px;border-radius:50%;background:var(--gold);flex-shrink:0;transition:background .5s}
+#sname{font-size:12px;font-weight:500;color:var(--surf)}
+.schange{font-size:10px;color:var(--gold);font-weight:600;letter-spacing:.04em}
+
+/* FOOTER CITY */
+#eftr{position:absolute;bottom:48px;left:0;right:0;z-index:10;text-align:center;pointer-events:none}
+#cname{display:block;font-family:var(--serif);font-size:19px;font-weight:700;color:var(--surf);
+  text-shadow:0 2px 14px rgba(0,0,0,.55);letter-spacing:.04em}
+#cmeta{display:block;font-family:'DM Sans',sans-serif;font-size:10px;color:var(--muted);letter-spacing:.06em;margin-top:2px}
+
+/* CTA */
+#ctawrap{position:absolute;bottom:0;left:0;right:0;z-index:10;padding:6px 14px 10px;
+  background:linear-gradient(0deg,rgba(13,26,48,.96),transparent)}
+#ctabtn{width:100%;height:46px;background:var(--gold);border:none;border-radius:10px;
+  font-family:var(--ui);font-size:14px;font-weight:600;color:var(--deep);cursor:pointer;
+  display:flex;align-items:center;justify-content:center;gap:8px;letter-spacing:.01em;
+  transition:all .2s;box-shadow:0 4px 20px rgba(201,169,110,.28)}
+#ctabtn:hover{background:var(--gold2);transform:translateY(-1px);box-shadow:0 6px 24px rgba(201,169,110,.4)}
+#ctabtn.pulse{animation:cpulse 1.1s ease-in-out infinite}
+@keyframes cpulse{0%,100%{box-shadow:0 4px 20px rgba(201,169,110,.28)}50%{box-shadow:0 4px 44px rgba(201,169,110,.7),0 0 60px rgba(201,169,110,.18)}}
+
+/* THEME PANEL */
+#tpanel{position:absolute;inset:0;z-index:30;background:rgba(10,20,40,.97);backdrop-filter:blur(20px);
+  display:flex;flex-direction:column;transform:translateY(100%);transition:transform .42s var(--expo)}
+#tpanel.open{transform:translateY(0)}
+.ph{display:flex;align-items:center;justify-content:space-between;padding:14px 14px 10px;
+  border-bottom:1px solid rgba(255,255,255,.07)}
+.ptitle{font-family:var(--serif);font-size:17px;font-weight:700;color:var(--surf)}
+.pclose{width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.08);border:none;
+  color:var(--surf);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:16px}
+.tabs{display:flex;gap:4px;padding:8px 14px;overflow-x:auto}
+.tab{padding:5px 13px;font-size:11px;font-weight:500;color:var(--muted);border:none;background:none;
+  cursor:pointer;border-radius:20px;white-space:nowrap;transition:all .15s}
+.tab.on{background:rgba(201,169,110,.14);color:var(--gold)}
+.tgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:6px 14px 20px;overflow-y:auto}
+.tcard{border-radius:9px;overflow:hidden;border:2px solid transparent;cursor:pointer;transition:border-color .2s;position:relative}
+.tcard.sel{border-color:var(--gold)}
+.tprev{width:100%;aspect-ratio:1;display:flex;align-items:center;justify-content:center;
+  font-size:9px;font-weight:700;color:rgba(255,255,255,.5);letter-spacing:.06em}
+.tcname{padding:5px 7px;font-size:10px;font-weight:500;color:var(--surf);background:rgba(13,26,48,.8)}
+.tcheck{position:absolute;top:6px;right:6px;width:18px;height:18px;border-radius:50%;
+  background:var(--gold);display:none;align-items:center;justify-content:center}
+.tcard.sel .tcheck{display:flex}
+.tp-noir{background:linear-gradient(135deg,#2e2e2e,#1a1a1a,#383838)}
+.tp-gotham{background:linear-gradient(135deg,#0d1a30,#1b2a4a,#0a1220)}
+.tp-red{background:linear-gradient(135deg,#3d0a0a,#6b1212,#2a0505)}
+.tp-pulse{background:linear-gradient(135deg,#041828,#075080,#042038)}
+.tp-med{background:linear-gradient(135deg,#c4a060,#8b6010,#ddb870)}
+.tp-pastel{background:linear-gradient(135deg,#c8dff0,#a8c8e8,#dcd0f0)}
+
+/* FRAME PANEL */
+#fpanel{position:absolute;inset:0;z-index:30;background:rgba(10,20,40,.97);backdrop-filter:blur(20px);
+  display:flex;flex-direction:column;transform:translateY(100%);transition:transform .5s var(--expo)}
+#fpanel.open{transform:translateY(0)}
+.fpreview{flex:1;display:flex;align-items:center;justify-content:center;padding:16px;min-height:0}
+.fposter{width:140px;aspect-ratio:18/24;position:relative;transition:all .4s var(--expo);filter:drop-shadow(0 12px 40px rgba(0,0,0,.7))}
+.finner{position:absolute;inset:14px;background:#0d1a30;border-radius:2px;overflow:hidden}
+.fmap-mini{width:100%;height:100%;background:linear-gradient(135deg,#1a1a2e,#0d1a30)}
+.fborder{position:absolute;inset:0;border-radius:3px;pointer-events:none}
+.fb-none{box-shadow:0 0 0 0 transparent}
+.fb-black{box-shadow:inset 0 0 0 12px #111}
+.fb-oak{box-shadow:inset 0 0 0 12px transparent;background:linear-gradient(135deg,#7a5c1e,#c4903a,#7a5c1e);-webkit-mask:linear-gradient(#000,#000) content-box,linear-gradient(#000,#000);-webkit-mask-composite:xor;mask-composite:exclude;padding:12px}
+.fb-canvas{box-shadow:inset 0 0 0 12px #f0ebe0}
+.fcontrols{padding:0 14px 8px;flex-shrink:0}
+.csec{margin-bottom:12px}
+.clbl{font-size:9px;font-weight:700;color:var(--gold);letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}
+.fopts{display:flex;gap:7px}
+.fopt{flex:1;height:40px;border-radius:7px;border:2px solid rgba(255,255,255,.1);
+  background:rgba(255,255,255,.04);color:rgba(245,237,228,.55);font-size:11px;font-weight:500;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .15s}
+.fopt.sel{border-color:var(--gold);color:var(--gold);background:rgba(201,169,110,.09)}
+.sgrid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.sopt{height:44px;border-radius:7px;border:2px solid rgba(255,255,255,.1);
+  background:rgba(255,255,255,.04);display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;transition:all .15s}
+.sopt.sel{border-color:var(--gold);background:rgba(201,169,110,.09)}
+.sdim{font-size:12px;font-weight:600;color:var(--surf)}
+.sprice{font-size:9px;color:var(--gold);font-weight:500;margin-top:1px}
+
+/* RENDER 3D BUTTON */
+#r3dbtn{width:100%;height:50px;background:linear-gradient(135deg,var(--navy),#253d70);
+  border:2px solid var(--gold);border-radius:10px;color:var(--gold);
+  font-family:var(--ui);font-size:14px;font-weight:600;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;gap:9px;margin-top:6px;
+  letter-spacing:.02em;transition:all .2s}
+#r3dbtn:hover{background:linear-gradient(135deg,#253d70,#365590);box-shadow:0 0 30px rgba(201,169,110,.25)}
+#r3dbtn.glow{animation:rglow 1.4s ease-in-out infinite}
+@keyframes rglow{0%,100%{box-shadow:0 0 0 rgba(201,169,110,0)}50%{box-shadow:0 0 40px rgba(201,169,110,.5),0 0 80px rgba(201,169,110,.18)}}
+
+/* 3D SCENE */
+#scene3d{position:fixed;inset:0;z-index:50;opacity:0;pointer-events:none;background:#050c1a;transition:opacity .9s ease}
+#scene3d.on{opacity:1;pointer-events:auto}
+#threecanvas{display:block;width:100%!important;height:100%!important}
+
+/* SCENE UI IN 3D */
+#s3d-ui{position:absolute;inset:0;pointer-events:none;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:24px 20px}
+#s3d-top{display:flex;align-items:center;justify-content:space-between;width:100%;pointer-events:auto}
+#s3d-badge{background:rgba(201,169,110,.15);border:1px solid rgba(201,169,110,.35);border-radius:20px;
+  padding:5px 14px;font-size:10px;font-weight:700;color:var(--gold);letter-spacing:.1em;text-transform:uppercase}
+#s3d-back{height:32px;padding:0 14px;border-radius:6px;background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.14);color:var(--surf);font-size:11px;font-weight:500;cursor:pointer;
+  pointer-events:auto;transition:background .15s;display:flex;align-items:center;gap:6px}
+#s3d-back:hover{background:rgba(255,255,255,.14)}
+#s3d-bottom{text-align:center;width:100%}
+#s3d-title{font-family:var(--serif);font-size:26px;font-weight:700;color:var(--surf);text-shadow:0 2px 20px rgba(0,0,0,.7);letter-spacing:.03em}
+#s3d-sub{font-size:11px;color:var(--gold);letter-spacing:.1em;text-transform:uppercase;margin-top:4px;font-weight:600}
+#s3d-cta{display:flex;gap:10px;justify-content:center;margin-top:14px;pointer-events:auto}
+.s3d-btn{height:42px;padding:0 22px;border-radius:8px;font-family:var(--ui);font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:7px;letter-spacing:.01em;transition:all .2s}
+.s3d-btn.primary{background:var(--gold);border:none;color:var(--deep)}
+.s3d-btn.primary:hover{background:var(--gold2)}
+.s3d-btn.secondary{background:transparent;border:1px solid rgba(245,237,228,.25);color:var(--surf)}
+.s3d-btn.secondary:hover{background:rgba(255,255,255,.08)}
+
+/* CAPTION */
+#caption{position:fixed;bottom:80px;left:50%;transform:translateX(-50%);z-index:60;
+  font-family:var(--serif);font-size:22px;font-weight:700;color:var(--surf);
+  text-align:center;text-shadow:0 2px 20px rgba(0,0,0,.8);letter-spacing:.02em;
+  max-width:320px;line-height:1.3;opacity:0;transition:opacity .5s,transform .5s var(--expo);
+  transform:translateY(10px);pointer-events:none}
+#caption.show{opacity:1;transform:translateY(0)}
+#caption em{color:var(--gold);font-style:normal}
+
+/* PROGRESS */
+#dots{position:fixed;bottom:28px;left:50%;transform:translateX(-50%);z-index:65;display:flex;gap:5px}
+.dot{width:5px;height:5px;border-radius:50%;background:rgba(245,237,228,.25);transition:all .3s}
+.dot.on{background:var(--gold);width:18px;border-radius:3px}
+
+/* LOADING */
+#loading{position:fixed;inset:0;z-index:100;background:var(--deep);display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:16px;transition:opacity .5s}
+#loading.hide{opacity:0;pointer-events:none}
+.lring{width:36px;height:36px;border:2px solid rgba(201,169,110,.2);border-top-color:var(--gold);
+  border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.ltxt{font-family:var(--serif);font-size:16px;color:var(--surf);letter-spacing:.04em}
+
+/* REPLAY */
+#replay{position:fixed;bottom:28px;right:20px;z-index:65;height:32px;padding:0 14px;
+  border-radius:6px;background:rgba(201,169,110,.15);border:1px solid rgba(201,169,110,.3);
+  color:var(--gold);font-size:11px;font-weight:600;cursor:pointer;display:none;
+  align-items:center;gap:6px;letter-spacing:.05em;transition:all .2s}
+#replay:hover{background:rgba(201,169,110,.25)}
+#replay.show{display:flex}
+</style>
+</head>
+<body>
+
+<!-- LOADING -->
+<div id="loading">
+  <div class="lring"></div>
+  <span class="ltxt">MapVibe Studio</span>
+</div>
+
+<!-- EDITOR SHELL -->
+<div id="shell">
+  <header id="hdr">
+    <div class="logo">
+      <div class="lmark">
+        <svg width="14" height="14" viewBox="0 0 14 14"><path d="M7 1L1 4v6l6 3 6-3V4L7 1z" fill-opacity=".9"/></svg>
+      </div>
+      <div>
+        <div class="lname">MapVibe</div>
+        <div class="lsub">Studio</div>
+      </div>
+    </div>
+    <div class="search">
+      <svg width="13" height="13" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="9" r="6"/><path d="m15 15 3 3" stroke-linecap="round"/></svg>
+      <span id="stxt">Washington DC<span class="cursor"></span></span>
+    </div>
+    <div class="hacts">
+      <button class="ibtn" title="Chat">
+        <svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 4a2 2 0 012-2h12a2 2 0 012 2v9a2 2 0 01-2 2H7l-4 3V4z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div id="mapwrap">
+    <div id="map"></div>
+
+    <!-- Style pill -->
+    <div id="spill" onclick="openThemePanel()">
+      <div class="sdot"></div>
+      <span id="sname">Vintage Noir</span>
+      <span class="schange">Change style</span>
+    </div>
+
+    <!-- City footer -->
+    <div id="eftr">
+      <span id="cname">Washington DC</span>
+      <span id="cmeta">38.8977° N · 77.0366° W · United States</span>
+    </div>
+
+    <!-- CTA -->
+    <div id="ctawrap">
+      <button id="ctabtn" onclick="openFramePanel()">
+        Choose size &amp; frame
+        <svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 10h12M10 4l6 6-6 6"/></svg>
+      </button>
+    </div>
+
+    <!-- THEME PANEL -->
+    <div id="tpanel">
+      <div class="ph">
+        <span class="ptitle">How should your city look?</span>
+        <button class="pclose" onclick="closeThemePanel()">✕</button>
+      </div>
+      <div class="tabs">
+        <button class="tab on">All</button>
+        <button class="tab">Hometown</button>
+        <button class="tab">Game Day</button>
+        <button class="tab">Pop Culture</button>
+        <button class="tab">Bold</button>
+      </div>
+      <div class="tgrid" id="tgrid"></div>
+    </div>
+
+    <!-- FRAME PANEL -->
+    <div id="fpanel">
+      <div class="ph">
+        <span class="ptitle">Size &amp; Frame</span>
+        <button class="pclose" onclick="closeFramePanel()">✕</button>
+      </div>
+      <div class="fpreview">
+        <div class="fposter" id="fposter">
+          <div class="fborder" id="fborder"></div>
+          <div class="finner">
+            <div class="fmap-mini" id="fmapmini"></div>
+          </div>
+        </div>
+      </div>
+      <div class="fcontrols">
+        <div class="csec">
+          <div class="clbl">Frame</div>
+          <div class="fopts" id="frameOpts">
+            <button class="fopt" data-f="none" onclick="pickFrame('none',this)">No Frame</button>
+            <button class="fopt sel" data-f="black" onclick="pickFrame('black',this)">Black</button>
+            <button class="fopt" data-f="oak" onclick="pickFrame('oak',this)">Oak</button>
+            <button class="fopt" data-f="canvas" onclick="pickFrame('canvas',this)">Canvas</button>
+          </div>
+        </div>
+        <div class="csec">
+          <div class="clbl">Size</div>
+          <div class="sgrid" id="sizeOpts">
+            <div class="sopt" data-s="16x20" onclick="pickSize('16x20',this)"><span class="sdim">16×20"</span><span class="sprice">from $37</span></div>
+            <div class="sopt sel" data-s="18x24" onclick="pickSize('18x24',this)"><span class="sdim">18×24"</span><span class="sprice">from $125</span></div>
+            <div class="sopt" data-s="20x28" onclick="pickSize('20x28',this)"><span class="sdim">20×28"</span><span class="sprice">from $145</span></div>
+            <div class="sopt" data-s="24x36" onclick="pickSize('24x36',this)"><span class="sdim">24×36"</span><span class="sprice">from $200</span></div>
+          </div>
+        </div>
+        <button id="r3dbtn" onclick="startScene3D()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          Render in 3D
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 3D SCENE -->
+<div id="scene3d">
+  <canvas id="threecanvas"></canvas>
+  <div id="s3d-ui">
+    <div id="s3d-top">
+      <span id="s3d-badge">3D Preview</span>
+      <button id="s3d-back" onclick="backToEditor()">← Back to editor</button>
+    </div>
+    <div id="s3d-bottom">
+      <div id="s3d-title">Washington DC</div>
+      <div id="s3d-sub">Vintage Noir · Black Frame · 18×24"</div>
+      <div id="s3d-cta">
+        <button class="s3d-btn primary" onclick="window.open('https://app.mapvibestudio.com','_blank')">
+          Order this poster
+          <svg width="13" height="13" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 10h12M10 4l6 6-6 6"/></svg>
+        </button>
+        <button class="s3d-btn secondary" onclick="backToEditor()">Edit map</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CAPTION -->
+<div id="caption"></div>
+
+<!-- DOTS -->
+<div id="dots">
+  <div class="dot on"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+</div>
+
+<!-- REPLAY -->
+<button id="replay" onclick="startDemo()">↺ Replay</button>
+
+<script>
+// ── DESIGN TOKENS & DATA ──────────────────────────────────────────────
+const THEMES = [
+  { id:'noir',  cls:'t-noir',   name:'Vintage Noir',       prev:'tp-noir',  desc:'Warm B&W' },
+  { id:'gotham',cls:'t-gotham', name:'Gotham Dark',        prev:'tp-gotham',desc:'Dark mode' },
+  { id:'red',   cls:'t-red',    name:'Heroic Red',         prev:'tp-red',   desc:'Bold red' },
+  { id:'pulse', cls:'t-pulse',  name:'Magic City Pulse',   prev:'tp-pulse', desc:'Neon teal' },
+  { id:'med',   cls:'t-med',    name:'Mediterranean Vibes',prev:'tp-med',   desc:'Warm gold' },
+  { id:'pastel',cls:'t-pastel', name:'Pastel Symmetry',    prev:'tp-pastel',desc:'Soft pastel' },
+];
+
+const CITIES = [
+  { name:'Washington DC',   coords:'38.8977° N · 77.0366° W · United States', center:[-77.0366,38.8977], zoom:12 },
+  { name:'New York City',   coords:'40.7128° N · 74.0060° W · United States', center:[-74.006,40.7128],  zoom:12 },
+  { name:'Lisbon',          coords:'38.7223° N · 9.1393° W · Portugal',        center:[-9.1393,38.7223], zoom:12.5 },
+  { name:'São Paulo',       coords:'23.5505° S · 46.6333° W · Brazil',         center:[-46.6333,-23.5505],zoom:11.5 },
+  { name:'Havana',          coords:'23.1136° N · 82.3666° W · Cuba',           center:[-82.3666,23.1136],zoom:12 },
+];
+
+// ── STATE ──────────────────────────────────────────────────────────────
+let map, threeScene, threeRenderer, threeCamera, posterGroup;
+let currentTheme = 0, currentCity = 0, currentFrame = 'black', currentSize = '18x24';
+let demoRunning = false, scene3DActive = false;
+let orbitAngle = 0, orbitTilt = 0, bobTime = 0;
+
+// ── MAP INIT ───────────────────────────────────────────────────────────
+function initMap() {
+  map = new maplibregl.Map({
+    container: 'map',
+    style: {
+      version: 8,
+      sources: {
+        carto: {
+          type: 'raster',
+          tiles: [
+            'https://a.basemaps.cartocdn.com/dark_matter/{z}/{x}/{y}@2x.png',
+            'https://b.basemaps.cartocdn.com/dark_matter/{z}/{x}/{y}@2x.png',
+          ],
+          tileSize: 256,
+          attribution: '© CARTO © OSM contributors'
+        }
+      },
+      layers: [{ id: 'base', type: 'raster', source: 'carto' }]
+    },
+    center: [-77.0366, 38.8977],
+    zoom: 12,
+    bearing: 0,
+    pitch: 0,
+    interactive: true,
+    attributionControl: false
+  });
+
+  map.on('load', () => {
+    document.getElementById('loading').classList.add('hide');
+    // Apply initial theme
+    document.getElementById('map').classList.add(THEMES[0].cls);
+    buildThemeGrid();
+    setTimeout(startDemo, 600);
+  });
+}
+
+// ── THEME GRID ─────────────────────────────────────────────────────────
+function buildThemeGrid() {
+  const g = document.getElementById('tgrid');
+  g.innerHTML = THEMES.map((t,i) => `
+    <div class="tcard ${i===0?'sel':''}" onclick="selectTheme(${i})">
+      <div class="tprev ${t.prev}">${t.desc}</div>
+      <div class="tcname">${t.name}</div>
+      <div class="tcheck"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="#0D1A30" stroke-width="2" stroke-linecap="round"><path d="M2 5l2.5 2.5L8 3"/></svg></div>
+    </div>`).join('');
+}
+
+function selectTheme(i) {
+  const mapEl = document.getElementById('map');
+  THEMES.forEach(t => mapEl.classList.remove(t.cls));
+  mapEl.classList.add(THEMES[i].cls);
+  currentTheme = i;
+  document.getElementById('sname').textContent = THEMES[i].name;
+  document.querySelectorAll('.tcard').forEach((c,j) => c.classList.toggle('sel', j===i));
+  updateFmapMini(i);
+}
+
+function updateFmapMini(ti) {
+  const m = document.getElementById('fmapmini');
+  const colors = ['#1a1a1a','#0d1a30','#3a0808','#041828','#8b6010','#c8dff0'];
+  const c2 = ['#383838','#1b2a4a','#6b1212','#075080','#c4a060','#a8c8e8'];
+  m.style.background = `linear-gradient(135deg,${colors[ti]},${c2[ti]})`;
+}
+
+// ── PANEL CONTROLS ─────────────────────────────────────────────────────
+function openThemePanel() { document.getElementById('tpanel').classList.add('open'); }
+function closeThemePanel() { document.getElementById('tpanel').classList.remove('open'); }
+function openFramePanel() {
+  closeThemePanel();
+  document.getElementById('fpanel').classList.add('open');
+  document.getElementById('fborder').className = 'fborder fb-black';
+}
+function closeFramePanel() { document.getElementById('fpanel').classList.remove('open'); }
+
+function pickFrame(f, el) {
+  currentFrame = f;
+  document.querySelectorAll('.fopt').forEach(e => e.classList.remove('sel'));
+  el.classList.add('sel');
+  const fb = document.getElementById('fborder');
+  fb.className = 'fborder fb-' + f;
+}
+
+function pickSize(s, el) {
+  currentSize = s;
+  document.querySelectorAll('.sopt').forEach(e => e.classList.remove('sel'));
+  el.classList.add('sel');
+}
+
+// ── CINEMATIC SEQUENCE ─────────────────────────────────────────────────
+const SCENES = [
+  { dur:2800, caption:'Your city, <em>your style.</em>',          fn: s0_intro },
+  { dur:4000, caption:'Every street, <em>every detail.</em>',     fn: s1_zoom },
+  { dur:6500, caption:'<em>62</em> hand-curated themes.',         fn: s2_themes },
+  { dur:3500, caption:'Same city. <em>Your angle.</em>',          fn: s3_bearing },
+  { dur:4000, caption:'Frame it. <em>Ship it.</em>',              fn: s4_frame },
+  { dur:2500, caption:'<em>Render in 3D</em> — watch the magic.', fn: s5_trigger },
+];
+
+let sceneIdx = 0, sceneTimer = null;
+
+function startDemo() {
+  demoRunning = true;
+  sceneIdx = 0;
+  setDot(0);
+  runScene(0);
+}
+
+function runScene(i) {
+  if (i >= SCENES.length) { endDemo(); return; }
+  sceneIdx = i;
+  setDot(i);
+  showCaption(SCENES[i].caption);
+  SCENES[i].fn();
+  sceneTimer = setTimeout(() => runScene(i + 1), SCENES[i].dur);
+}
+
+function endDemo() {
+  demoRunning = false;
+  hideCaption();
+  document.getElementById('replay').classList.add('show');
+}
+
+function setDot(i) {
+  document.querySelectorAll('.dot').forEach((d,j) => d.classList.toggle('on', j===i));
+}
+
+function showCaption(html) {
+  const c = document.getElementById('caption');
+  c.classList.remove('show');
+  setTimeout(() => { c.innerHTML = html; c.classList.add('show'); }, 50);
+}
+
+function hideCaption() {
+  document.getElementById('caption').classList.remove('show');
+}
+
+// SCENE 0: Intro — editor fades in, DC loads
+function s0_intro() {
+  goCity(0);
+}
+
+// SCENE 1: Zoom into detail, slight pitch
+function s1_zoom() {
+  map.easeTo({ zoom: 14, pitch: 25, bearing: 10, duration: 3500 });
+}
+
+// SCENE 2: Rapid theme switching
+function s2_themes() {
+  map.easeTo({ zoom: 12.5, pitch: 0, bearing: 0, duration: 1000 });
+  let t = 0;
+  const order = [1, 2, 3, 4, 0]; // gotham, red, pulse, med, back to noir
+  const iv = setInterval(() => {
+    if (t >= order.length) { clearInterval(iv); return; }
+    selectTheme(order[t++]);
+  }, 1200);
+}
+
+// SCENE 3: Bearing rotation + new city
+function s3_bearing() {
+  goCity(1); // NYC
+  setTimeout(() => {
+    map.easeTo({ bearing: 45, zoom: 13, duration: 2000 });
+    setTimeout(() => map.easeTo({ bearing: 90, duration: 2000 }), 2000);
+  }, 600);
+}
+
+// SCENE 4: Open frame panel, auto-select
+function s4_frame() {
+  map.easeTo({ bearing: 0, zoom: 12, duration: 1000 });
+  setTimeout(() => {
+    openFramePanel();
+    document.getElementById('r3dbtn').classList.add('glow');
+  }, 800);
+}
+
+// SCENE 5: Click "Render in 3D"
+function s5_trigger() {
+  clearTimeout(sceneTimer); // don't advance automatically
+  document.getElementById('r3dbtn').style.transform = 'scale(0.97)';
+  setTimeout(() => {
+    document.getElementById('r3dbtn').style.transform = '';
+    startScene3D();
+  }, 400);
+}
+
+// ── CITY NAVIGATION ────────────────────────────────────────────────────
+function goCity(i) {
+  const c = CITIES[i];
+  currentCity = i;
+  document.getElementById('cname').textContent = c.name;
+  document.getElementById('cmeta').textContent = c.coords;
+  document.getElementById('stxt').innerHTML = c.name + '<span class="cursor"></span>';
+  document.getElementById('s3d-title').textContent = c.name;
+  map.easeTo({ center: c.center, zoom: c.zoom, bearing: 0, pitch: 0, duration: 1800 });
+}
+
+// ── THREE.JS SCENE ─────────────────────────────────────────────────────
+function startScene3D() {
+  closeFramePanel();
+  document.getElementById('r3dbtn').classList.remove('glow');
+
+  const s3 = document.getElementById('scene3d');
+  const shell = document.getElementById('shell');
+
+  // Update subtitle
+  const t = THEMES[currentTheme].name;
+  const f = currentFrame.charAt(0).toUpperCase() + currentFrame.slice(1);
+  document.getElementById('s3d-sub').textContent = `${t} · ${f} Frame · ${currentSize}"`;
+
+  shell.classList.add('out');
+
+  if (!threeRenderer) initThree();
+  else resetOrbit();
+
+  setTimeout(() => {
+    s3.classList.add('on');
+    scene3DActive = true;
+    hideCaption();
+    document.getElementById('dots').style.display = 'none';
+  }, 300);
+}
+
+function backToEditor() {
+  const s3 = document.getElementById('scene3d');
+  const shell = document.getElementById('shell');
+  s3.classList.remove('on');
+  shell.classList.remove('out');
+  scene3DActive = false;
+  closeFramePanel();
+  document.getElementById('dots').style.display = 'flex';
+}
+
+function initThree() {
+  const canvas = document.getElementById('threecanvas');
+  const W = window.innerWidth, H = window.innerHeight;
+
+  // Renderer
+  threeRenderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false });
+  threeRenderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  threeRenderer.setSize(W, H);
+  threeRenderer.toneMapping = THREE.ACESFilmicToneMapping;
+  threeRenderer.toneMappingExposure = 1.1;
+  threeRenderer.shadowMap.enabled = true;
+
+  // Scene
+  threeScene = new THREE.Scene();
+  threeScene.background = new THREE.Color(0x05090f);
+  threeScene.fog = new THREE.FogExp2(0x05090f, 0.04);
+
+  // Camera
+  threeCamera = new THREE.PerspectiveCamera(42, W / H, 0.01, 100);
+  threeCamera.position.set(0, 0, 5);
+
+  // Lights
+  const ambient = new THREE.AmbientLight(0x1a2840, 0.8);
+  threeScene.add(ambient);
+
+  const key = new THREE.DirectionalLight(0xfff4e0, 2.0);
+  key.position.set(3, 4, 4);
+  key.castShadow = true;
+  threeScene.add(key);
+
+  const fill = new THREE.DirectionalLight(0xb8cce0, 0.5);
+  fill.position.set(-3, 1, 2);
+  threeScene.add(fill);
+
+  const rim = new THREE.PointLight(0xC9A96E, 1.5, 12);
+  rim.position.set(0, -4, -2);
+  threeScene.add(rim);
+
+  const back = new THREE.PointLight(0x1B2A4A, 2.0, 15);
+  back.position.set(-2, 3, -4);
+  threeScene.add(back);
+
+  // Build poster group
+  posterGroup = new THREE.Group();
+  threeScene.add(posterGroup);
+  buildPoster();
+  addParticles();
+  startRenderLoop();
+
+  window.addEventListener('resize', onResize3D);
+}
+
+function buildPoster() {
+  while (posterGroup.children.length) posterGroup.remove(posterGroup.children[0]);
+
+  const mapW = 1.8, mapH = 2.4; // 18:24 ratio
+  const matW = 0.12;
+  const frameW = 0.09;
+  const depth = 0.06;
+
+  // ── Map canvas texture ──
+  const mapCanvas = document.querySelector('#map .maplibregl-canvas');
+  let mapTex;
+  if (mapCanvas) {
+    mapTex = new THREE.CanvasTexture(mapCanvas);
+    mapTex.minFilter = THREE.LinearFilter;
+  } else {
+    mapTex = new THREE.Texture();
+  }
+
+  // Map surface
+  const mapMesh = new THREE.Mesh(
+    new THREE.PlaneGeometry(mapW, mapH),
+    new THREE.MeshStandardMaterial({ map: mapTex, roughness: 0.4, metalness: 0.05 })
+  );
+  mapMesh.position.z = depth * 0.5 + 0.002;
+  posterGroup.add(mapMesh);
+
+  // Mat board
+  const matGeo = new THREE.BoxGeometry(mapW + matW*2, mapH + matW*2, depth * 0.3);
+  const matMat = new THREE.MeshStandardMaterial({ color: 0xf0ebe0, roughness: 0.85, metalness: 0 });
+  const matMesh = new THREE.Mesh(matGeo, matMat);
+  matMesh.position.z = depth * 0.1;
+  posterGroup.add(matMesh);
+
+  // Frame
+  if (currentFrame !== 'none') {
+    const fColor = currentFrame === 'black' ? 0x111111 :
+                   currentFrame === 'oak'   ? 0x8B6010 :
+                   currentFrame === 'canvas'? 0xf0ebe0 : 0x111111;
+    const fRoughness = currentFrame === 'black' ? 0.25 : 0.55;
+    const fMetal = currentFrame === 'black' ? 0.15 : 0.05;
+    const frameMat = new THREE.MeshStandardMaterial({ color: fColor, roughness: fRoughness, metalness: fMetal });
+
+    const totalW = mapW + matW*2, totalH = mapH + matW*2;
+    const bars = [
+      { w: totalW + frameW*2, h: frameW, x: 0,          y:  totalH/2 + frameW/2 },
+      { w: totalW + frameW*2, h: frameW, x: 0,          y: -totalH/2 - frameW/2 },
+      { w: frameW, h: totalH,            x: -totalW/2 - frameW/2, y: 0 },
+      { w: frameW, h: totalH,            x:  totalW/2 + frameW/2, y: 0 },
+    ];
+    bars.forEach(b => {
+      const mesh = new THREE.Mesh(new THREE.BoxGeometry(b.w, b.h, depth), frameMat);
+      mesh.position.set(b.x, b.y, 0);
+      posterGroup.add(mesh);
+    });
+
+    // Subtle shadow plane behind
+    const shadow = new THREE.Mesh(
+      new THREE.PlaneGeometry(totalW + frameW*2 + 0.4, totalH + frameW*2 + 0.4),
+      new THREE.MeshBasicMaterial({ color: 0x000000, transparent: true, opacity: 0.35 })
+    );
+    shadow.position.z = -0.08;
+    posterGroup.add(shadow);
+  }
+
+  // Refresh canvas texture each frame
+  mapMesh.userData.liveTexture = true;
+  mapMesh.userData.tex = mapTex;
+}
+
+function addParticles() {
+  const count = 180;
+  const geo = new THREE.BufferGeometry();
+  const pos = new Float32Array(count * 3);
+  for (let i = 0; i < count; i++) {
+    pos[i*3]   = (Math.random() - 0.5) * 14;
+    pos[i*3+1] = (Math.random() - 0.5) * 14;
+    pos[i*3+2] = (Math.random() - 0.5) * 8;
+  }
+  geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  const pts = new THREE.Points(geo,
+    new THREE.PointsMaterial({ color: 0xC9A96E, size: 0.025, transparent: true, opacity: 0.3 }));
+  threeScene.add(pts);
+}
+
+function resetOrbit() { orbitAngle = 0; orbitTilt = 0; bobTime = 0; }
+
+function startRenderLoop() {
+  function loop() {
+    requestAnimationFrame(loop);
+    if (!scene3DActive) return;
+
+    bobTime += 0.008;
+    orbitAngle += 0.005;
+    const tiltTarget = Math.sin(bobTime * 0.5) * 0.18;
+    orbitTilt += (tiltTarget - orbitTilt) * 0.02;
+
+    const r = 5 + Math.sin(bobTime * 0.3) * 0.3;
+    threeCamera.position.x = Math.sin(orbitAngle) * r;
+    threeCamera.position.z = Math.cos(orbitAngle) * r;
+    threeCamera.position.y = orbitTilt + Math.sin(bobTime * 0.7) * 0.08;
+    threeCamera.lookAt(0, 0, 0);
+
+    // Update live map texture
+    if (posterGroup) {
+      posterGroup.children.forEach(c => {
+        if (c.userData.liveTexture) c.userData.tex.needsUpdate = true;
+      });
+    }
+
+    threeRenderer.render(threeScene, threeCamera);
+  }
+  loop();
+}
+
+function onResize3D() {
+  const W = window.innerWidth, H = window.innerHeight;
+  threeCamera.aspect = W / H;
+  threeCamera.updateProjectionMatrix();
+  threeRenderer.setSize(W, H);
+}
+
+// ── INIT ───────────────────────────────────────────────────────────────
+updateFmapMini(0);
+initMap();
+</script>
+</body>
+</html>
