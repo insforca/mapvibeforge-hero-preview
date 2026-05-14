@@ -411,33 +411,25 @@ function initMap() {
     bearing: 0,
     pitch: 0,
     interactive: true,
-    attributionControl: false
+    attributionControl: false,
+    preserveDrawingBuffer: true
   });
 
-  function dismissLoader() {
+  let demoLaunched = false;
+  function launchDemo() {
+    if (demoLaunched) return;
+    demoLaunched = true;
     document.getElementById('loading').classList.add('hide');
+    document.getElementById('map').classList.add(THEMES[0].cls);
+    buildThemeGrid();
+    setTimeout(startDemo, 600);
   }
 
-  // Hard timeout — removes loader after 6s even if map stalls
-  const loaderTimeout = setTimeout(dismissLoader, 6000);
+  // Hard timeout — launches after 6s even if tiles stall
+  const loaderTimeout = setTimeout(launchDemo, 6000);
 
-  map.on('load', () => {
-    clearTimeout(loaderTimeout);
-    dismissLoader();
-    // Apply initial theme
-    document.getElementById('map').classList.add(THEMES[0].cls);
-    buildThemeGrid();
-    setTimeout(startDemo, 600);
-  });
-
-  map.on('error', (e) => {
-    console.warn('MapLibre error:', e);
-    clearTimeout(loaderTimeout);
-    dismissLoader();
-    document.getElementById('map').classList.add(THEMES[0].cls);
-    buildThemeGrid();
-    setTimeout(startDemo, 600);
-  });
+  map.on('load', () => { clearTimeout(loaderTimeout); launchDemo(); });
+  map.on('error', (e) => { console.warn('MapLibre error:', e); clearTimeout(loaderTimeout); launchDemo(); });
 }
 
 // ── THEME GRID ─────────────────────────────────────────────────────────
