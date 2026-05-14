@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MapVibe Studio — Your city, beautifully framed</title>
+<title>MapVibe Studio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
@@ -175,95 +175,16 @@ html, body { width: 100%; height: 100%; overflow: hidden; background: #07070e; }
 }
 
 /* ── COPY ───────────────────────────────────────────────── */
-.copy {
-  position: absolute;
-  bottom: 7%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  z-index: 15;
-  white-space: nowrap;
-  opacity: 0;
-  animation: rise 1.2s 0.5s cubic-bezier(0.16,1,0.3,1) forwards;
-}
+
 @keyframes rise {
   from { opacity: 0; transform: translateX(-50%) translateY(24px); }
   to   { opacity: 1; transform: translateX(-50%) translateY(0); }
 }
 
-.copy-eyebrow {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 9px; font-weight: 400;
-  letter-spacing: 0.28em; text-transform: uppercase;
-  color: #C9A96E; margin-bottom: 10px;
-}
-
-.copy-headline {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(20px, 2.4vw, 30px);
-  font-weight: 400; line-height: 1.25;
-  color: rgba(245,240,232,0.95);
-  margin-bottom: 6px;
-}
-.copy-headline em { font-style: italic; color: #fff; }
-
-.copy-sub {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 12px; font-weight: 300;
-  color: rgba(255,255,255,0.38);
-  letter-spacing: 0.06em;
-  margin-bottom: 22px;
-}
-
-.copy-cta {
-  display: inline-flex; align-items: center; gap: 8px;
-  padding: 10px 26px;
-  border: 1px solid rgba(201,169,110,0.4);
-  border-radius: 1px;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 10px; font-weight: 500;
-  letter-spacing: 0.22em; text-transform: uppercase;
-  color: #C9A96E; text-decoration: none;
-  cursor: pointer;
-  background: transparent;
-  transition: background 0.3s, border-color 0.3s, color 0.3s;
-}
-.copy-cta:hover {
-  background: rgba(201,169,110,0.1);
-  border-color: rgba(201,169,110,0.8);
-  color: #e0c68a;
-}
-.copy-cta svg { opacity: 0.7; transition: transform 0.3s; }
-.copy-cta:hover svg { transform: translateX(3px); }
-
 /* ── BRAND ──────────────────────────────────────────────── */
-.brand {
-  position: fixed; top: 6%; left: 50%; transform: translateX(-50%);
-  z-index: 15; text-align: center;
-  opacity: 0; animation: rise 0.9s 0.1s cubic-bezier(0.16,1,0.3,1) forwards;
-}
-.brand-wordmark {
-  font-family: 'Playfair Display', serif;
-  font-size: 11px; font-weight: 400;
-  letter-spacing: 0.38em; text-transform: uppercase;
-  color: rgba(255,255,255,0.55);
-}
-.brand-line {
-  width: 36px; height: 1px; margin: 7px auto 0;
-  background: linear-gradient(90deg, transparent, rgba(201,169,110,0.7), transparent);
-}
 
 /* ── SUBTLE FRAME COUNT TAG ─────────────────────────────── */
-.tag {
-  position: absolute;
-  top: -38px; right: 0;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 9px; font-weight: 300;
-  letter-spacing: 0.2em; text-transform: uppercase;
-  color: rgba(201,169,110,0.45);
-  opacity: 0;
-  animation: rise 0.8s 1.2s cubic-bezier(0.16,1,0.3,1) forwards;
-}
+
 </style>
 </head>
 <body>
@@ -278,17 +199,12 @@ html, body { width: 100%; height: 100%; overflow: hidden; background: #07070e; }
   <i style="width:240px;height:240px;right:18%;bottom:22%;background:#3a1e08;--o:0.08;--dx:-35px;--dy:20px;animation-duration:28s;animation-delay:-12s;"></i>
 </div>
 <canvas id="particles"></canvas>
-
-<!-- Brand -->
-<div class="brand">
-  <div class="brand-wordmark">MapVibe Studio</div>
   <div class="brand-line"></div>
 </div>
 
 <!-- Main stage -->
 <div class="stage">
   <div class="frame-scene">
-    <div class="tag">18 × 24 &nbsp;·&nbsp; Noir Edition</div>
     <div class="frame-halo"></div>
     <div class="frame-wrap" id="frameWrap">
       <div class="frame-border">
@@ -303,19 +219,8 @@ html, body { width: 100%; height: 100%; overflow: hidden; background: #07070e; }
       </div>
       <div class="frame-reflection"></div>
     </div>
-    <div class="copy">
-      <div class="copy-eyebrow">The art of map printing</div>
-      <div class="copy-headline">Your city,<br><em>beautifully framed.</em></div>
-      <div class="copy-sub">62 hand-crafted themes &nbsp;·&nbsp; Ships worldwide</div>
-      <a class="copy-cta" href="#">
-        Start Designing
-        <svg width="12" height="10" viewBox="0 0 12 10" fill="none">
-          <path d="M7 1l4 4-4 4M1 5h10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </a>
-    </div>
+      </div>
   </div>
-</div>
 
 <!-- Vignette -->
 <div class="vignette"></div>
