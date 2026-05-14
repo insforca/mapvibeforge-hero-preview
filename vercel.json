@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/((?!cinematic-demo(?:/|$)).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
