@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import CityMapSvg from '@/components/CityMapSvg'
 import type { GalleryItem } from '@/lib/gallery-data'
 
 interface GalleryCardProps {
@@ -10,30 +10,44 @@ export default function GalleryCard({ item }: GalleryCardProps) {
     <article
       id={item.anchor}
       style={{
-        background: '#f5f2ed',
+        background: '#faf9f6',
         display: 'flex',
         flexDirection: 'column',
         transition: 'transform 0.25s ease',
       }}
       className="gallery-card"
     >
-      {/* Image */}
+      {/* Map print preview — linen mat + white mount + SVG map */}
       <div
         style={{
-          position: 'relative',
           width: '100%',
           aspectRatio: '3/4',
-          overflow: 'hidden',
-          background: '#e8e3dc',
+          background: '#ede8dc',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          padding: '10px',
+          boxSizing: 'border-box',
         }}
       >
-        <Image
-          src={item.imageUrl}
-          alt={item.altText}
-          fill
-          style={{ objectFit: 'cover', transition: 'transform 0.4s ease' }}
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-        />
+        <div
+          style={{
+            width: '100%',
+            height: '100%',
+            background: '#fff',
+            padding: '8px',
+            boxShadow: 'inset 0 0 0 0.5px rgba(26,26,26,0.12)',
+            display: 'flex',
+            alignItems: 'stretch',
+          }}
+        >
+          <CityMapSvg
+            style={item.mapStyle}
+            city={item.city}
+            width="100%"
+            height="100%"
+          />
+        </div>
       </div>
 
       {/* Content */}

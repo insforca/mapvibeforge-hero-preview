@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import CityMapSvg from '@/components/CityMapSvg'
 import { featuredItems } from '@/lib/gallery-data'
 
 export default function FeaturedStrip() {
@@ -78,23 +78,21 @@ export default function FeaturedStrip() {
       <div className="featured-strip">
         {featuredItems.map((item) => (
           <article key={item.id} className="featured-card">
-            {/* Landscape image */}
+            {/* Map print — landscape mat */}
             <div
               style={{
-                position: 'relative',
                 width: '100%',
                 aspectRatio: '4/3',
-                overflow: 'hidden',
-                background: '#e8e3dc',
+                background: '#ede8dc',
+                padding: '12px',
+                boxSizing: 'border-box',
+                display: 'flex',
+                alignItems: 'stretch',
               }}
             >
-              <Image
-                src={item.imageUrl}
-                alt={item.altText}
-                fill
-                style={{ objectFit: 'cover' }}
-                sizes="320px"
-              />
+              <div style={{ width: '100%', height: '100%', background: '#fff', padding: '6px', boxSizing: 'border-box', boxShadow: 'inset 0 0 0 0.5px rgba(26,26,26,0.1)' }}>
+                <CityMapSvg style={item.mapStyle} city={item.city} width="100%" height="100%"/>
+              </div>
             </div>
 
             {/* Content */}

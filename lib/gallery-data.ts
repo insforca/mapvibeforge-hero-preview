@@ -1,3 +1,5 @@
+import type { MapStyle } from '@/components/CityMapSvg'
+
 export interface GalleryItem {
   id: number
   title: string
@@ -7,7 +9,7 @@ export interface GalleryItem {
   description: string
   altText: string
   anchor: string
-  imageUrl: string
+  mapStyle: MapStyle
 }
 
 export const galleryItems: GalleryItem[] = [
@@ -20,7 +22,7 @@ export const galleryItems: GalleryItem[] = [
     description: 'Minimal monochrome NYC wall art styled for warm modern interiors. Perfect for gallery walls and reading nooks.',
     altText: 'Luxury New York city map print in warm beige modern living room',
     anchor: 'new-york',
-    imageUrl: 'https://picsum.photos/seed/interior1/400/533',
+    mapStyle: 'manhattan',
   },
   {
     id: 2,
@@ -31,7 +33,7 @@ export const galleryItems: GalleryItem[] = [
     description: 'Elegant Parisian street map rendered in warm travertine tones. Evokes the quiet luxury of a Haussmann apartment.',
     altText: 'Paris street map art print styled in editorial interior photography',
     anchor: 'paris',
-    imageUrl: 'https://picsum.photos/seed/mapwall/400/533',
+    mapStyle: 'paris',
   },
   {
     id: 3,
@@ -42,7 +44,7 @@ export const galleryItems: GalleryItem[] = [
     description: 'Refined Tokyo street grid in soft ivory and charcoal. A study in negative space and urban geometry.',
     altText: 'Minimalist Tokyo map print in Japandi interior with warm lighting',
     anchor: 'tokyo',
-    imageUrl: 'https://picsum.photos/seed/nordic/400/533',
+    mapStyle: 'tokyo',
   },
   {
     id: 4,
@@ -53,7 +55,7 @@ export const galleryItems: GalleryItem[] = [
     description: "London's iconic street network captured in warm cream and walnut tones. A timeless addition to any home library.",
     altText: 'London city map print in warm editorial interior setting',
     anchor: 'london',
-    imageUrl: 'https://picsum.photos/seed/villa/400/533',
+    mapStyle: 'london',
   },
   {
     id: 5,
@@ -64,7 +66,7 @@ export const galleryItems: GalleryItem[] = [
     description: "Eixample's grid and Gothic Quarter's labyrinth rendered in warm Mediterranean neutrals. Sun-bleached, architectural, enduring.",
     altText: 'Barcelona street map art print in Mediterranean interior with warm tones',
     anchor: 'mediterranean-vibes',
-    imageUrl: 'https://picsum.photos/seed/studio/400/533',
+    mapStyle: 'barcelona',
   },
   {
     id: 6,
@@ -75,7 +77,7 @@ export const galleryItems: GalleryItem[] = [
     description: 'The concentric canals of Amsterdam rendered in warm ivory and soft black. Elegant, architectural, and quietly romantic.',
     altText: 'Amsterdam canal map print in warm minimal interior',
     anchor: 'minimalist',
-    imageUrl: 'https://picsum.photos/seed/canal1/400/533',
+    mapStyle: 'amsterdam',
   },
   {
     id: 7,
@@ -86,7 +88,7 @@ export const galleryItems: GalleryItem[] = [
     description: "Rome's ancient streets and piazzas immortalized in travertine and sand tones. A monument to editorial restraint.",
     altText: 'Rome map print styled in warm travertine editorial interior',
     anchor: 'mediterranean-vibes',
-    imageUrl: 'https://picsum.photos/seed/rome1/400/533',
+    mapStyle: 'rome',
   },
   {
     id: 8,
@@ -97,7 +99,7 @@ export const galleryItems: GalleryItem[] = [
     description: "Copenhagen's harbor and canal districts in understated Nordic tones. A tribute to Scandinavian design philosophy.",
     altText: 'Copenhagen city map print in Scandinavian minimal interior',
     anchor: 'minimalist',
-    imageUrl: 'https://picsum.photos/seed/cph1/400/533',
+    mapStyle: 'grid',
   },
   {
     id: 9,
@@ -108,7 +110,7 @@ export const galleryItems: GalleryItem[] = [
     description: "From Silver Lake to Venice Beach — LA's sprawling neighborhoods captured in a warm, sun-faded editorial palette.",
     altText: 'Los Angeles city map print in warm California interior setting',
     anchor: 'minimalist',
-    imageUrl: 'https://picsum.photos/seed/la1/400/533',
+    mapStyle: 'grid',
   },
   {
     id: 10,
@@ -119,7 +121,7 @@ export const galleryItems: GalleryItem[] = [
     description: 'The harbour, the bays, the bridge — Sydney rendered in coastal neutrals and soft cartographic lines.',
     altText: 'Sydney harbour map print in coastal neutral interior',
     anchor: 'minimalist',
-    imageUrl: 'https://picsum.photos/seed/syd1/400/533',
+    mapStyle: 'grid',
   },
   {
     id: 11,
@@ -130,7 +132,7 @@ export const galleryItems: GalleryItem[] = [
     description: "Brooklyn's brownstone blocks and waterfront parks in warm matte tones. A love letter to neighborhood life.",
     altText: 'Brooklyn New York map print in warm urban interior',
     anchor: 'new-york',
-    imageUrl: 'https://picsum.photos/seed/brooklyn1/400/533',
+    mapStyle: 'manhattan',
   },
   {
     id: 12,
@@ -141,7 +143,7 @@ export const galleryItems: GalleryItem[] = [
     description: 'The winding streets of Le Marais in a soft beige palette. Intimate in scale, grand in feeling.',
     altText: 'Paris Marais map art print in soft beige editorial interior',
     anchor: 'paris',
-    imageUrl: 'https://picsum.photos/seed/marais1/400/533',
+    mapStyle: 'paris',
   },
   {
     id: 13,
@@ -152,7 +154,7 @@ export const galleryItems: GalleryItem[] = [
     description: "Shinjuku's dense street network in fine-line cartography on warm ivory. An urban meditation in print form.",
     altText: 'Tokyo Shinjuku map print in Japandi interior space',
     anchor: 'tokyo',
-    imageUrl: 'https://picsum.photos/seed/shinjuku1/400/533',
+    mapStyle: 'tokyo',
   },
   {
     id: 14,
@@ -163,7 +165,7 @@ export const galleryItems: GalleryItem[] = [
     description: 'Notting Hill and Portobello Road in warm cream and muted terracotta. Nostalgic without being sentimental.',
     altText: 'London Notting Hill map print in heritage cream interior',
     anchor: 'london',
-    imageUrl: 'https://picsum.photos/seed/nottinghill/400/533',
+    mapStyle: 'london',
   },
   {
     id: 15,
@@ -174,7 +176,7 @@ export const galleryItems: GalleryItem[] = [
     description: "The Amalfi Coast's dramatic topography rendered in warm earthy cartography. Brings the south to any interior.",
     altText: 'Mediterranean Amalfi Coast map print in warm earthy interior',
     anchor: 'mediterranean-vibes',
-    imageUrl: 'https://picsum.photos/seed/amalfi1/400/533',
+    mapStyle: 'grid',
   },
   {
     id: 16,
@@ -185,7 +187,7 @@ export const galleryItems: GalleryItem[] = [
     description: "Manhattan's perfectly ordered grid abstracted to its finest lines. Architectural precision as wall art.",
     altText: 'Manhattan grid city map print in architectural monochrome interior',
     anchor: 'new-york',
-    imageUrl: 'https://picsum.photos/seed/manhattan2/400/533',
+    mapStyle: 'manhattan',
   },
   {
     id: 17,
@@ -196,7 +198,7 @@ export const galleryItems: GalleryItem[] = [
     description: 'Berlin Mitte in warm greige and matte black. Raw, considered, and quietly powerful.',
     altText: 'Berlin Mitte map print in Bauhaus neutral editorial interior',
     anchor: 'minimalist',
-    imageUrl: 'https://picsum.photos/seed/berlin1/400/533',
+    mapStyle: 'grid',
   },
   {
     id: 18,
@@ -207,7 +209,7 @@ export const galleryItems: GalleryItem[] = [
     description: "Kyoto's ancient temple paths in warm sand and muted ink. A quiet reverence for place and tradition.",
     altText: 'Kyoto temple district map print in wabi-sabi warm interior',
     anchor: 'tokyo',
-    imageUrl: 'https://picsum.photos/seed/kyoto1/400/533',
+    mapStyle: 'tokyo',
   },
   {
     id: 19,
@@ -218,7 +220,7 @@ export const galleryItems: GalleryItem[] = [
     description: "Alfama's hillside streets in warm terracotta and sun-bleached ivory. A map for those who prefer the slower road.",
     altText: 'Lisbon Alfama map print in Mediterranean neutral interior',
     anchor: 'mediterranean-vibes',
-    imageUrl: 'https://picsum.photos/seed/lisbon1/400/533',
+    mapStyle: 'rome',
   },
   {
     id: 20,
@@ -229,7 +231,7 @@ export const galleryItems: GalleryItem[] = [
     description: 'A curated neighbourhood view of Manhattan in warm, gift-ready palette. The map print that says something.',
     altText: 'New York city map print as housewarming gift in warm neutral interior',
     anchor: 'housewarming',
-    imageUrl: 'https://picsum.photos/seed/nygift1/400/533',
+    mapStyle: 'manhattan',
   },
 ]
 

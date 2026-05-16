@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import CityMapSvg from '@/components/CityMapSvg'
 
 export default function HeroSection() {
   return (
@@ -82,78 +82,69 @@ export default function HeroSection() {
           </a>
         </div>
 
-        {/* Right: Editorial image collage */}
-        <div
-          style={{
-            position: 'relative',
-            height: '540px',
-          }}
-        >
-          {/* Back image */}
+        {/* Right: Three framed city map prints, stacked editorially */}
+        <div style={{ position: 'relative', height: '540px' }}>
+
+          {/* Back — Paris, rotated right */}
           <div
             style={{
               position: 'absolute',
-              top: '2rem',
-              right: '3rem',
-              width: '220px',
-              height: '300px',
-              boxShadow: '0 8px 32px rgba(26,26,26,0.10)',
-              background: '#f5f2ed',
-              transform: 'rotate(2deg)',
+              top: '1.5rem',
+              right: '2rem',
+              width: '210px',
+              height: '285px',
+              transform: 'rotate(2.5deg)',
+              boxShadow: '0 10px 36px rgba(26,26,26,0.13)',
+              background: '#ede8dc',
+              padding: '10px',
+              boxSizing: 'border-box',
             }}
           >
-            <Image
-              src="https://picsum.photos/seed/interior1/440/600"
-              alt="City map art print in warm modern interior"
-              fill
-              style={{ objectFit: 'cover' }}
-              sizes="220px"
-            />
+            <div style={{ width: '100%', height: '100%', background: '#fff', padding: '6px', boxSizing: 'border-box', boxShadow: 'inset 0 0 0 0.5px rgba(26,26,26,0.1)' }}>
+              <CityMapSvg style="paris" city="Paris" width="100%" height="100%"/>
+            </div>
           </div>
 
-          {/* Middle image */}
+          {/* Middle — Manhattan, rotated left */}
           <div
             style={{
               position: 'absolute',
-              top: '4rem',
-              left: '2rem',
-              width: '240px',
-              height: '320px',
-              boxShadow: '0 8px 32px rgba(26,26,26,0.10)',
-              background: '#f5f2ed',
-              transform: 'rotate(-1.5deg)',
+              top: '3rem',
+              left: '1rem',
+              width: '230px',
+              height: '310px',
+              transform: 'rotate(-2deg)',
+              boxShadow: '0 10px 36px rgba(26,26,26,0.13)',
+              background: '#ede8dc',
+              padding: '10px',
+              boxSizing: 'border-box',
             }}
           >
-            <Image
-              src="https://picsum.photos/seed/mapwall/480/640"
-              alt="Editorial city map print in styled living room"
-              fill
-              style={{ objectFit: 'cover' }}
-              sizes="240px"
-            />
+            <div style={{ width: '100%', height: '100%', background: '#fff', padding: '6px', boxSizing: 'border-box', boxShadow: 'inset 0 0 0 0.5px rgba(26,26,26,0.1)' }}>
+              <CityMapSvg style="manhattan" city="New York" width="100%" height="100%"/>
+            </div>
           </div>
 
-          {/* Front image */}
+          {/* Front — Tokyo, centered, slight tilt */}
           <div
             style={{
               position: 'absolute',
-              bottom: '1rem',
+              bottom: '0.5rem',
               left: '50%',
-              transform: 'translateX(-50%) rotate(0.5deg)',
-              width: '200px',
-              height: '270px',
-              boxShadow: '0 12px 40px rgba(26,26,26,0.14)',
-              background: '#f5f2ed',
+              transform: 'translateX(-50%) rotate(0.8deg)',
+              width: '195px',
+              height: '262px',
+              boxShadow: '0 16px 48px rgba(26,26,26,0.18)',
+              background: '#ede8dc',
+              padding: '10px',
+              boxSizing: 'border-box',
             }}
           >
-            <Image
-              src="https://picsum.photos/seed/villa/400/533"
-              alt="Framed city map art print for home decor"
-              fill
-              style={{ objectFit: 'cover' }}
-              sizes="200px"
-            />
+            <div style={{ width: '100%', height: '100%', background: '#fff', padding: '6px', boxSizing: 'border-box', boxShadow: 'inset 0 0 0 0.5px rgba(26,26,26,0.1)' }}>
+              <CityMapSvg style="tokyo" city="Tokyo" width="100%" height="100%"/>
+            </div>
           </div>
+
         </div>
       </div>
     </section>

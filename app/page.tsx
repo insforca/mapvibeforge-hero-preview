@@ -19,7 +19,7 @@ const itemListSchema = {
     name: item.title,
     description: item.description,
     url: `https://mapvibe.co/#${item.anchor}`,
-    image: item.imageUrl,
+    image: `https://mapvibe.co/maps/${item.anchor}.png`,
   })),
 }
 
