@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'MapVibe — City Map Prints for Inspired Interiors',
-  description: 'Curated city map prints for interiors, gifting, and travel-inspired spaces. Custom wall art for New York, London, Paris, Tokyo and 500+ cities worldwide.',
+  title: 'City Map Prints — The Map Art Gazette',
+  description: 'Curated city map prints for interiors, gifting, and travel-inspired spaces. The editorial source for map wall art — New York, London, Paris, Tokyo and 500+ cities.',
 }
 
 export default function RootLayout({

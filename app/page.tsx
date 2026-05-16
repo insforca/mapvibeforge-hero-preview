@@ -10,7 +10,7 @@ import { galleryItems } from '@/lib/gallery-data'
 const itemListSchema = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  name: 'MapVibe City Map Prints Gallery',
+  name: 'City Map Prints — The Map Art Gazette',
   description: 'Curated city map prints for interiors, gifting, and travel-inspired spaces.',
   numberOfItems: galleryItems.length,
   itemListElement: galleryItems.map((item, index) => ({
@@ -18,8 +18,8 @@ const itemListSchema = {
     position: index + 1,
     name: item.title,
     description: item.description,
-    url: `https://mapvibe.co/#${item.anchor}`,
-    image: `https://mapvibe.co/maps/${item.anchor}.png`,
+    url: `https://citymapprints.com/#${item.anchor}`,
+    image: `https://citymapprints.com/maps/${item.anchor}.png`,
   })),
 }
 
@@ -64,7 +64,7 @@ const faqSchema = {
       name: 'Are the maps based on real street data?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. All MapVibe prints are generated from real OpenStreetMap data, ensuring geographic accuracy. We then apply our editorial styling on top — so every print is both artistically considered and cartographically precise.',
+        text: 'Yes. All City Map Prints are generated from real OpenStreetMap data, ensuring geographic accuracy. We then apply our editorial styling on top — so every print is both artistically considered and cartographically precise.',
       },
     },
     {

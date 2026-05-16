@@ -13,19 +13,21 @@ export default function GalleryGrid() {
     >
       {/* Section heading */}
       <div style={{ marginBottom: '3rem' }}>
-        <p
-          style={{
+        {/* Magazine section divider */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', marginBottom: '0.75rem' }}>
+          <div style={{ flex: 1, height: '2px', background: '#1a1a1a' }}/>
+          <span style={{
             fontFamily: "'Inter', sans-serif",
-            fontSize: '0.75rem',
-            fontWeight: 500,
-            letterSpacing: '0.12em',
+            fontSize: '0.6rem',
+            letterSpacing: '0.2em',
             textTransform: 'uppercase',
             color: '#8a7f72',
-            marginBottom: '0.75rem',
-          }}
-        >
-          The Collection
-        </p>
+            whiteSpace: 'nowrap',
+          }}>
+            The Collection
+          </span>
+          <div style={{ flex: 1, height: '2px', background: '#1a1a1a' }}/>
+        </div>
         <h2
           style={{
             fontFamily: "'Playfair Display', serif",
@@ -33,10 +35,21 @@ export default function GalleryGrid() {
             fontWeight: 400,
             color: '#1a1a1a',
             letterSpacing: '-0.02em',
+            marginBottom: '0.5rem',
           }}
         >
           City Map Prints
         </h2>
+        <p style={{
+          fontFamily: "'Inter', sans-serif",
+          fontSize: '0.875rem',
+          fontWeight: 300,
+          color: '#8a7f72',
+          lineHeight: 1.6,
+          maxWidth: '520px',
+        }}>
+          Every print begins with real street data. We render it in warm, editorial palettes designed for considered interiors. 500+ cities. Yours in minutes.
+        </p>
       </div>
 
       {/* CSS for card hover effect */}

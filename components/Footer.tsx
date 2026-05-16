@@ -37,7 +37,7 @@ export default function Footer() {
               letterSpacing: '-0.01em',
             }}
           >
-            MapVibe
+            City Map Prints
           </a>
 
           {/* Nav links */}
@@ -95,7 +95,7 @@ export default function Footer() {
               letterSpacing: '0.01em',
             }}
           >
-            Map art for spaces that inspire.
+            The map art gazette for spaces that inspire.
           </p>
 
           <p
@@ -107,7 +107,7 @@ export default function Footer() {
               letterSpacing: '0.04em',
             }}
           >
-            &copy; 2025 MapVibe
+            &copy; 2025 City Map Prints
           </p>
         </div>
       </div>
