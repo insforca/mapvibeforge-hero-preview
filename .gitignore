@@ -25,3 +25,8 @@ yarn-error.log*
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Obsidian (estado local da janela)
+vault/.obsidian/workspace*.json
+vault/.obsidian/cache
+vault/.trash/
