@@ -9,31 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@react-three/drei": "^9.117.3",
-    "@react-three/fiber": "^8.17.14",
     "@tailwindcss/postcss": "^4.3.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.18.0",
     "lucide-react": "^1.16.0",
     "next": "^15.5.18",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
-    "tailwind-merge": "^3.6.0",
-    "three": "^0.170.0"
+    "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {
     "@types/node": "^25.8.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@types/three": "^0.170.0",
-    "@vitejs/plugin-react": "^4.3.4",
-    "autoprefixer": "^10.4.20",
     "eslint": "^10.3.0",
     "eslint-config-next": "^16.2.6",
     "postcss": "^8.4.49",
     "tailwindcss": "^4.3.0",
-    "typescript": "^5.9.3",
-    "vite": "^6.0.7"
+    "typescript": "^5.9.3"
   }
 }
