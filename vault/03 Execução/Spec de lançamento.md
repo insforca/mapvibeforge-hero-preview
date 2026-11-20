@@ -99,20 +99,15 @@ A navegação é feita com links normais (`<a href>`), rastreáveis, sem filtros
 O Studio já aceita deep links (`posterStore.ts`, `getUrlParamFormOverrides`):
 
 ```
-https://app.mapvibestudio.com/?city=Lisbon&country=Portugal&lat=38.7223&lng=-9.1393&style=tk_blueprint
+https://mapvibestudio.com/products/mapvibe-city-map-print?city=Lisbon&country=Portugal&lat=38.7223&lng=-9.1393&style=tk_blueprint
 ```
 
 - **Paleta do Studio:** "Create yours in this style" abre directamente com cidade e paleta.
 - **Estilo da biblioteca que o Studio não vende:** "The closest in MapVibe Studio: Blueprint", que abre com a paleta mais próxima. Cada estilo da biblioteca indica a sua paleta-irmã.
 
-**Decidido (2026-11-20): o CTA aponta para `mapvibestudio.com`.**
+**Decidido (2026-11-20): o CTA aponta para a página do editor em `mapvibestudio.com/products/mapvibe-city-map-print`**, com `city`, `country`, `lat`, `lng` e `style`. Os links genéricos ("Create Your Map") vão para a home da loja.
 
-Há uma dependência. Testado a 20 Nov: a página `mapvibestudio.com/?city=…&style=…` responde, mas os botões para o editor apontam para `https://app.mapvibestudio.com` sem parâmetros, por isso a cidade e a paleta perdem-se. É preciso, no projecto `mapvibe-content-hub`:
-
-- uma página de entrada (ex.: `mapvibestudio.com/create`, que hoje fecha a ligação) ou a própria home a **passar** `city`, `country`, `lat`, `lng` e `style` para o link `app.mapvibestudio.com/?…`;
-- de preferência, mostrar nessa página a paleta escolhida ("You picked Blueprint · Lisbon") antes do botão para o editor.
-
-Até isso existir, o CTA pode ir para `mapvibestudio.com` sem parâmetros, ou directamente para `app.` como solução temporária.
+mapvibestudio.com é a loja Shopify, e o editor vive num iframe dentro dessa página. Para os parâmetros chegarem ao editor falta um pequeno script no tema Shopify: ver [[Shopify deep links]].
 
 ---
 
@@ -226,7 +221,7 @@ taxonomy.json + recipes/
 
 ## 9. Decisões em aberto
 
-1. ~~Domínio do CTA~~ → `mapvibestudio.com`, com passagem de parâmetros a implementar no `mapvibe-content-hub` (§3). ✅ 2026-11-20
+1. ~~Domínio do CTA~~ → página do editor em `mapvibestudio.com`; falta o script no tema Shopify ([[Shopify deep links]]). ✅ 2026-11-20
 2. ~~Selecção das paletas~~ → as 10 do §2. ✅ 2026-11-20
 3. Os 12 estilos da biblioteca: algum a trocar?
 4. Orçamento de geração da Fase 1 (cerca de 150 entradas × 4 variantes).

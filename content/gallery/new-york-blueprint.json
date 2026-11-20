@@ -1,0 +1,20 @@
+{
+  "slug": "new-york-blueprint",
+  "status": "draft",
+  "title": "New York in Blueprint",
+  "subtitle": "New York · Blueprint · Flat",
+  "city": "new-york",
+  "style": "blueprint",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/new-york-blueprint.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAADwAwCdASoMABEAPu1iqU2ppaQiMAgBMB2JZQAD5AmtWlC5nvHQl48AAP7tYaBwlmI7p1oj9blr7oDHMY/K+p32kxCWJtnCM+XJa7L3HvdlVwcIVdtMKiUvFDho9PaOdO5qRZe/jxnjYIAB/09jEGgAAAA="
+  },
+  "description": "New York, United States, drawn in the Blueprint palette from MapVibe Studio. Deep navy water and pale blue streets, crisp as a technical drawing.",
+  "alt": "Blueprint city map poster of New York, United States, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

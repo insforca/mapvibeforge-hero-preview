@@ -167,13 +167,18 @@ export function relatedEntries(entry: Entry, limit = 4) {
   return { sameStyle: sameStyle.slice(0, limit), sameCity: sameCity.slice(0, limit) }
 }
 
+/** Shopify product page that embeds the MapVibe Studio editor (iframe). */
+export const STUDIO_EDITOR_PAGE = 'https://mapvibestudio.com/products/mapvibe-city-map-print'
+
 /**
- * Link to MapVibe Studio for a city + Studio palette.
- * mapvibestudio.com must forward these params to app.mapvibestudio.com
- * (see vault: "Spec de lançamento" §3); until then they are simply ignored.
+ * Link to the MapVibe Studio editor for a city + Studio palette.
+ * The editor reads ?city=&country=&lat=&lng=&style= (mapvibe-studio posterStore.ts),
+ * but the Shopify section must copy them onto the iframe src
+ * (vault: "Spec de lançamento" §3, snippet in "Shopify deep links").
+ * Without city/theme it links to the store home.
  */
 export function studioUrl(citySlug?: string, studioTheme?: string) {
-  const url = new URL('https://mapvibestudio.com/')
+  const url = new URL(citySlug || studioTheme ? STUDIO_EDITOR_PAGE : 'https://mapvibestudio.com/')
   const city = citySlug ? getCity(citySlug) : undefined
   if (city) {
     url.searchParams.set('city', city.name)

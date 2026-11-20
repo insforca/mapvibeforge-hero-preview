@@ -1,0 +1,20 @@
+{
+  "slug": "paris-blueprint",
+  "status": "draft",
+  "title": "Paris in Blueprint",
+  "subtitle": "Paris · Blueprint · Flat",
+  "city": "paris",
+  "style": "blueprint",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/paris-blueprint.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAABwAwCdASoMABEAPu1iqU2ppaQiMAgBMB2JZwAAW+L43k/NN+AA/u1GkBxRyP8muPMDNngnzDL06Q4JjDN+kxgQPc+n4bhwhLwAAA=="
+  },
+  "description": "Paris, France, drawn in the Blueprint palette from MapVibe Studio. Deep navy water and pale blue streets, crisp as a technical drawing.",
+  "alt": "Blueprint city map poster of Paris, France, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

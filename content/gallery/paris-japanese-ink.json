@@ -1,0 +1,20 @@
+{
+  "slug": "paris-japanese-ink",
+  "status": "draft",
+  "title": "Paris in Japanese Ink",
+  "subtitle": "Paris · Japanese Ink · Flat",
+  "city": "paris",
+  "style": "japanese-ink",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/paris-japanese-ink.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAgCdASoMABEAPu1iqU2ppaOiMAgBMB2JZwC+SDKUAAD+7xkW+JNu8OLeMdtPTYBwlQSSBeAfUGcYvA5kN88AkxaWCPyreG6wAA=="
+  },
+  "description": "Paris, France, drawn in the Japanese Ink palette from MapVibe Studio. Ink greys on paper with a single vermilion accent on the main roads.",
+  "alt": "Japanese Ink city map poster of Paris, France, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

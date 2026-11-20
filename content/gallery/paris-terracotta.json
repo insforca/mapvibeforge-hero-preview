@@ -1,0 +1,20 @@
+{
+  "slug": "paris-terracotta",
+  "status": "draft",
+  "title": "Paris in Terracotta",
+  "subtitle": "Paris · Terracotta · Flat",
+  "city": "paris",
+  "style": "terracotta",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/paris-terracotta.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAAAQAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JZ2R5S0eTmgAA/u9pQBP44SnQV8T4wek6Y2Uen/GTgv7hKePpo/vAAAA="
+  },
+  "description": "Paris, France, drawn in the Terracotta palette from MapVibe Studio. Clay and sand, the colours of Mediterranean rooftops.",
+  "alt": "Terracotta city map poster of Paris, France, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

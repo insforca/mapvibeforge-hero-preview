@@ -1,0 +1,20 @@
+{
+  "slug": "new-york-japanese-ink",
+  "status": "draft",
+  "title": "New York in Japanese Ink",
+  "subtitle": "New York · Japanese Ink · Flat",
+  "city": "new-york",
+  "style": "japanese-ink",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/new-york-japanese-ink.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAABwAwCdASoMABEAPu1iqk4ppaQiMAgBMB2JZwCzgCHpSvg+WsAA/u1IGLGq3XPHngPwHKaH1V4y6YrAU9ViXYQ8+8GAAA=="
+  },
+  "description": "New York, United States, drawn in the Japanese Ink palette from MapVibe Studio. Ink greys on paper with a single vermilion accent on the main roads.",
+  "alt": "Japanese Ink city map poster of New York, United States, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

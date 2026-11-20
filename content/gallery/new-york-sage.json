@@ -1,0 +1,20 @@
+{
+  "slug": "new-york-sage",
+  "status": "draft",
+  "title": "New York in Sage",
+  "subtitle": "New York · Sage · Flat",
+  "city": "new-york",
+  "style": "sage",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/new-york-sage.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAABQAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JZwAAUrWVGlYyIAD+7WF2TWoKdExW892xmLSgFfHTZz66bQTOXHgDJRhNgKxUAAA="
+  },
+  "description": "New York, United States, drawn in the Sage palette from MapVibe Studio. Soft green and mist, calm and botanical.",
+  "alt": "Sage city map poster of New York, United States, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

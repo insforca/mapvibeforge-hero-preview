@@ -1,0 +1,20 @@
+{
+  "slug": "paris-copper-patina",
+  "status": "draft",
+  "title": "Paris in Copper Patina",
+  "subtitle": "Paris · Copper Patina · Flat",
+  "city": "paris",
+  "style": "copper-patina",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/paris-copper-patina.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACQAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JZwDImCHe8jkTdlKAAP7qfex8OvyIFDfVbqtKh0a0JnV66zJuqorIxAA="
+  },
+  "description": "Paris, France, drawn in the Copper Patina palette from MapVibe Studio. Copper main roads over pale verdigris, like an old rooftop.",
+  "alt": "Copper Patina city map poster of Paris, France, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

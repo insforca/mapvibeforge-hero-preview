@@ -11,8 +11,9 @@ Ao fechar uma tarefa: `- [x]`, data e commit curto, ex. `✅ 2026-11-20 · a1b2c
 
 ## Agora (Fase 1 — biblioteca mínima)
 
-- [ ] mapvibestudio.com a passar `city`, `country`, `lat`, `lng`, `style` ao editor (repositório `mapvibe-content-hub`).
-- [ ] Exportação do Studio para PNG por script (cidade + paleta). Ver `layeredSvgExporter` / `previewCompositing` no `mapvibe-studio`.
+- [ ] Colar o script de [[Shopify deep links]] no tema Shopify (passa `city`, `style`… ao iframe do editor).
+- [x] Exportação do Studio para PNG por script: `scripts/gallery/studio-export.mjs` (Studio local em `localhost:5179`) + `studio-ingest.mjs` ✅ 2026-11-20
+- [ ] Rever as entradas `studio-render` em rascunho: títulos e textos editoriais, aprovar.
 - [ ] Pipeline da galeria: `plan → map → scene → review → composite → derive → metadata`.
 - [ ] ~150 entradas: 22 estilos/paletas, 5 formatos, ≥ 6 espaços, 10–12 cidades.
 - [ ] Títulos editoriais para as 13 entradas actuais, ou substituí-las.

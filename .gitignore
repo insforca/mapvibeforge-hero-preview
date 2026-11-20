@@ -32,3 +32,6 @@ vault/.obsidian/cache
 vault/.trash/
 .vercel
 .env*
+
+# Gallery pipeline working files
+work/

@@ -1,0 +1,20 @@
+{
+  "slug": "new-york-old-navy",
+  "status": "draft",
+  "title": "New York in Old Navy",
+  "subtitle": "New York · Old Navy · Flat",
+  "city": "new-york",
+  "style": "old-navy",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/new-york-old-navy.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAQBACdASoMABEAPu1iqU2ppaOiMAgBMB2JZQDA3YvWttBUSfAteAfzAAD+7WGgcJZiO6d416+6ZdR2wWpJi0vyxRFFvP+IhZAETuD/L4DPOpLxN2gQBoATjDn5D4OKb34Ljt6Z7mvPbkUFOls1qJAA"
+  },
+  "description": "New York, United States, drawn in the Old Navy palette from MapVibe Studio. Navy water and gold streets, formal and nautical.",
+  "alt": "Old Navy city map poster of New York, United States, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

@@ -9,7 +9,8 @@ Gravidade: 🔴 parte em produção · 🟠 prejudica SEO ou utilizadores · �
 
 | | Problema | Onde | Detalhe |
 |---|---|---|---|
-| 🟠 | O CTA perde a cidade e a paleta | mapvibestudio.com (`mapvibe-content-hub`) | a home liga para `app.mapvibestudio.com` sem parâmetros; ver [[Spec de lançamento]] §3 |
+| 🟠 | O CTA perde a cidade e a paleta | tema Shopify de mapvibestudio.com | o iframe do editor é criado só com `?shopify=1&sku=`; script pronto em [[Shopify deep links]] |
+| 🔴 | Loja com encomendas pausadas | mapvibestudio.com | aviso "Back soon — Orders reopen soon"; o funil leva a uma loja que não vende |
 | 🟠 | Só um estilo tem entradas | `content/gallery/` | as 13 entradas publicadas são todas `fine-line-minimal`; as outras 21 páginas de estilo ficam `noindex` até terem entradas |
 | 🟠 | 7 entradas em rascunho | `content/gallery/` | Berlim, Copenhaga, Los Angeles, Sydney, Amalfi (desenho genérico), Quioto (desenho de Tóquio), Lisboa (desenho de Roma) |
 | 🟠 | Títulos de catálogo | `content/gallery/` | "New York City Map Print" e afins; trocar por títulos editoriais ([[Spec de lançamento]] §5) |

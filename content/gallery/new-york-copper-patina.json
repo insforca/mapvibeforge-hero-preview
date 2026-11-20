@@ -1,0 +1,20 @@
+{
+  "slug": "new-york-copper-patina",
+  "status": "draft",
+  "title": "New York in Copper Patina",
+  "subtitle": "New York · Copper Patina · Flat",
+  "city": "new-york",
+  "style": "copper-patina",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/new-york-copper-patina.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACQAwCdASoMABEAPu1iqU2ppaQiMAgBMB2JZwDE2B6VJJnO0J0AAP7tYXZPQbxZYiPDR8uKesO833926jjXJtjdAAA="
+  },
+  "description": "New York, United States, drawn in the Copper Patina palette from MapVibe Studio. Copper main roads over pale verdigris, like an old rooftop.",
+  "alt": "Copper Patina city map poster of New York, United States, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}
