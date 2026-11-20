@@ -5,6 +5,8 @@ fase: execução
 
 # Roadmap
 
+Plano completo de lançamento e pipeline da galeria: [[Spec de lançamento]].
+
 Ao fechar uma tarefa: `- [x]`, data e commit curto, ex. `✅ 2026-11-20 · a1b2c3d`.
 
 ## Agora (bloqueia o lançamento)
