@@ -5,28 +5,26 @@ fase: execução
 
 # Deploy
 
-## Estado actual: nada pronto para produção
+## Estado (20 Nov 2026)
 
-Dois ficheiros herdados do projecto Vite estão incompatíveis com o Next.js:
+- **Vercel**, conta `insforca`, projecto **`mapvibeforge-hero-preview`**.
+- Domínios: `citymapprints.com` e `www.citymapprints.com`, verificados.
+- DNS no Cloudflare: CNAME `@` e `www` → `4f5d4e65abfff0d6.vercel-dns-016.com`, **proxy desligado** (nuvem cinzenta). Com o proxy ligado o certificado do Vercel falha.
+- `vercel.json` define `framework: nextjs`, porque o projecto estava configurado para procurar `dist/` (herança do Vite).
+- A pasta local está ligada ao projecto (`.vercel/`, fora do Git).
 
-1. **`vercel.json`** reescreve todos os caminhos (menos `cinematic-demo`) para `/index.html`. Na Vercel isto serve o `index.html` antigo do Vite em vez da página Next. Tem de sair antes do primeiro deploy.
-2. **`.github/workflows/deploy.yml`** corre `npx vite build` e publica `dist/` no GitHub Pages a cada push para `main`. Se o ramo for fundido em `main` assim, o Pages publica o site antigo ou falha.
+## Como publicar
 
-## Opção A — Vercel (recomendada)
+```
+npm run build          # tem de passar
+vercel deploy          # preview
+vercel deploy --prod   # produção (citymapprints.com)
+```
 
-- Apagar `vercel.json` (o Next.js não precisa dele).
-- Importar o repositório na Vercel; o framework é detectado sozinho.
-- Ligar o domínio citymapprints.com.
-- Desactivar ou apagar o workflow do GitHub Pages.
-- Prós: imagens, cabeçalhos e futuras rotas dinâmicas funcionam sem esforço.
+## Por verificar
 
-## Opção B — GitHub Pages
+- Se o projecto Vercel está ligado ao GitHub (deploy automático a cada push) ou só recebe deploys pela CLI.
+- O workflow do GitHub Pages (`.github/workflows/deploy.yml`) não existe neste ramo; confirmar se ainda existe em `main` antes de fundir.
+- O projecto Vercel antigo `citymapprints-com` parece sem uso: arquivar?
 
-- `next.config.ts`: `output: 'export'`, `images: { unoptimized: true }`.
-- Workflow: `npx next build` e publicar `out/` em vez de `dist/`.
-- Se o site ficar num subcaminho (`/mapvibeforge-hero-preview/`), definir `basePath`.
-- Prós: gratuito e já existe um ramo `gh-pages`. Contra: sem optimização de imagens nem funções no servidor.
-
-## Decisão
-
-- [ ] Escolher A ou B e registar num ADR novo.
+Ver [[Runbook]].

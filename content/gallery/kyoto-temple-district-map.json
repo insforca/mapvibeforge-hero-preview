@@ -1,0 +1,15 @@
+{
+  "slug": "kyoto-temple-district-map",
+  "status": "draft",
+  "order": 18,
+  "title": "Kyoto Temple District Map",
+  "subtitle": "Kyoto · Wabi-Sabi Warm",
+  "city": "kyoto",
+  "style": "fine-line-minimal",
+  "format": "framed",
+  "source": "illustration",
+  "svg": "tokyo",
+  "description": "Kyoto's ancient temple paths in warm sand and muted ink. A quiet reverence for place and tradition.",
+  "alt": "Kyoto temple district map print in wabi-sabi warm interior",
+  "note": "Draft: the SVG drawing does not represent this city. Replace with a real render before publishing."
+}

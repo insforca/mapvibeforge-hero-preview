@@ -1,0 +1,15 @@
+{
+  "slug": "mediterranean-coastline-map",
+  "status": "draft",
+  "order": 15,
+  "title": "Mediterranean Coastline Map",
+  "subtitle": "Amalfi Coast · Mediterranean Neutral",
+  "city": "amalfi",
+  "style": "fine-line-minimal",
+  "format": "framed",
+  "source": "illustration",
+  "svg": "grid",
+  "description": "The Amalfi Coast's dramatic topography rendered in warm earthy cartography. Brings the south to any interior.",
+  "alt": "Mediterranean Amalfi Coast map print in warm earthy interior",
+  "note": "Draft: the SVG drawing does not represent this city. Replace with a real render before publishing."
+}

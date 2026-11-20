@@ -1,0 +1,142 @@
+{
+  "families": [
+    { "slug": "antique", "name": "Antique", "description": "Hand-drawn and engraved city maps from the age of sail to the nineteenth century." },
+    { "slug": "twentieth-century", "name": "Twentieth Century", "description": "The modern map: relief shading, transit diagrams, illustrated tourist maps and travel posters." },
+    { "slug": "contemporary", "name": "Contemporary", "description": "Maps reduced to line, mass and colour, made for walls rather than wayfinding." },
+    { "slug": "mapvibe-studio", "name": "MapVibe Studio", "description": "Palettes you can apply to any city in MapVibe Studio and order as a print." }
+  ],
+  "styles": [
+    {
+      "slug": "portolan-chart", "name": "Portolan Chart", "family": "antique", "studioTheme": "tk_old_navy",
+      "era": "14th–17th century",
+      "summary": "Nautical charts drawn for sailors, criss-crossed by rhumb lines radiating from compass roses.",
+      "body": "Portolan charts were working tools before they were decoration. Navigators read the coastline and the web of rhumb lines that fans out from each compass rose, and the interior of the land was often left almost empty. That emptiness is what makes them work on a wall today: a band of detail along the water, aged vellum tones, and a geometry that feels both precise and handmade.",
+      "traits": ["rhumb lines", "compass roses", "vellum and ink", "coast-first detail"]
+    },
+    {
+      "slug": "engraved-city-plan", "name": "Engraved City Plan", "family": "antique", "studioTheme": "tk_copper_patina",
+      "era": "18th century",
+      "summary": "Copperplate plans where every block is hatched by hand and the city reads like an etching.",
+      "body": "Before photography, a city plan was a feat of engraving. Surveyors measured the streets and engravers cut every block, garden and church into copper, shading masses with fine parallel lines. The result is dense and tactile: a plan that rewards standing close, with the texture of an old master print.",
+      "traits": ["hatched blocks", "copperplate line", "cartouches", "warm paper"]
+    },
+    {
+      "slug": "edo-woodblock-map", "name": "Edo Woodblock Map", "family": "antique", "studioTheme": "tk_japanese_ink",
+      "era": "17th–19th century",
+      "summary": "Japanese city maps printed from carved woodblocks, in flat colour on soft washi paper.",
+      "body": "Woodblock maps of Edo-period cities were printed for travellers and pilgrims. Each colour came from a separate block, so the palette is flat and limited: indigo water, ochre roads, vermilion temples. Orientation was often loose, and text ran in several directions so the map could be read from any side.",
+      "traits": ["flat colour", "washi texture", "indigo and vermilion", "multi-directional text"]
+    },
+    {
+      "slug": "fire-insurance-map", "name": "Fire Insurance Map", "family": "antique", "studioTheme": "tk_terracotta",
+      "era": "19th–early 20th century",
+      "summary": "Watercolour plans that coded every building by material: pink brick, yellow timber, blue stone.",
+      "body": "Fire insurance maps recorded cities building by building so underwriters could judge the risk. Each structure was tinted by what it was made of, which turns an ordinary street into a quiet patchwork of pinks, yellows and greys. They are some of the most detailed portraits of cities ever made, and some of the most unexpectedly beautiful.",
+      "traits": ["material colour code", "building footprints", "watercolour wash", "fine labels"]
+    },
+    {
+      "slug": "swiss-topography", "name": "Swiss Topography", "family": "twentieth-century", "studioTheme": "tk_blueprint",
+      "era": "20th century",
+      "summary": "Shaded relief and contour lines, lit from the north-west so the land seems to rise off the paper.",
+      "body": "Swiss cartographers turned relief shading into an art: terrain lit from the upper left, soft greys in the valleys, crisp contour lines and restrained colour. Applied to a city, it shows what street maps hide: the hills a neighbourhood climbs, the river valley it follows, the shape of the ground under the grid.",
+      "traits": ["shaded relief", "contour lines", "north-west light", "muted greens and greys"]
+    },
+    {
+      "slug": "transit-diagram", "name": "Transit Diagram", "family": "twentieth-century", "studioTheme": "vintage_noir",
+      "era": "1930s onward",
+      "summary": "Lines straightened to 45 and 90 degrees, stations evenly spaced, geography traded for clarity.",
+      "body": "The transit diagram abandoned true distance for legibility: straight lines, regular angles, a colour for every line. It became one of the most recognisable graphic languages of the twentieth century. On a wall it reads as pure graphic design, and as a portrait of how a city actually moves.",
+      "traits": ["45-degree angles", "colour per line", "station ticks", "white ground"]
+    },
+    {
+      "slug": "mid-century-illustrated", "name": "Mid-Century Illustrated", "family": "twentieth-century", "studioTheme": "tk_warm_beige",
+      "era": "1940s–1960s",
+      "summary": "Tourist maps with landmarks drawn in, bold offset colour, and a sense of humour.",
+      "body": "After the war, cities sold themselves with illustrated maps: landmarks drawn oversized, little figures in the parks, boats in the harbour, all printed in a few bright offset inks. They were never meant to be accurate. They were meant to make you want to go.",
+      "traits": ["drawn landmarks", "offset colour", "playful scale", "hand lettering"]
+    },
+    {
+      "slug": "art-deco-travel-poster", "name": "Art Deco Travel Poster", "family": "twentieth-century", "studioTheme": "capri_shores",
+      "era": "1920s–1930s",
+      "summary": "Geometric city views and stylised coastlines in a handful of flat, sunlit colours.",
+      "body": "Railway and steamship companies commissioned posters that compressed a city into a few bold shapes: a coastline, a skyline, a sun. Art deco maps borrow that language, with stepped geometry, airbrushed gradients and confident colour, and turn the map into an invitation.",
+      "traits": ["geometric forms", "airbrushed gradients", "few flat colours", "large type"]
+    },
+    {
+      "slug": "fine-line-minimal", "name": "Fine-Line Minimal", "family": "contemporary", "studioTheme": "tk_warm_beige",
+      "era": "Contemporary",
+      "summary": "Only the streets, drawn in a single weight of line on warm paper.",
+      "body": "Strip a map of labels, colour and buildings and what remains is the street network itself: dense in old centres, loose at the edges, ruled by rivers and hills. A single fine line is enough to make every city instantly different from every other.",
+      "traits": ["streets only", "single line weight", "no labels", "warm ground"]
+    },
+    {
+      "slug": "figure-ground", "name": "Figure-Ground", "family": "contemporary", "studioTheme": "vintage_noir",
+      "era": "Contemporary, after Nolli",
+      "summary": "Buildings in solid black, streets and squares in white: the city as mass and void.",
+      "body": "Architects call it a figure-ground plan, a technique that goes back to Giambattista Nolli's 1748 map of Rome. Every building is filled solid, every open space left white, and the city's real structure appears: the tight medieval core, the open boulevards, the courtyards hidden inside blocks.",
+      "traits": ["solid building mass", "white streets", "no colour", "architectural"]
+    },
+    {
+      "slug": "risograph-duotone", "name": "Risograph Duotone", "family": "contemporary", "studioTheme": "tk_terracotta",
+      "era": "Contemporary",
+      "summary": "Two inks printed one over the other, with grain, overlap and slight misregistration.",
+      "body": "Risograph printing lays down one colour at a time, and the layers never line up perfectly. Maps printed this way have a soft grain and a slight drift between the inks, which is exactly the charm: a city map that looks made by hand in a small studio rather than output by a machine.",
+      "traits": ["two inks", "visible grain", "overprint", "misregistration"]
+    },
+    {
+      "slug": "loose-watercolour", "name": "Loose Watercolour", "family": "contemporary", "studioTheme": "tk_sage",
+      "era": "Contemporary",
+      "summary": "Washes of colour for water, parks and districts, with almost no outline.",
+      "body": "A watercolour map lets the paint do the work: a pool of blue for the harbour, a soft green for the park, warm washes where the old town sits. Edges bleed, lines are few, and the city becomes closer to a memory than a plan.",
+      "traits": ["soft washes", "few outlines", "bleeding edges", "paper texture"]
+    },
+    { "slug": "vintage-noir", "name": "Vintage Noir", "family": "mapvibe-studio", "studioTheme": "vintage_noir", "era": "MapVibe Studio", "summary": "Black streets on warm silver-gelatin white: the city in classic monochrome.", "body": "Vintage Noir renders every street in graded blacks and greys on a warm white ground inspired by fibre-based darkroom paper. It is the most timeless of the MapVibe palettes and works in almost any room.", "traits": ["monochrome", "warm white ground", "graded road weights"] },
+    { "slug": "japanese-ink", "name": "Japanese Ink", "family": "mapvibe-studio", "studioTheme": "tk_japanese_ink", "era": "MapVibe Studio", "summary": "Sumi-ink greys on paper, quiet and restrained.", "body": "Japanese Ink keeps the palette to ink and paper, with soft greys for water and parks. It suits calm, minimal interiors and pairs naturally with timber and linen.", "traits": ["ink greys", "paper ground", "minimal"] },
+    { "slug": "blueprint", "name": "Blueprint", "family": "mapvibe-studio", "studioTheme": "tk_blueprint", "era": "MapVibe Studio", "summary": "White lines on deep blueprint blue, like an architect's drawing.", "body": "Blueprint reverses the map: the ground is a deep technical blue and the streets are drawn in white. It reads as an architectural drawing and is at home in studios, offices and libraries.", "traits": ["blue ground", "white lines", "technical"] },
+    { "slug": "warm-beige", "name": "Warm Beige", "family": "mapvibe-studio", "studioTheme": "tk_warm_beige", "era": "MapVibe Studio", "summary": "Sand and ivory tones for warm, neutral interiors.", "body": "Warm Beige keeps everything in sand, ivory and soft brown. It disappears into neutral rooms in the best way, adding structure without adding colour.", "traits": ["sand and ivory", "low contrast", "neutral"] },
+    { "slug": "terracotta", "name": "Terracotta", "family": "mapvibe-studio", "studioTheme": "tk_terracotta", "era": "MapVibe Studio", "summary": "Clay and sand, the colours of Mediterranean rooftops.", "body": "Terracotta warms the map with clay reds and sand. It belongs in sunlit rooms, next to plaster walls, linen and old wood.", "traits": ["clay red", "sand", "Mediterranean"] },
+    { "slug": "copper-patina", "name": "Copper Patina", "family": "mapvibe-studio", "studioTheme": "tk_copper_patina", "era": "MapVibe Studio", "summary": "Aged copper and verdigris, like an old rooftop.", "body": "Copper Patina pairs pale verdigris with aged copper tones. It has the feel of an old instrument or a weathered dome and suits heritage interiors.", "traits": ["verdigris", "aged copper", "heritage"] },
+    { "slug": "mediterranean-vibes", "name": "Mediterranean Vibes", "family": "mapvibe-studio", "studioTheme": "mediterranean_vibes", "era": "MapVibe Studio", "summary": "Cream and Aegean navy, bright and coastal.", "body": "Mediterranean Vibes sets Aegean navy streets on a cream ground. It is crisp and coastal, made for white walls and strong sunlight.", "traits": ["Aegean navy", "cream", "coastal"] },
+    { "slug": "capri-shores", "name": "Capri Shores", "family": "mapvibe-studio", "studioTheme": "capri_shores", "era": "MapVibe Studio", "summary": "Cream, navy and terracotta, with the feel of an Italian summer.", "body": "Capri Shores adds a terracotta accent to cream and navy. It has the warmth of an Italian coastal town and works especially well for seaside cities.", "traits": ["cream", "navy", "terracotta accent"] },
+    { "slug": "old-navy", "name": "Old Navy", "family": "mapvibe-studio", "studioTheme": "tk_old_navy", "era": "MapVibe Studio", "summary": "Deep navy with gold lines, formal and nautical.", "body": "Old Navy draws gold streets on a deep navy ground. It is formal, nautical and quietly luxurious, at home in a study or a library.", "traits": ["deep navy", "gold lines", "nautical"] },
+    { "slug": "sage", "name": "Sage", "family": "mapvibe-studio", "studioTheme": "tk_sage", "era": "MapVibe Studio", "summary": "Soft green and mist, calm and botanical.", "body": "Sage uses soft greens and misty greys. It is calm and botanical, and pairs well with plants, natural wood and daylight.", "traits": ["soft green", "mist grey", "calm"] }
+  ],
+  "formats": [
+    { "slug": "flat", "name": "Flat" },
+    { "slug": "framed", "name": "Framed" },
+    { "slug": "unframed", "name": "Unframed" },
+    { "slug": "detail", "name": "Detail" },
+    { "slug": "in-space", "name": "In a Space" }
+  ],
+  "spaces": [
+    { "slug": "living-room", "name": "Living Room" },
+    { "slug": "library", "name": "Library" },
+    { "slug": "study", "name": "Study" },
+    { "slug": "city-hall", "name": "City Hall" },
+    { "slug": "hotel-lobby", "name": "Hotel Lobby" },
+    { "slug": "architecture-studio", "name": "Architecture Studio" },
+    { "slug": "hallway", "name": "Hallway" },
+    { "slug": "bedroom", "name": "Bedroom" },
+    { "slug": "kitchen", "name": "Kitchen" },
+    { "slug": "cafe", "name": "Café" },
+    { "slug": "office", "name": "Office" },
+    { "slug": "beach-house", "name": "Beach House" },
+    { "slug": "chalet", "name": "Chalet" }
+  ],
+  "cities": [
+    { "slug": "new-york", "name": "New York", "country": "United States", "lat": 40.7831, "lng": -73.9712 },
+    { "slug": "paris", "name": "Paris", "country": "France", "lat": 48.8566, "lng": 2.3522 },
+    { "slug": "london", "name": "London", "country": "United Kingdom", "lat": 51.5072, "lng": -0.1276 },
+    { "slug": "tokyo", "name": "Tokyo", "country": "Japan", "lat": 35.6762, "lng": 139.6503 },
+    { "slug": "barcelona", "name": "Barcelona", "country": "Spain", "lat": 41.3874, "lng": 2.1686 },
+    { "slug": "amsterdam", "name": "Amsterdam", "country": "Netherlands", "lat": 52.3676, "lng": 4.9041 },
+    { "slug": "rome", "name": "Rome", "country": "Italy", "lat": 41.9028, "lng": 12.4964 },
+    { "slug": "lisbon", "name": "Lisbon", "country": "Portugal", "lat": 38.7223, "lng": -9.1393 },
+    { "slug": "kyoto", "name": "Kyoto", "country": "Japan", "lat": 35.0116, "lng": 135.7681 },
+    { "slug": "copenhagen", "name": "Copenhagen", "country": "Denmark", "lat": 55.6761, "lng": 12.5683 },
+    { "slug": "berlin", "name": "Berlin", "country": "Germany", "lat": 52.52, "lng": 13.405 },
+    { "slug": "los-angeles", "name": "Los Angeles", "country": "United States", "lat": 34.0522, "lng": -118.2437 },
+    { "slug": "sydney", "name": "Sydney", "country": "Australia", "lat": -33.8688, "lng": 151.2093 },
+    { "slug": "amalfi", "name": "Amalfi", "country": "Italy", "lat": 40.634, "lng": 14.6027 }
+  ]
+}

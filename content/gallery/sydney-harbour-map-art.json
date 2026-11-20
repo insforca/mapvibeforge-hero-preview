@@ -1,0 +1,15 @@
+{
+  "slug": "sydney-harbour-map-art",
+  "status": "draft",
+  "order": 10,
+  "title": "Sydney Harbour Map Art",
+  "subtitle": "Sydney · Coastal Neutral",
+  "city": "sydney",
+  "style": "fine-line-minimal",
+  "format": "framed",
+  "source": "illustration",
+  "svg": "grid",
+  "description": "The harbour, the bays, the bridge — Sydney rendered in coastal neutrals and soft cartographic lines.",
+  "alt": "Sydney harbour map print in coastal neutral interior",
+  "note": "Draft: the SVG drawing does not represent this city. Replace with a real render before publishing."
+}

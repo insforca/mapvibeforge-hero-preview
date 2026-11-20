@@ -1,0 +1,15 @@
+{
+  "slug": "lisbon-alfama-map-art",
+  "status": "draft",
+  "order": 19,
+  "title": "Lisbon Alfama Map Art",
+  "subtitle": "Lisbon · Mediterranean Neutral",
+  "city": "lisbon",
+  "style": "fine-line-minimal",
+  "format": "framed",
+  "source": "illustration",
+  "svg": "rome",
+  "description": "Alfama's hillside streets in warm terracotta and sun-bleached ivory. A map for those who prefer the slower road.",
+  "alt": "Lisbon Alfama map print in Mediterranean neutral interior",
+  "note": "Draft: the SVG drawing does not represent this city. Replace with a real render before publishing."
+}

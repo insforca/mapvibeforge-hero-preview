@@ -9,18 +9,13 @@ Gravidade: 🔴 parte em produção · 🟠 prejudica SEO ou utilizadores · �
 
 | | Problema | Onde | Detalhe |
 |---|---|---|---|
-| 🔴 | `vercel.json` reescreve tudo para `/index.html` | raiz | herança do Vite; ver [[Deploy]] |
-| 🔴 | Workflow do Pages corre `vite build` | `.github/workflows/deploy.yml` | dispara em push para `main` |
-| 🟠 | Capa não responsiva | `HeroSection.tsx` | `gridTemplateColumns: '1fr 1.15fr'` sem media query |
-| 🟠 | Masthead fixa com três andares | `Navbar.tsx` | ocupa cerca de 150 px no topo, demais em telemóvel |
-| 🟠 | Ids de âncora repetidos | `GalleryCard.tsx` | 5 cartões com `id="new-york"`; HTML inválido |
-| 🟠 | `clipPath` com ids repetidos | `CityMapSvg.tsx` | mapas do mesmo estilo partilham `id="cm"` etc. |
-| 🟠 | Imagens do JSON-LD não existem | `page.tsx` | `/maps/<anchor>.png` |
-| 🟠 | SVG sem texto alternativo | `CityMapSvg.tsx` | o `altText` dos dados não chega ao SVG |
-| 🟠 | Data da edição desactualizada | `Navbar.tsx`, `HeroSection.tsx`, `Footer.tsx` | "Summer 2025", "© 2025" |
-| 🟡 | Fontes por `@import` | `globals.css` | bloqueia a renderização; usar `next/font` |
-| 🟡 | Restos do Vite e do demo 3D | várias pastas | ver [[Arquitectura]] |
-| 🟡 | `picsum.photos` e `transpilePackages` de three.js | `next.config.ts` | já não usados |
-| 🟡 | CTAs sem destino real | vários | todos para `#gallery` |
+| 🟠 | O CTA perde a cidade e a paleta | mapvibestudio.com (`mapvibe-content-hub`) | a home liga para `app.mapvibestudio.com` sem parâmetros; ver [[Spec de lançamento]] §3 |
+| 🟠 | Só um estilo tem entradas | `content/gallery/` | as 13 entradas publicadas são todas `fine-line-minimal`; as outras 21 páginas de estilo ficam `noindex` até terem entradas |
+| 🟠 | 7 entradas em rascunho | `content/gallery/` | Berlim, Copenhaga, Los Angeles, Sydney, Amalfi (desenho genérico), Quioto (desenho de Tóquio), Lisboa (desenho de Roma) |
+| 🟠 | Títulos de catálogo | `content/gallery/` | "New York City Map Print" e afins; trocar por títulos editoriais ([[Spec de lançamento]] §5) |
+| 🟠 | Sem imagem OpenGraph | `app/layout.tsx` | falta uma imagem por omissão e uma por entrada |
+| 🟡 | `components/ui/button.tsx` sem uso | | apagar ou usar |
+
+Resolvidos a 20 Nov 2026: `vercel.json` do Vite, capa não responsiva, masthead fixa em telemóvel, ids de âncora repetidos, `clipPath` repetidos (removidos, eram redundantes), imagens inexistentes no JSON-LD, SVG sem texto alternativo, data da edição, fontes por `@import` (agora `next/font`), demo antigo (13 MB), CTAs para `#gallery`, FAQ em dois sítios.
 
 Ao resolver um problema, apagar a linha e anotar o commit no [[Roadmap]].

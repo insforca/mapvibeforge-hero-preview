@@ -1,0 +1,15 @@
+{
+  "slug": "copenhagen-map-print",
+  "status": "draft",
+  "order": 8,
+  "title": "Copenhagen Map Print",
+  "subtitle": "Copenhagen · Scandinavian Minimal",
+  "city": "copenhagen",
+  "style": "fine-line-minimal",
+  "format": "framed",
+  "source": "illustration",
+  "svg": "grid",
+  "description": "Copenhagen's harbor and canal districts in understated Nordic tones. A tribute to Scandinavian design philosophy.",
+  "alt": "Copenhagen city map print in Scandinavian minimal interior",
+  "note": "Draft: the SVG drawing does not represent this city. Replace with a real render before publishing."
+}

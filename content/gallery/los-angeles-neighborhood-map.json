@@ -1,0 +1,15 @@
+{
+  "slug": "los-angeles-neighborhood-map",
+  "status": "draft",
+  "order": 9,
+  "title": "Los Angeles Neighborhood Map",
+  "subtitle": "Los Angeles · Warm California",
+  "city": "los-angeles",
+  "style": "fine-line-minimal",
+  "format": "framed",
+  "source": "illustration",
+  "svg": "grid",
+  "description": "From Silver Lake to Venice Beach — LA's sprawling neighborhoods captured in a warm, sun-faded editorial palette.",
+  "alt": "Los Angeles city map print in warm California interior setting",
+  "note": "Draft: the SVG drawing does not represent this city. Replace with a real render before publishing."
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "berlin-mitte-map-print",
+  "status": "draft",
+  "order": 17,
+  "title": "Berlin Mitte Map Print",
+  "subtitle": "Berlin · Bauhaus Neutral",
+  "city": "berlin",
+  "style": "fine-line-minimal",
+  "format": "framed",
+  "source": "illustration",
+  "svg": "grid",
+  "description": "Berlin Mitte in warm greige and matte black. Raw, considered, and quietly powerful.",
+  "alt": "Berlin Mitte map print in Bauhaus neutral editorial interior",
+  "note": "Draft: the SVG drawing does not represent this city. Replace with a real render before publishing."
+}

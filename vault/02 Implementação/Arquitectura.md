@@ -17,19 +17,24 @@ fase: implementação
 
 ```
 app/
-  layout.tsx        metadados, <html>, globals.css
-  page.tsx          monta as secções + JSON-LD
-  globals.css       tokens, fontes, Tailwind
-components/         ver [[Componentes]]
+  layout.tsx              fontes (next/font), metadados, Navbar + Footer
+  page.tsx                capa, galeria, famílias, FAQ + JSON-LD
+  styles/page.tsx         a biblioteca
+  styles/[style]/page.tsx um estilo
+  prints/[slug]/page.tsx  uma entrada
+  sitemap.ts, robots.ts, not-found.tsx
+  globals.css             tokens e classes (responsivo)
+components/               ver [[Componentes]]
+content/
+  taxonomy.json           famílias, estilos, formatos, espaços, cidades
+  gallery/*.json          uma entrada por ficheiro
 lib/
-  gallery-data.ts   20 itens da galeria + featuredItems
-  utils.ts          cn()
-public/             estáticos (inclui o vídeo do demo antigo)
+  content.ts              leitura + validação zod, consultas, studioUrl()
+  site.ts                 edição, nome, FAQ
+  utils.ts                cn()
 ```
 
-## Restos do projecto Vite (por limpar)
-
-`src/`, `cinematic-demo/`, `dist/`, `index.html`, `vite.config.ts`, `tsconfig.node.json`, `tailwind.config.ts`, e as dependências `three`, `@react-three/*`, `framer-motion`, `vite`, `@vitejs/plugin-react`. O `tsconfig.json` exclui `src/` para o build passar. Ver [[ADR-001 Next.js em vez de Vite]].
+Os restos do Vite e o demo 3D foram removidos a 20 Nov 2026.
 
 ## Comandos
 

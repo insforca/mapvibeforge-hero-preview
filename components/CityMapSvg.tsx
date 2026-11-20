@@ -11,6 +11,8 @@ export type MapStyle =
 interface Props {
   style: MapStyle
   city?: string
+  /** Accessible description of the artwork */
+  label?: string
   width?: string | number
   height?: string | number
 }
@@ -39,16 +41,13 @@ function Manhattan() {
   const avenues = [65, 98, 130, 156, 180, 206, 234, 262, 296, 328, 358]
   return (
     <svg viewBox="0 0 400 533" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-      <defs>
-        <clipPath id="cm"><rect width="400" height="533"/></clipPath>
-      </defs>
       <rect width="400" height="533" fill={C.bg}/>
       {/* Rivers */}
       <rect x="0" y="0" width="28" height="533" fill={C.water}/>
       <rect x="370" y="0" width="30" height="533" fill={C.water}/>
       {/* Harlem River top */}
       <path d="M28 28 Q200 8 370 32" fill="none" stroke={C.water} strokeWidth="18" opacity="0.7"/>
-      <g clipPath="url(#cm)">
+      <g>
         {/* Cross streets */}
         {streets.map(y => (
           <line key={y} x1="28" y1={y} x2="370" y2={y}
@@ -83,11 +82,8 @@ function Paris() {
   ]
   return (
     <svg viewBox="0 0 400 533" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-      <defs>
-        <clipPath id="cp"><rect width="400" height="533"/></clipPath>
-      </defs>
       <rect width="400" height="533" fill={C.bg}/>
-      <g clipPath="url(#cp)">
+      <g>
         {/* Background street mesh */}
         {range(42, 520, 19).map((y, i) => (
           <line key={y} x1="0" y1={y} x2="400" y2={y + (i%4)*3}
@@ -126,11 +122,8 @@ function Paris() {
 function London() {
   return (
     <svg viewBox="0 0 400 533" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-      <defs>
-        <clipPath id="cl"><rect width="400" height="533"/></clipPath>
-      </defs>
       <rect width="400" height="533" fill={C.bg}/>
-      <g clipPath="url(#cl)">
+      <g>
         {/* Organic street mesh */}
         {[45,68,88,112,136,157,180,202,224,248,270,294,318,340,364,388,412,438,462,488,514].map((y, i) => (
           <line key={y} x1="0" y1={y+(i%5)*4} x2="400" y2={y-(i%4)*5}
@@ -180,11 +173,8 @@ function Barcelona() {
   }
   return (
     <svg viewBox="0 0 400 533" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-      <defs>
-        <clipPath id="cb"><rect width="400" height="533"/></clipPath>
-      </defs>
       <rect width="400" height="533" fill="#ece7da"/>
-      <g clipPath="url(#cb)">
+      <g>
         {/* Eixample octagonal blocks */}
         {blocks.map((d, i) => (
           <path key={i} d={d} fill={C.bg} stroke={C.major} strokeWidth="0.7" opacity="0.55"/>
@@ -219,11 +209,8 @@ function Amsterdam() {
   const spokeAngles = [-2.4,-2.0,-1.6,-1.2,-0.8,-0.4,0,0.4,0.8,1.2,1.6,2.0,2.4]
   return (
     <svg viewBox="0 0 400 533" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-      <defs>
-        <clipPath id="ca"><rect width="400" height="533"/></clipPath>
-      </defs>
       <rect width="400" height="533" fill={C.bg}/>
-      <g clipPath="url(#ca)">
+      <g>
         {/* IJ Waterway (north) */}
         <rect x="0" y="0" width="400" height="42" fill={C.water} opacity="0.75"/>
         {/* Background street mesh */}
@@ -286,11 +273,8 @@ function Tokyo() {
   for (const s of V_SPACINGS) { if (vx > 392) break; vXs.push(vx); vx += s }
   return (
     <svg viewBox="0 0 400 533" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-      <defs>
-        <clipPath id="ct"><rect width="400" height="533"/></clipPath>
-      </defs>
       <rect width="400" height="533" fill={C.bg}/>
-      <g clipPath="url(#ct)">
+      <g>
         {hYs.map((y, i) => (
           <line key={y} x1="0" y1={y} x2="400" y2={y}
             stroke={C.minor} strokeWidth={i % 7 === 0 ? 1.3 : 0.5} opacity="0.62"/>
@@ -325,11 +309,8 @@ function Tokyo() {
 function Rome() {
   return (
     <svg viewBox="0 0 400 533" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-      <defs>
-        <clipPath id="cr"><rect width="400" height="533"/></clipPath>
-      </defs>
       <rect width="400" height="533" fill={C.bg}/>
-      <g clipPath="url(#cr)">
+      <g>
         {/* Organic street mesh */}
         {[45,68,90,112,136,158,180,202,225,248,272,296,318,342,365,388,412,438,462,488,514].map((y, i) => (
           <line key={y} x1="0" y1={y+(i%5)*3} x2="400" y2={y-(i%4)*5}
@@ -390,7 +371,7 @@ function GenericGrid({ city, seed = 0 }: { city: string; seed?: number }) {
   )
 }
 
-export default function CityMapSvg({ style, city = '', width = '100%', height = '100%' }: Props) {
+export default function CityMapSvg({ style, city = '', label, width = '100%', height = '100%' }: Props) {
   const style2 = { width, height, display: 'block' }
   const inner = (() => {
     switch (style) {
@@ -404,5 +385,9 @@ export default function CityMapSvg({ style, city = '', width = '100%', height = 
       default:          return <GenericGrid city={city} seed={city.length * 13 + city.charCodeAt(0)}/>
     }
   })()
-  return <div style={style2}>{inner}</div>
+  return (
+    <div style={style2} role="img" aria-label={label ?? `Map of ${city}`}>
+      {inner}
+    </div>
+  )
 }
