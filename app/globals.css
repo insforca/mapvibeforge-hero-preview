@@ -12,8 +12,8 @@
   --border: #e8e3dc;
   --gutter: 2rem;
   --max: 1400px;
-  --serif: var(--font-serif), 'Playfair Display', Georgia, serif;
-  --sans: var(--font-sans), 'Inter', system-ui, sans-serif;
+  --serif: 'Playfair Display', Georgia, serif;
+  --sans: 'Inter', system-ui, sans-serif;
 }
 
 @media (max-width: 640px) {

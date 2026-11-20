@@ -1,24 +1,15 @@
 import type { Metadata } from 'next'
-import { Inter, Playfair_Display } from 'next/font/google'
+// Self-hosted fonts (no network at build time; next/font/google failed on Vercel).
+import '@fontsource/inter/300.css'
+import '@fontsource/inter/400.css'
+import '@fontsource/inter/500.css'
+import '@fontsource/playfair-display/400.css'
+import '@fontsource/playfair-display/500.css'
+import '@fontsource/playfair-display/400-italic.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { SITE_DESCRIPTION, SITE_NAME, SITE_TAGLINE } from '@/lib/site'
 import './globals.css'
-
-const serif = Playfair_Display({
-  subsets: ['latin'],
-  weight: ['400', '500'],
-  style: ['normal', 'italic'],
-  variable: '--font-serif',
-  display: 'swap',
-})
-
-const sans = Inter({
-  subsets: ['latin'],
-  weight: ['300', '400', '500'],
-  variable: '--font-sans',
-  display: 'swap',
-})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://citymapprints.com'),
@@ -41,7 +32,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${serif.variable} ${sans.variable}`}>
+    <html lang="en">
       <body>
         <Navbar />
         <main>{children}</main>
