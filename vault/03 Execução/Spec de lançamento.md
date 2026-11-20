@@ -2,262 +2,232 @@
 tags: [execucao, spec]
 fase: execução
 data: 2026-11-20
-estado: rascunho
+estado: rascunho v2
 ---
 
 # Spec de lançamento — citymapprints.com
-
-Como levar a "MapVibe Ecosystem Spec" do estado actual (20 itens escritos à mão, mapas SVG) a uma galeria editorial gerada por pipeline, com 100 entradas no lançamento e espaço para crescer até milhares.
 
 Relacionado: [[Roadmap]], [[Arquitectura]], [[Dados estruturados]], [[Mapas SVG]], [[Deploy]].
 
 ---
 
-## 1. Princípios (não negociáveis)
+## 1. A ideia numa frase
 
-1. **Dois sites, dois papéis.** citymapprints.com é descoberta editorial; mapvibestudio.com é gerador e loja. Não se fundem. A única ponte é o CTA "Create your own".
-2. **A galeria é o produto.** Cada entrada é um nó semântico (dados estruturados + imagem + texto), não "uma imagem".
-3. **Fotografado, não gerado.** Realismo de fotografia de arquitectura e interiores. Nada de estética de "AI art", pósteres estilizados ou surrealismo.
-4. **O mapa na imagem tem de ser verdadeiro.** O quadro mostra a cidade real, no estilo que a loja vende. Ver §5.3: é o ponto técnico mais importante do pipeline.
-5. **Qualidade antes de volume.** Nada é publicado sem revisão humana. Ver §8 sobre o risco de conteúdo em escala.
+**citymapprints.com é uma biblioteca de estilos de mapa de cidade, do antigo ao contemporâneo, mostrados em muitas formas e espaços diferentes, que encaminha quem se apaixona por um estilo para o MapVibe Studio.**
+
+- **A biblioteca atrai e inspira.** É ampla, editorial e muito "guardável" no Pinterest.
+- **O Studio vende.** As paletas do Studio aparecem salpicadas na biblioteca, ao lado de estilos históricos e contemporâneos, como mais uma família.
+- **O que nos diferencia** não é o mapa em si, mas a **variedade de apresentação**: o mesmo estilo visto sozinho, emoldurado, sem moldura, num detalhe, numa sala, numa biblioteca, num escritório, numa câmara municipal…
+
+Os dois sites continuam separados. A ponte é sempre o botão **"Create yours in this style"**.
 
 ---
 
-## 2. Ponto de partida (20 Nov 2026)
+## 2. Os três eixos da biblioteca
 
-| Área | Estado |
+Cada imagem da biblioteca é a combinação de três eixos.
+
+### Eixo A — Estilo (o "como está desenhado")
+
+**12 estilos da biblioteca**, mais uma selecção das paletas do Studio.
+
+| Família | Estilo | Notas |
+|---|---|---|
+| Antigo | Carta náutica (portulano) | linhas de rumo, rosa-dos-ventos, papel velho |
+| Antigo | Planta gravada do séc. XVIII | traço a buril, quarteirões sombreados |
+| Antigo | Mapa japonês em xilogravura | período Edo, cor plana, papel washi |
+| Antigo | Mapa de seguros do séc. XIX | aguarela por material de construção |
+| Séc. XX | Topografia suíça | relevo sombreado, curvas de nível |
+| Séc. XX | Diagrama de metro | linhas rectas a 45°, cores por linha |
+| Séc. XX | Mapa ilustrado mid-century | edifícios desenhados, cor de offset |
+| Séc. XX | Cartaz de viagem art déco | geometria, poucas cores, grande título |
+| Contemporâneo | Linha fina minimalista | só ruas, um só traço |
+| Contemporâneo | Figure-ground | só edifícios, preto sobre branco |
+| Contemporâneo | Risografia a duas cores | sobreposição, grão, desalinho |
+| Contemporâneo | Aguarela solta | manchas, sem contorno |
+
+**Paletas do Studio** (no Studio o desenho é sempre o mesmo, só muda a paleta). Proposta de selecção inicial, as que encaixam no tom editorial:
+
+| Paleta | ID no Studio | Família onde fica melhor |
+|---|---|---|
+| Vintage Noir | `vintage_noir` | ao lado do figure-ground |
+| Japanese Ink | `tk_japanese_ink` | ao lado da xilogravura |
+| Blueprint | `tk_blueprint` | ao lado da topografia suíça |
+| Warm Beige | `tk_warm_beige` | contemporâneo |
+| Terracotta | `tk_terracotta` | mediterrânico |
+| Copper Patina | `tk_copper_patina` | antigo / séc. XX |
+| Mediterranean Vibes | `mediterranean_vibes` | mediterrânico |
+| Capri Shores | `capri_shores` | costeiro |
+| Old Navy | `tk_old_navy` | carta náutica |
+| Sage | `tk_sage` | contemporâneo |
+
+O Studio tem 67 paletas, definidas em `mapvibe-studio/src/features/mapvibedomain/domain/themes.ts`. Ficam de fora, por agora, as paletas de desporto e cultura pop (Gotham, The Shire, Spirited Forest, Pastel Symmetry, Synthetica…). Os subtítulos internos referem marcas e obras protegidas (Ghibli, Tolkien, Blade Runner, Wes Anderson), que **não podem aparecer em texto público**.
+
+### Eixo B — Formato (o "como se vê o mapa")
+
+1. **Plano**: só o mapa, de frente, sem contexto.
+2. **Emoldurado**: em fundo neutro.
+3. **Sem moldura**: papel na parede, fita, molas, prancheta.
+4. **Detalhe**: close-up de um bairro, da textura do papel ou da tinta.
+5. **Em espaço**: o mapa dentro de uma divisão (ver eixo C).
+
+### Eixo C — Espaço (o "onde está")
+
+Sala · biblioteca · escritório/study · câmara municipal / edifício público · lobby de hotel · estúdio de arquitectura · corredor · quarto · cozinha · café/restaurante · escritório de empresa · casa de praia · chalé.
+
+Exemplo de entrada: *Lisboa × Topografia suíça × Em espaço × Biblioteca.*
+
+---
+
+## 3. Estrutura do site
+
+| Rota | O que mostra |
 |---|---|
-| Deploy | Vercel, projecto `mapvibeforge-hero-preview`, domínios `citymapprints.com` e `www` verificados. `vercel.json` (framework Next.js) por fazer commit. |
-| Dados | `lib/gallery-data.ts`: 20 itens fixos, campos `title, city, theme, occasion, description, altText, anchor, mapStyle`. |
-| Imagens | Nenhuma fotografia. Mapas SVG estilizados em `components/CityMapSvg.tsx`, 7 estilos. Vários são genéricos (`grid`). |
-| Página | Uma só página `/` com âncoras (`FilterNav`), JSON-LD `ItemList` + `FAQPage`. |
-| Bloqueios já conhecidos | Capa não responsiva, edição/copyright desactualizados, restos do Vite. Ver [[Roadmap]] e [[Problemas conhecidos]]. |
-| Outros projectos Vercel | `citymapprints-com` (antigo, por arquivar?), `mapvibe-render-service`, `mapvibe-studio` (`app.mapvibestudio.com`). |
+| `/` | Capa editorial e uma mistura curada de tudo (formatos e espaços alternados) |
+| `/styles` | A biblioteca: os 12 estilos e as paletas do Studio, por família |
+| `/styles/[style]` | Um estilo: texto curto (origem, época, características), grelha de variações, CTA |
+| `/prints/[slug]` | Uma imagem: grande, metadados, "mais neste estilo", "mais nesta cidade", CTA |
+| `/cities/[city]` | Uma cidade em todos os estilos. Só existe com ≥ 8 entradas |
+| `/spaces/[space]` | Um espaço (ex.: bibliotecas) com mapas de vários estilos. Só existe com ≥ 8 entradas |
+
+A navegação é feita com links normais (`<a href>`), rastreáveis, sem filtros em JavaScript.
+
+**A grelha mistura os formatos de propósito**, alternando plano, emoldurado, detalhe e espaço, com proporções diferentes (4:5, 2:3, 1:1). É esse ritmo que dá o ar de revista e de moodboard.
+
+### O CTA para o Studio
+
+O Studio já aceita deep links (`posterStore.ts`, `getUrlParamFormOverrides`):
+
+```
+https://app.mapvibestudio.com/?city=Lisbon&country=Portugal&lat=38.7223&lng=-9.1393&style=tk_blueprint
+```
+
+- **Paleta do Studio:** "Create yours in this style" abre directamente com cidade e paleta.
+- **Estilo da biblioteca que o Studio não vende:** "The closest in MapVibe Studio: Blueprint", que abre com a paleta mais próxima. Cada estilo da biblioteca indica a sua paleta-irmã.
+
+**Decidido (2026-11-20): o CTA aponta para `mapvibestudio.com`.**
+
+Há uma dependência. Testado a 20 Nov: a página `mapvibestudio.com/?city=…&style=…` responde, mas os botões para o editor apontam para `https://app.mapvibestudio.com` sem parâmetros, por isso a cidade e a paleta perdem-se. É preciso, no projecto `mapvibe-content-hub`:
+
+- uma página de entrada (ex.: `mapvibestudio.com/create`, que hoje fecha a ligação) ou a própria home a **passar** `city`, `country`, `lat`, `lng` e `style` para o link `app.mapvibestudio.com/?…`;
+- de preferência, mostrar nessa página a paleta escolhida ("You picked Blueprint · Lisbon") antes do botão para o editor.
+
+Até isso existir, o CTA pode ir para `mapvibestudio.com` sem parâmetros, ou directamente para `app.` como solução temporária.
 
 ---
 
-## 3. Sobre o repositório `joeseesun/qiaomu-artist-style`
+## 4. De onde vêm as imagens
 
-Lido a 20 Nov 2026. **Não é** um sistema de estilos nem uma camada de orquestração de prompts. É:
+| Estilo | Mapa | Cena (formatos B2–B5) |
+|---|---|---|
+| Paletas do Studio | **Exportação real do Studio** (cidade + paleta), ou seja, o produto exacto que se vende | IA com o quadro vazio, e o mapa real encaixado depois |
+| Estilos antigos | **Mapas históricos reais, de domínio público** (Library of Congress e outros, sempre com a licença confirmada, já que algumas colecções proíbem o uso comercial) | IA com o quadro vazio, e o mapa real encaixado depois |
+| Séc. XX e contemporâneos | Gerado por IA "no estilo de" (não é a cartografia exacta da cidade) | IA |
 
-- uma app Next.js estática que mostra uma grelha filtrável de 383 imagens;
-- **um único prompt** (montanhas, floresta, riacho) em que só muda o nome de um pintor (`{artist}`), definido em `data/site-config.ts`;
-- um script `npm run generate:images` que chama a API HiAPI em lote (`--offset`, `--limit`, `--force`, `--quality`) e grava WebP em `public/generated/`.
-
-**Conclusão:**
-
-- **Não usar o código.** O repositório não tem licença, por isso a reutilização não está autorizada. Além disso, imita estilos de pintores identificados pelo nome, o oposto do realismo que queremos.
-- **Copiar o padrão, que é exactamente o que precisamos:** template de prompt × lista de variáveis → script em lote idempotente → ficheiros estáticos → galeria Next.js gerada a partir dos dados. Implementamo-lo de raiz e com mais camadas (módulos de prompt, revisão, composição do mapa, metadados).
+Regra: **o que se vende tem de ser real.** Uma imagem com paleta do Studio mostra sempre o render verdadeiro dessa cidade. As imagens de inspiração (estilos que o Studio não vende) ficam marcadas como tal na página.
 
 ---
 
-## 4. Modelo de conteúdo
+## 5. Modelo de conteúdo
 
-Uma entrada = um ficheiro JSON em `content/gallery/<slug>.json`, validado com `zod` no build. `lib/gallery-data.ts` passa a ler esta pasta em vez de ter os dados escritos no código.
+Uma entrada = um ficheiro `content/gallery/<slug>.json`, validado com `zod` no build. Os vocabulários ficam em `content/taxonomy.json` (`styles`, `families`, `formats`, `spaces`, `cities`).
 
 ```json
 {
-  "slug": "lisbon-summer-walls",
+  "slug": "lisbon-swiss-relief-library",
   "status": "approved",
-  "title": "Lisbon Summer Walls",
-  "city": "Lisbon",
-  "country": "Portugal",
-  "style": "mediterranean",
-  "space": "coastal-villa",
-  "occasion": "housewarming",
-  "mood": "warm-minimal",
-  "palette": ["sand", "olive", "travertine"],
-  "mapStyle": "minimal-monochrome",
+  "title": "Lisbon in Relief",
+  "subtitle": "Lisbon · Swiss Topography · Library",
+  "city": "lisbon",
+  "style": "swiss-topography",
+  "family": "twentieth-century",
+  "format": "in-space",
+  "space": "library",
+  "source": "ai-inspiration",
+  "studioTheme": "tk_blueprint",
   "image": {
-    "src": "/gallery/lisbon-summer-walls.avif",
+    "src": "/gallery/lisbon-swiss-relief-library.avif",
     "width": 1600, "height": 2000,
     "blurDataURL": "data:image/webp;base64,...",
-    "alt": "Minimal monochrome map of Lisbon framed above a travertine console in a sunlit coastal villa"
+    "alt": "Shaded-relief map of Lisbon in a wooden frame above library shelves, afternoon light"
   },
   "description": "Duas frases editoriais, únicas para esta entrada.",
-  "cta": "https://mapvibestudio.com/create?city=lisbon&style=minimal-monochrome",
-  "generation": {
-    "recipe": "mediterranean-editorial@1",
-    "model": "flux-1.1-pro",
-    "seed": 81234,
-    "mapRender": "render-service:lisbon:minimal-monochrome",
-    "reviewedBy": "editor",
-    "reviewedAt": "2026-12-02"
-  }
+  "generation": { "recipe": "in-space-library@1", "model": "flux-1.1-pro", "seed": 81234 }
 }
 ```
 
-**Vocabulários fechados** em `content/taxonomy.json`: `cities`, `styles`, `spaces`, `occasions`, `moods`, `mapStyles`, cada um com slug, nome de apresentação e descrição curta. Um item com um valor fora da taxonomia falha o build.
+`source`: `studio-render` | `public-domain` | `ai-inspiration`. Indica a origem do mapa e decide o texto do CTA e a nota de inspiração.
 
-**`status`:** `draft` → `approved` → (`retired`). Só `approved` entra no site e no sitemap.
-
-**Nomes:** título evocativo ("Tokyo Quiet Geometry") e, por baixo, a linha de metadados "Tokyo · Japandi · Reading Space". Nunca "Tokyo Map Print".
+`status`: `draft` → `approved` → `retired`. Só `approved` vai para o site e para o sitemap.
 
 ---
 
-## 5. Pipeline de geração da galeria
+## 6. Pipeline
+
+O padrão vem do `qiaomu-artist-style`: template × variáveis → script em lote → ficheiros estáticos → galeria. Esse repositório não tem licença, por isso o código é escrito de raiz.
 
 ```
-taxonomy.json + recipes/*.json
-        │  1. matriz      scripts/gallery/plan.ts
-        ▼
-queue/plan.jsonl  (combinações escolhidas, não todas)
-        │  2. cena        scripts/gallery/generate.ts   (API de imagem)
-        ▼
-work/<slug>/scene-*.png   (3–4 variantes, quadro vazio)
-        │  3. revisão     scripts/gallery/review  (página local)
-        ▼
-variante escolhida
-        │  4. mapa        scripts/gallery/composite.ts  (render real → perspectiva)
-        ▼
-work/<slug>/final.png
-        │  5. derivados   sharp: AVIF + WebP, 3 larguras, blur
-        │  6. metadados   Claude: título, alt, descrição  → revisão humana
-        ▼
-content/gallery/<slug>.json  +  public/gallery/*   → commit → deploy
+taxonomy.json + recipes/
+   1. plan       escolhe combinações estilo × cidade × formato × espaço (com regras e quotas)
+   2. map        exporta do Studio / vai buscar o mapa histórico / gera o mapa de inspiração
+   3. scene      gera 3–4 variantes da cena com o quadro vazio (formatos B2–B5)
+   4. review     página local: escolher a variante e marcar os 4 cantos do quadro
+   5. composite  encaixa o mapa na cena (perspectiva, sombra, grão)
+   6. derive     sharp → AVIF + WebP, 3 larguras, blur
+   7. metadata   Claude escreve o rascunho de título, alt e descrição → revisão humana
+   → content/gallery/*.json + public/gallery/* → commit → deploy
 ```
 
-### 5.1 Matriz (não é combinatória cega)
-
-`plan.ts` gera candidatos `cidade × estilo × espaço × ocasião`, mas **só aceita combinações plausíveis**. A coerência vem de regras em `taxonomy.json` (ex.: `ski-chalet` só com cidades de montanha/inverno; `beach-house` só com cidades costeiras), e há um limite por cidade e por estilo para manter a galeria equilibrada.
-
-### 5.2 Receitas de prompt modulares
-
-Cada estilo tem uma receita versionada em `content/recipes/<style>.json` com blocos fixos:
-
-`[interior] [arquitectura] [luz] [câmara/lente] [materiais] [paleta] [presença humana] [integração do quadro] [negativos]`
-
-O bloco **integração do quadro** pede sempre *"um quadro de parede com uma área de arte lisa e clara"*, como elemento secundário e fora do centro. O bloco **negativos** exclui texto, logótipos, capas de revista e ilustração.
-
-Mudar uma receita sobe a versão (`mediterranean-editorial@2`). Cada entrada regista a receita com que foi feita, para se poder regenerar com consistência.
-
-### 5.3 O mapa verdadeiro (composição)
-
-Os modelos de imagem **inventam** mapas. Um "mapa de Lisboa" gerado não é Lisboa, e mostrar na galeria um produto que a loja não vende é publicidade enganosa. Por isso:
-
-1. a cena é gerada com o quadro vazio;
-2. o mapa real da cidade, no estilo vendido, vem do motor da loja: o `mapvibe-render-service` se já exportar PNG/SVG por cidade e estilo, senão um render a partir do OpenStreetMap;
-3. `composite.ts` encaixa o mapa no quadro com transformação de perspectiva (4 cantos marcados na revisão), mais sombra e grão para o integrar na luz da cena.
-
-Isto também resolve a pendência de [[Mapas SVG]] (estilos genéricos que não representam a cidade).
-
-### 5.4 Ferramentas
-
-| Passo | Escolha inicial | Notas |
-|---|---|---|
-| Cena | Flux 1.1 Pro / Ultra por API (BFL, fal ou Replicate) | Bom realismo de interiores e uso por API em lote. O Midjourney não tem API oficial, por isso só serve para exploração manual. |
-| Limpeza | GPT-image ou inpainting do Flux | Só para corrigir artefactos, não para mudar a cena. |
-| Upscale | Topaz (manual) ou um upscaler por API | Só nas variantes aprovadas. |
-| Derivados | `sharp` | AVIF + WebP, larguras 640/1080/1600, `blurDataURL`. |
-| Metadados | Claude por API | Gera rascunhos de título, alt e descrição a partir dos campos. Um humano revê sempre. |
-
-O script deve ser idempotente, como o padrão do §3: `--offset`, `--limit`, `--force`, saltar o que já existe e registar o custo por imagem.
+- **Receitas por formato e espaço** (`recipes/in-space-library.json`, `recipes/framed-neutral.json`…), com blocos fixos de luz, lente, materiais, posição do quadro e negativos (sem texto, sem logótipos, sem ar de ilustração). São versionadas.
+- **Regras e quotas no `plan`:** equilíbrio entre famílias, formatos e espaços, combinações plausíveis (o chalé não leva carta náutica de Lisboa…) e um limite por cidade.
+- **Scripts idempotentes** (`--offset`, `--limit`, `--force`), com o custo de cada imagem registado.
+- **Ferramentas:** Flux por API para as cenas, `sharp` para os derivados, Claude para os metadados. O Midjourney fica só para exploração manual, porque não tem API oficial.
+- **Exportação do Studio:** confirmar se o `layeredSvgExporter` / `previewCompositing` do Studio pode correr sem interface (script ou `mapvibe-render-service`) para cidade + paleta → PNG.
 
 ---
 
-## 6. Site
+## 7. SEO, Pinterest, dados estruturados
 
-### 6.1 Rotas
-
-| Rota | Conteúdo | Quando existe |
-|---|---|---|
-| `/` | Capa editorial, destaques, grelha com as entradas mais recentes e curadas, FAQ | sempre |
-| `/prints/[slug]` | Página da entrada: imagem grande, texto, metadados, entradas relacionadas, CTA | por cada entrada `approved` |
-| `/city/[city]`, `/style/[style]`, `/space/[space]` | Colecção editorial com introdução própria | só com **≥ 8 entradas aprovadas** |
-
-As páginas por entrada são necessárias. O Pinterest precisa de um URL por pin, o schema por item precisa de uma página, e 500 itens numa única página são pesados demais. As colecções só aparecem quando têm massa crítica, para não criar páginas finas.
-
-A navegação continua a ser feita de **links rastreáveis** (`<a href>`), sem filtros em JavaScript.
-
-### 6.2 Grelha
-
-Masonry editorial: 4 colunas no desktop, 2 no tablet e cartões empilhados no telemóvel. Imagens verticais (4:5 ou 2:3), muito espaço em branco e interface mínima.
-
-### 6.3 Dados estruturados
-
-- `/`: `ItemList` + `FAQPage` (já existem) + `Organization`/`WebSite`.
-- `/prints/[slug]`: `ImageObject` (com `creditText`, `license`, `acquireLicensePage`) + `CreativeWork`.
-- **`Product` só com `offers` reais.** O Google exige `offers`, `review` ou `aggregateRating` para mostrar resultados enriquecidos de produto. Sem preço verdadeiro, um `Product` é inútil ou arriscado. Ligar quando a loja expuser preço por estilo/tamanho (ver §10).
-- `sitemap.xml` com extensão de imagem; `robots.txt`.
-- OpenGraph e `pinterest`/rich pins por entrada.
-
-### 6.4 Imagens e custos
-
-- **Fase 1** (≤ 150 entradas): ficheiros pré-optimizados em `public/gallery/`, cerca de 40 MB, servidos com `next/image` em modo `unoptimized`, já que os derivados vêm do pipeline. Assim não se gasta a quota de optimização de imagem do Vercel.
-- **Fase 2** (> 500): mover as imagens para **Vercel Blob** ou Cloudflare R2, com o mesmo formato de URL, para o repositório Git não crescer sem limite.
-
-### 6.5 Analytics
-
-Começar só com **Plausible** (sem cookies, sem banner). O PostHog entra quando houver funil a medir entre os dois sites. Eventos: clique no CTA (com cidade e estilo), save no Pinterest, saída para mapvibestudio.com.
+- **Pesquisas-alvo:** "vintage map of [city]", "[city] map poster", "swiss topographic map art", "minimalist city map", "map wall art library", "[estilo] map print".
+- **Páginas de estilo com texto real** (origem, época, como reconhecer o estilo). É isto que distingue uma biblioteca de uma galeria de imagens soltas e dá às IAs algo para citar.
+- **Dados estruturados:** `ImageObject` + `CreativeWork` por entrada; `CollectionPage` + `ItemList` por estilo, cidade e espaço; `FAQPage` na capa. Usar `Product` só quando houver preço real do Studio.
+- **Pinterest:** rich pins e um board por estilo e por espaço ("Maps in Libraries", "Swiss Topography"…). Cada pin aponta para `/prints/[slug]`.
+- **Escala com cuidado:** milhares de combinações quase iguais caem na política do Google contra "scaled content abuse". Por isso: revisão humana, quotas, colecções só com ≥ 8 entradas e crescimento gradual.
 
 ---
 
-## 7. Pinterest e email
+## 8. Fases
 
-- Uma conta empresarial com **rich pins** activos e um board por estilo e por espaço (não por cidade).
-- Publicação a partir do `content/gallery`. O título e a descrição do pin vêm da entrada e o link vai para `/prints/[slug]`. Cadência inicial de 3 a 5 pins por dia, agendados.
-- Email: newsletter editorial mensal ("Cities worth keeping on your wall"), com 4 a 6 entradas e uma nota curta. Ferramenta a decidir (ver §10). Sem descontos agressivos.
+### Fase 0 — Desbloquear
 
----
+- [x] Deploy no Vercel com `citymapprints.com` ✅ 2026-11-20 · fae75fd
+- [ ] Itens "Agora" do [[Roadmap]]: capa responsiva, edição/copyright, limpeza do Vite.
+- [ ] `content/taxonomy.json` + `zod` + `lib/gallery-data.ts` a ler `content/gallery/`.
+- [ ] Rotas `/styles`, `/styles/[style]`, `/prints/[slug]`, sitemap, robots, OpenGraph.
 
-## 8. Riscos
+### Fase 1 — Biblioteca mínima (lançamento)
 
-| Risco | Mitigação |
-|---|---|
-| **Conteúdo em escala como spam.** A política do Google contra "scaled content abuse" atinge páginas geradas em massa sem valor próprio, como 10 000 combinações quase iguais. | Revisão humana por entrada, imagem e texto únicos, colecções com limiar mínimo, só `approved` no sitemap, crescimento gradual (100 → 300 → 1000) com medição na Search Console. |
-| Mapas falsos nas imagens | Composição com o render real (§5.3). |
-| Imagens com aspecto de "gerado" | Receitas fixas, revisão, rejeitar sem pena. Medir a taxa de aprovação por receita. |
-| Divulgação de IA | O Pinterest pode marcar imagens geradas. Uma nota discreta em "About" ("cenas criadas digitalmente; os mapas são os nossos produtos reais") protege a confiança. |
-| Custos de geração | Custo registado por imagem. Orçamento por fase (§9). |
-| CTA para a loja sem destino | Confirmar os parâmetros que o mapvibestudio.com aceita antes de gerar os URLs (§10). |
+- [ ] 12 páginas de estilo com texto, mais 10 paletas do Studio.
+- [ ] **~150 entradas**: 22 estilos/paletas × ~7 entradas, espalhadas por 5 formatos e pelo menos 6 espaços, em 10–12 cidades.
+- [ ] Exportação do Studio para PNG por script.
+- [ ] Pipeline completo (plan → metadata).
+- [ ] Plausible, Search Console, Pinterest com os primeiros 50 pins.
 
----
+**Sai quando:** cada estilo tem ≥ 6 entradas, todos os formatos aparecem, todas as imagens com paleta do Studio mostram o render real e o CTA abre o Studio com a cidade e a paleta certas.
 
-## 9. Fases e critérios de saída
+### Fase 2 — Crescer
 
-### Fase 0 — Desbloquear (1 semana)
-
-- [ ] Commit de `vercel.json`. Arquivar o projecto Vercel `citymapprints-com`, se já não for preciso.
-- [ ] Os três itens de "Agora" do [[Roadmap]]: capa responsiva, edição/copyright, limpeza do Vite.
-- [ ] `content/taxonomy.json` + schema `zod` + `lib/gallery-data.ts` a ler `content/gallery/`. Migrar os 20 itens actuais.
-- [ ] Rotas `/prints/[slug]`, `sitemap.xml`, `robots.txt`, OpenGraph.
-- [ ] Plausible.
-
-**Sai quando:** o build passa com os dados em JSON, existem 20 páginas de entrada e a Lighthouse dá ≥ 90 em mobile.
-
-### Fase 1 — Pipeline e 100 entradas (2–4 semanas)
-
-- [ ] Receitas para 5 estilos (Mediterranean, Japandi, Scandinavian, Chalet, Coastal).
-- [ ] Scripts `plan`, `generate`, `review`, `composite`, `derive`, `metadata`.
-- [ ] Ligação ao `mapvibe-render-service` (ou render OSM) para 10 cidades.
-- [ ] 100 entradas aprovadas: 10 cidades × 5 estilos × cerca de 2 espaços.
-- [ ] Search Console, pedido de indexação do sitemap.
-- [ ] Pinterest: conta, rich pins, primeiros 50 pins.
-
-**Sai quando:** 100 entradas com mapa real, taxa de aprovação de pelo menos 1 em cada 4 variantes e custo por entrada conhecido.
-
-### Fase 2 — Escala (contínua)
-
-- [ ] Imagens para Blob/R2.
-- [ ] Colecções `/city`, `/style`, `/space` quando ultrapassarem o limiar.
-- [ ] 300 → 1000 entradas, ao ritmo que a revisão aguentar.
-- [ ] Publicação automática no Pinterest.
-- [ ] `Product` com `offers`, se a loja expuser preço.
-
-### Fase 3 — Optimização para pesquisa por IA
-
-- [ ] Monitorizar citações em AI Mode, ChatGPT e Perplexity com um conjunto fixo de perguntas.
-- [ ] Expandir as entidades (cidades, bairros, estilos) onde houver procura medida.
-- [ ] PostHog no funil citymapprints → mapvibestudio.
+- [ ] Páginas `/cities/[city]` e `/spaces/[space]` quando passarem o limiar.
+- [ ] Mais estilos e paletas, 300 → 1000 entradas.
+- [ ] Imagens para Vercel Blob ou R2.
+- [ ] Publicação automática no Pinterest e newsletter editorial.
 
 ---
 
-## 10. Decisões em aberto
+## 9. Decisões em aberto
 
-1. **Origem do mapa no quadro:** o `mapvibe-render-service` já exporta imagens por cidade e estilo? Que formato e que URL/API?
-2. **CTA:** que URL e parâmetros aceita a loja? (`app.mapvibestudio.com/create?city=&style=`?)
-3. **Modelo de imagem:** testar Flux 1.1 Pro contra GPT-image com 10 cenas iguais antes de fixar. Orçamento da Fase 1?
-4. **Revisão:** quem aprova, e quantas entradas por semana são realistas?
-5. **Preços:** a loja tem preço fixo por tamanho que possa ir para `offers`?
-6. **Email:** que ferramenta (Resend, Buttondown, Kit)? Integração com a loja?
-7. **CMS:** JSON local chega até cerca de 1000 entradas. Só reavaliar o Sanity depois disso.
+1. ~~Domínio do CTA~~ → `mapvibestudio.com`, com passagem de parâmetros a implementar no `mapvibe-content-hub` (§3). ✅ 2026-11-20
+2. ~~Selecção das paletas~~ → as 10 do §2. ✅ 2026-11-20
+3. Os 12 estilos da biblioteca: algum a trocar?
+4. Orçamento de geração da Fase 1 (cerca de 150 entradas × 4 variantes).
+5. Quem revê e aprova, e a que ritmo?
