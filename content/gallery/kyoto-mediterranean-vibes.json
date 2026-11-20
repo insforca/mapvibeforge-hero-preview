@@ -1,0 +1,20 @@
+{
+  "slug": "kyoto-mediterranean-vibes",
+  "status": "draft",
+  "title": "Kyoto in Mediterranean Vibes",
+  "subtitle": "Kyoto · Mediterranean Vibes · Flat",
+  "city": "kyoto",
+  "style": "mediterranean-vibes",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/kyoto-mediterranean-vibes.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADwAgCdASoMABEAPu1oqk6ppiQiMAgBMB2JZwDA3C0kAAD+79e07ym9xZi7OHScAAA="
+  },
+  "description": "Kyoto, Japan, drawn in the Mediterranean Vibes palette from MapVibe Studio. Cream and Aegean navy, bright and coastal.",
+  "alt": "Mediterranean Vibes city map poster of Kyoto, Japan, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

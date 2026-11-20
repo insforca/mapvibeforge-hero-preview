@@ -1,0 +1,19 @@
+{
+  "slug": "sydney-old-navy",
+  "status": "approved",
+  "title": "Sydney, Gold Coast Lines",
+  "subtitle": "Sydney · Old Navy · Flat",
+  "city": "sydney",
+  "style": "old-navy",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/sydney-old-navy.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAACwAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JZQCzgB6syxoNGAUdgAD+yPyHeN3yDl2tndx8CIS5zZFAeVRaF7tj1cvWz0gdJiRp5zFqukUUfj5gY0twQLt8N8MFaMje9AA="
+  },
+  "description": "Port Jackson in deep navy, its shores and streets drawn in gold. Quietly luxurious, at home in a study or library.",
+  "alt": "Old Navy city map poster of Sydney, Australia, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "lisbon-japanese-ink",
+  "status": "draft",
+  "title": "Lisbon in Japanese Ink",
+  "subtitle": "Lisbon · Japanese Ink · Flat",
+  "city": "lisbon",
+  "style": "japanese-ink",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/lisbon-japanese-ink.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAgCdASoMABEAPu1kqk4ppaQiMAgBMB2JZwC3uDKUAAD+725Z6fqmK1MgJtvWAfnPp3L+gAA="
+  },
+  "description": "Lisbon, Portugal, drawn in the Japanese Ink palette from MapVibe Studio. Ink greys on paper with a single vermilion accent on the main roads.",
+  "alt": "Japanese Ink city map poster of Lisbon, Portugal, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "london-mediterranean-vibes",
+  "status": "draft",
+  "title": "London in Mediterranean Vibes",
+  "subtitle": "London · Mediterranean Vibes · Flat",
+  "city": "london",
+  "style": "mediterranean-vibes",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/london-mediterranean-vibes.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAgCdASoMABEAPu1iqU2ppaOiMAgBMB2JaQAAhAwAAP7vb2/pHLCF1adg0MNbSwrIiqd6uw8gAA=="
+  },
+  "description": "London, United Kingdom, drawn in the Mediterranean Vibes palette from MapVibe Studio. Cream and Aegean navy, bright and coastal.",
+  "alt": "Mediterranean Vibes city map poster of London, United Kingdom, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

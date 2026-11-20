@@ -1,0 +1,20 @@
+{
+  "slug": "berlin-mediterranean-vibes",
+  "status": "draft",
+  "title": "Berlin in Mediterranean Vibes",
+  "subtitle": "Berlin · Mediterranean Vibes · Flat",
+  "city": "berlin",
+  "style": "mediterranean-vibes",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/berlin-mediterranean-vibes.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAAAQAwCdASoMABEAPu1iqU2ppaQiMAgBMB2JZwDDNCz95UAA/u+M8uFpGXuwHMmX5wnC5gAA"
+  },
+  "description": "Berlin, Germany, drawn in the Mediterranean Vibes palette from MapVibe Studio. Cream and Aegean navy, bright and coastal.",
+  "alt": "Mediterranean Vibes city map poster of Berlin, Germany, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

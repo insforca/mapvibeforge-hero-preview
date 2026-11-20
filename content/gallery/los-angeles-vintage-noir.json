@@ -1,0 +1,19 @@
+{
+  "slug": "los-angeles-vintage-noir",
+  "status": "approved",
+  "title": "Los Angeles, After Dark Room",
+  "subtitle": "Los Angeles · Vintage Noir · Flat",
+  "city": "los-angeles",
+  "style": "vintage-noir",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/los-angeles-vintage-noir.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAwCdASoMABEAPu1iqU2ppaQiMAgBMB2JZwC3uCHw4rQ+zuivAAD+7VksgfYnrl/dc4ZQMdAS9Ox4PcwVtXJLdxO+6m5j98qqOQ4uReTP1gAA"
+  },
+  "description": "Freeways loop around downtown in heavy black strokes, the street grid fading to grey toward the hills. A city usually shown in colour reads like a film still.",
+  "alt": "Vintage Noir city map poster of Los Angeles, United States, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "tokyo-copper-patina",
+  "status": "draft",
+  "title": "Tokyo in Copper Patina",
+  "subtitle": "Tokyo · Copper Patina · Flat",
+  "city": "tokyo",
+  "style": "copper-patina",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/tokyo-copper-patina.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAgCdASoMABEAPu1iqk4ppaQiMAgBMB2JZwDE2DBsAAD+70JDKbuLE4lM6R78uEiX5z/CigoAAA=="
+  },
+  "description": "Tokyo, Japan, drawn in the Copper Patina palette from MapVibe Studio. Copper main roads over pale verdigris, like an old rooftop.",
+  "alt": "Copper Patina city map poster of Tokyo, Japan, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

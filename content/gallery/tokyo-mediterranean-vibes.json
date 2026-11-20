@@ -1,0 +1,20 @@
+{
+  "slug": "tokyo-mediterranean-vibes",
+  "status": "draft",
+  "title": "Tokyo in Mediterranean Vibes",
+  "subtitle": "Tokyo · Mediterranean Vibes · Flat",
+  "city": "tokyo",
+  "style": "mediterranean-vibes",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/tokyo-mediterranean-vibes.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAgCdASoMABEAPu1kqk4ppaQiMAgBMB2JZwAAeyAA/u7w9Opcx6CPPURu/55vrkckSJfnP+aWYAAA"
+  },
+  "description": "Tokyo, Japan, drawn in the Mediterranean Vibes palette from MapVibe Studio. Cream and Aegean navy, bright and coastal.",
+  "alt": "Mediterranean Vibes city map poster of Tokyo, Japan, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "copenhagen-terracotta",
+  "status": "draft",
+  "title": "Copenhagen in Terracotta",
+  "subtitle": "Copenhagen · Terracotta · Flat",
+  "city": "copenhagen",
+  "style": "terracotta",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/copenhagen-terracotta.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAABQAwCdASoMABEAPu1iqU2ppaQiMAgBMB2JZwCzgCHfTSlyAAD+7UhSc0T8CF1HYZGO1GG550/mdJ8nzSFtdQkPt1z48AAA"
+  },
+  "description": "Copenhagen, Denmark, drawn in the Terracotta palette from MapVibe Studio. Clay and sand, the colours of Mediterranean rooftops.",
+  "alt": "Terracotta city map poster of Copenhagen, Denmark, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

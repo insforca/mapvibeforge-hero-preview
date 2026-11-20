@@ -1,0 +1,20 @@
+{
+  "slug": "amalfi-japanese-ink",
+  "status": "draft",
+  "title": "Amalfi in Japanese Ink",
+  "subtitle": "Amalfi · Japanese Ink · Flat",
+  "city": "amalfi",
+  "style": "japanese-ink",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/amalfi-japanese-ink.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADwAgCdASoMABEAPu1orU2ppqSiMAgBMB2JZwDA3DKUAAD+79NA7BYyM/E73tNCxUuoAA=="
+  },
+  "description": "Amalfi, Italy, drawn in the Japanese Ink palette from MapVibe Studio. Ink greys on paper with a single vermilion accent on the main roads.",
+  "alt": "Japanese Ink city map poster of Amalfi, Italy, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: almost all sea, very few streets. Re-export closer in."
+}

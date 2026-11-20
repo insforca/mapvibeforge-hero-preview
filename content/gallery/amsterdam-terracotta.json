@@ -1,0 +1,20 @@
+{
+  "slug": "amsterdam-terracotta",
+  "status": "draft",
+  "title": "Amsterdam in Terracotta",
+  "subtitle": "Amsterdam · Terracotta · Flat",
+  "city": "amsterdam",
+  "style": "terracotta",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/amsterdam-terracotta.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAgCdASoMABEAPu1iqU2ppaQiMAgBMB2JZwC+SC0kAAD+7u3tOuMziSCbXlcUMSh8GNHWn/qjWhP6sKQsGZs3MUTzQAAA"
+  },
+  "description": "Amsterdam, Netherlands, drawn in the Terracotta palette from MapVibe Studio. Clay and sand, the colours of Mediterranean rooftops.",
+  "alt": "Terracotta city map poster of Amsterdam, Netherlands, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

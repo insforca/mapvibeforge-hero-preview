@@ -1,0 +1,19 @@
+{
+  "slug": "london-vintage-noir",
+  "status": "approved",
+  "title": "London, Silver Gelatin",
+  "subtitle": "London · Vintage Noir · Flat",
+  "city": "london",
+  "style": "vintage-noir",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/london-vintage-noir.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAABQAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JZ2M+VdaV7J0oAAD+7yCm8WM3OOdXQg4t2vnFIakSSAAA"
+  },
+  "description": "A dense, unplanned web of streets in graded blacks, the river a soft grey band through the middle. Monochrome shows how London grew from villages rather than a plan.",
+  "alt": "Vintage Noir city map poster of London, United Kingdom, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

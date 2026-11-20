@@ -1,0 +1,19 @@
+{
+  "slug": "amsterdam-copper-patina",
+  "status": "approved",
+  "title": "Amsterdam Verdigris",
+  "subtitle": "Amsterdam · Copper Patina · Flat",
+  "city": "amsterdam",
+  "style": "copper-patina",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/amsterdam-copper-patina.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAgCdASoMABEAPu1kqU4ppaOiMAgBMB2JZ2c1ADtSAAD+70H3mOqpJb3NX3Gzp/PE9nN/SvKyTDyAAAA="
+  },
+  "description": "Copper lines on pale verdigris, with the canal ring in soft green-grey. The palette of old roofs and gables, laid flat.",
+  "alt": "Copper Patina city map poster of Amsterdam, Netherlands, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

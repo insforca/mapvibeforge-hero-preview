@@ -1,0 +1,20 @@
+{
+  "slug": "amalfi-warm-beige",
+  "status": "draft",
+  "title": "Amalfi in Warm Beige",
+  "subtitle": "Amalfi · Warm Beige · Flat",
+  "city": "amalfi",
+  "style": "warm-beige",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/amalfi-warm-beige.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAAAQAwCdASoMABEAPu1mqk2ppaQiMAgBMB2JZWkfU0ATmgAA/u7IPNoiM70yEkiEoF/qaASzuylaSBqAAAA="
+  },
+  "description": "Amalfi, Italy, drawn in the Warm Beige palette from MapVibe Studio. Sand and ivory tones for warm, neutral interiors.",
+  "alt": "Warm Beige city map poster of Amalfi, Italy, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: almost all sea, very few streets. Re-export closer in."
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "berlin-vintage-noir",
+  "status": "approved",
+  "title": "Berlin, Graphite",
+  "subtitle": "Berlin · Vintage Noir · Flat",
+  "city": "berlin",
+  "style": "vintage-noir",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/berlin-vintage-noir.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAAAQAwCdASoMABEAPu1kqU2ppaOiMAgBMB2JZ2UFVdaV8gAA/u9vZvkBm3wTmU8z+CgBK9VrO8P/+dYAAAA="
+  },
+  "description": "Rings and radials of the old and new city drawn in graphite tones, with the Tiergarten as a quiet pale field. Restrained enough for a study, structured enough for an architect's wall.",
+  "alt": "Vintage Noir city map poster of Berlin, Germany, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

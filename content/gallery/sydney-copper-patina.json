@@ -1,0 +1,20 @@
+{
+  "slug": "sydney-copper-patina",
+  "status": "draft",
+  "title": "Sydney in Copper Patina",
+  "subtitle": "Sydney · Copper Patina · Flat",
+  "city": "sydney",
+  "style": "copper-patina",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/sydney-copper-patina.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAgCdASoMABEAPu1kqk4ppaQiMAgBMB2JZwC/OC1yAAD+72/WQ+k4krhrcX281XcOnkZCNjhAAA=="
+  },
+  "description": "Sydney, Australia, drawn in the Copper Patina palette from MapVibe Studio. Copper main roads over pale verdigris, like an old rooftop.",
+  "alt": "Copper Patina city map poster of Sydney, Australia, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

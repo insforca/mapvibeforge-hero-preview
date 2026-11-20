@@ -1,7 +1,7 @@
 {
   "slug": "lisbon-blueprint",
-  "status": "draft",
-  "title": "Lisbon in Blueprint",
+  "status": "approved",
+  "title": "Lisbon, Tagus Blue",
   "subtitle": "Lisbon · Blueprint · Flat",
   "city": "lisbon",
   "style": "blueprint",
@@ -13,8 +13,7 @@
     "height": 1413,
     "blurDataURL": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADQAwCdASoMABEAPu1iqU2ppaQiMAgBMB2JQAAMNMhs/Maamf6FOAQA/u1ZGt5EQ+mobAC4v4u0ctqC0FdBE3oeQmc69nqalhydk8w9U4+82/vYKu6Q8rcfCc4n2kmIbcW+WiHSczIyEKYAAAA="
   },
-  "description": "Lisbon, Portugal, drawn in the Blueprint palette from MapVibe Studio. Deep navy water and pale blue streets, crisp as a technical drawing.",
+  "description": "The Tagus estuary spreads in dark navy below a city of pale blue avenues climbing north from the river. The 25 de Abril bridge crosses the water like a ruled line.",
   "alt": "Blueprint city map poster of Lisbon, Portugal, with the city name and coordinates at the foot of the print",
-  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
-  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
 }

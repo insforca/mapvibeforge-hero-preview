@@ -1,0 +1,19 @@
+{
+  "slug": "sydney-capri-shores",
+  "status": "approved",
+  "title": "Sydney, Cobalt Coves",
+  "subtitle": "Sydney · Capri Shores · Flat",
+  "city": "sydney",
+  "style": "capri-shores",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/sydney-capri-shores.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAABQAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JZ2R5U0ATiWjEAAD+70mkSljcx5kwrAm5MP+Sh7/Zw8Re4AA="
+  },
+  "description": "Bright cobalt streets wrap around the coves and bays of the harbour, the water a soft sea blue. Sunlit and coastal.",
+  "alt": "Capri Shores city map poster of Sydney, Australia, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

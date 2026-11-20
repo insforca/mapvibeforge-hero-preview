@@ -1,0 +1,20 @@
+{
+  "slug": "rome-japanese-ink",
+  "status": "draft",
+  "title": "Rome in Japanese Ink",
+  "subtitle": "Rome · Japanese Ink · Flat",
+  "city": "rome",
+  "style": "japanese-ink",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/rome-japanese-ink.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAgCdASoMABEAPu1iqU2ppaOiMAgBMB2JZwDA3DKUAAD+77BAtWsgyfXmAt7OcDqDfWzSxaAAAA=="
+  },
+  "description": "Rome, Italy, drawn in the Japanese Ink palette from MapVibe Studio. Ink greys on paper with a single vermilion accent on the main roads.",
+  "alt": "Japanese Ink city map poster of Rome, Italy, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

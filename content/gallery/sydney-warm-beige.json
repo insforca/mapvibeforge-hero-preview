@@ -1,0 +1,20 @@
+{
+  "slug": "sydney-warm-beige",
+  "status": "draft",
+  "title": "Sydney in Warm Beige",
+  "subtitle": "Sydney · Warm Beige · Flat",
+  "city": "sydney",
+  "style": "warm-beige",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/sydney-warm-beige.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAABQAwCdASoMABEAPu1iqk4ppaQiMAgBMB2JZ2R5S0eTiWl2gAD+70mkSljcx5kws6Df74tHX+EGw8RAAAA="
+  },
+  "description": "Sydney, Australia, drawn in the Warm Beige palette from MapVibe Studio. Sand and ivory tones for warm, neutral interiors.",
+  "alt": "Warm Beige city map poster of Sydney, Australia, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

@@ -1,7 +1,7 @@
 {
   "slug": "new-york-vintage-noir",
-  "status": "draft",
-  "title": "New York in Vintage Noir",
+  "status": "approved",
+  "title": "Manhattan, Silver Print",
   "subtitle": "New York · Vintage Noir · Flat",
   "city": "new-york",
   "style": "vintage-noir",
@@ -13,8 +13,7 @@
     "height": 1413,
     "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAABwAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JZwAAUvyOXFDnbIAA/u1hdWpyaV9NdnYo67Vhk/a96o9FS1KeqxLsIed1A4AA"
   },
-  "description": "New York, United States, drawn in the Vintage Noir palette from MapVibe Studio. Black streets on warm silver-gelatin white: the city in classic monochrome.",
+  "description": "The grid of Manhattan in graded blacks on warm darkroom white, Central Park a pale void at its heart. Broadway cuts the only diagonal, exactly as it does on the ground.",
   "alt": "Vintage Noir city map poster of New York, United States, with the city name and coordinates at the foot of the print",
-  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
-  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
 }

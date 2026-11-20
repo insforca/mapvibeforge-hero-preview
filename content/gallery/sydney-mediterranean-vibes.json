@@ -1,0 +1,19 @@
+{
+  "slug": "sydney-mediterranean-vibes",
+  "status": "approved",
+  "title": "Sydney, Salt and Navy",
+  "subtitle": "Sydney · Mediterranean Vibes · Flat",
+  "city": "sydney",
+  "style": "mediterranean-vibes",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/sydney-mediterranean-vibes.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAQAwCdASoMABEAPu1iqk2ppaQiMAgBMB2JZ2HgU0ATmgAA/u73hK7YoNnZXiVau/FMRTfbSFte1uwfgM1ERyAZuI78RgAA"
+  },
+  "description": "The harbour coves in soft blue, the streets in navy over cream. A coastal palette for a city defined by its water.",
+  "alt": "Mediterranean Vibes city map poster of Sydney, Australia, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

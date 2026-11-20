@@ -1,0 +1,20 @@
+{
+  "slug": "copenhagen-mediterranean-vibes",
+  "status": "draft",
+  "title": "Copenhagen in Mediterranean Vibes",
+  "subtitle": "Copenhagen · Mediterranean Vibes · Flat",
+  "city": "copenhagen",
+  "style": "mediterranean-vibes",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/copenhagen-mediterranean-vibes.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAABQAwCdASoMABEAPu1iqk4ppaQiMAgBMB2JZwC/7CHe1j1sAAD+7Vih37xAFLbseXh2AAucTtJ3W579LDLWupoVwuUAAA=="
+  },
+  "description": "Copenhagen, Denmark, drawn in the Mediterranean Vibes palette from MapVibe Studio. Cream and Aegean navy, bright and coastal.",
+  "alt": "Mediterranean Vibes city map poster of Copenhagen, Denmark, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

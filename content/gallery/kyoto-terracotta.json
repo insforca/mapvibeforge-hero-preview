@@ -1,0 +1,20 @@
+{
+  "slug": "kyoto-terracotta",
+  "status": "draft",
+  "title": "Kyoto in Terracotta",
+  "subtitle": "Kyoto · Terracotta · Flat",
+  "city": "kyoto",
+  "style": "terracotta",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/kyoto-terracotta.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAgCdASoMABEAPu1mq04ppaQiMAgBMB2JZwC+SDKUAAD+79e07ynZBvrdGLcm9LOyumAA"
+  },
+  "description": "Kyoto, Japan, drawn in the Terracotta palette from MapVibe Studio. Clay and sand, the colours of Mediterranean rooftops.",
+  "alt": "Terracotta city map poster of Kyoto, Japan, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

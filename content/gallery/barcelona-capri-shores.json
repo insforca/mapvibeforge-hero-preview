@@ -1,0 +1,19 @@
+{
+  "slug": "barcelona-capri-shores",
+  "status": "approved",
+  "title": "Barcelona Cobalt",
+  "subtitle": "Barcelona · Capri Shores · Flat",
+  "city": "barcelona",
+  "style": "capri-shores",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/barcelona-capri-shores.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAABQAwCdASoMABEAPu1iqk4ppaQiMAgBMB2JQBlABDwpfWDJkAD+60/4krXc9Xo5+hLzmAoACUAEoAJQASmuPAAA"
+  },
+  "description": "Cobalt streets on warm cream, the Mediterranean in pale sea blue. The colours of painted shutters and harbour light.",
+  "alt": "Capri Shores city map poster of Barcelona, Spain, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

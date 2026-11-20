@@ -1,0 +1,20 @@
+{
+  "slug": "berlin-old-navy",
+  "status": "draft",
+  "title": "Berlin in Old Navy",
+  "subtitle": "Berlin · Old Navy · Flat",
+  "city": "berlin",
+  "style": "old-navy",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/berlin-old-navy.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACQAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JZwDE2CK4Vd/k60EAAP7iAj9tL/XHK2RyYBN4Q8jscEkkC260r7YQ7fqcQyYqohdjI2n8AAA="
+  },
+  "description": "Berlin, Germany, drawn in the Old Navy palette from MapVibe Studio. Navy water and gold streets, formal and nautical.",
+  "alt": "Old Navy city map poster of Berlin, Germany, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

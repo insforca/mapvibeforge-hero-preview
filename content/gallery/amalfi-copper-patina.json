@@ -1,0 +1,20 @@
+{
+  "slug": "amalfi-copper-patina",
+  "status": "draft",
+  "title": "Amalfi in Copper Patina",
+  "subtitle": "Amalfi · Copper Patina · Flat",
+  "city": "amalfi",
+  "style": "copper-patina",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/amalfi-copper-patina.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAABQAwCdASoMABEAPu1orU2ppqSiMAgBMB2JYwC/OCHfx+xKuAD+6mYuq4muzQDC/lZKzrKnvdT5FAAA"
+  },
+  "description": "Amalfi, Italy, drawn in the Copper Patina palette from MapVibe Studio. Copper main roads over pale verdigris, like an old rooftop.",
+  "alt": "Copper Patina city map poster of Amalfi, Italy, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: almost all sea, very few streets. Re-export closer in."
+}

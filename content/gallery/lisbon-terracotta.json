@@ -1,0 +1,19 @@
+{
+  "slug": "lisbon-terracotta",
+  "status": "approved",
+  "title": "Lisbon Rooftops",
+  "subtitle": "Lisbon · Terracotta · Flat",
+  "city": "lisbon",
+  "style": "terracotta",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/lisbon-terracotta.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAABQAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JQBadBDvjCYeCAAD+7UHY0ju8f5bh8SG9wskjbu5+LJM962XuS061szQAAA=="
+  },
+  "description": "Clay-red avenues on a sand ground, with the Tagus in a soft sea green. The colours of the city's tiled roofs, carried into the map.",
+  "alt": "Terracotta city map poster of Lisbon, Portugal, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

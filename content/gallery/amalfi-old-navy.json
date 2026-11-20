@@ -1,0 +1,20 @@
+{
+  "slug": "amalfi-old-navy",
+  "status": "draft",
+  "title": "Amalfi in Old Navy",
+  "subtitle": "Amalfi · Old Navy · Flat",
+  "city": "amalfi",
+  "style": "old-navy",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/amalfi-old-navy.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAABQAwCdASoMABEAPu1mqk2ppaQiMAgBMB2JQBYdhDiW/7B3gAD+69jCWj97X4665LenSHxcgnpsN8PfrSIQf8XTaL62bm17xgA="
+  },
+  "description": "Amalfi, Italy, drawn in the Old Navy palette from MapVibe Studio. Navy water and gold streets, formal and nautical.",
+  "alt": "Old Navy city map poster of Amalfi, Italy, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: almost all sea, very few streets. Re-export closer in."
+}

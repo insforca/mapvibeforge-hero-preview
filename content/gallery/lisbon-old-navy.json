@@ -1,0 +1,20 @@
+{
+  "slug": "lisbon-old-navy",
+  "status": "draft",
+  "title": "Lisbon in Old Navy",
+  "subtitle": "Lisbon · Old Navy · Flat",
+  "city": "lisbon",
+  "style": "old-navy",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/lisbon-old-navy.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADQAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JYgAASp6Vq5plwt+D0/gA/uqHZt9/xXhwiPUdI7jeFa103qd3mYqhxibMuJkzHoymUkx0ZfPDnebf3sEYIvxFKjqlAgds9VgY7i3y0R9r8BniUxpoAA=="
+  },
+  "description": "Lisbon, Portugal, drawn in the Old Navy palette from MapVibe Studio. Navy water and gold streets, formal and nautical.",
+  "alt": "Old Navy city map poster of Lisbon, Portugal, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

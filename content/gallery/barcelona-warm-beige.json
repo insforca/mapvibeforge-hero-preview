@@ -1,0 +1,19 @@
+{
+  "slug": "barcelona-warm-beige",
+  "status": "approved",
+  "title": "Barcelona, Sand",
+  "subtitle": "Barcelona · Warm Beige · Flat",
+  "city": "barcelona",
+  "style": "warm-beige",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/barcelona-warm-beige.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADQAwCdASoMABEAPu1kqk4ppaQiMAgBMB2JZwDE2CHfjZTPUb+AFvAA/u1CHOeK57ubNYiEAbp5xY+ciHfEAAAA"
+  },
+  "description": "The Eixample grid, the old town and the waterfront in sand and soft brown. Cerdà's planned blocks look almost woven at this scale.",
+  "alt": "Warm Beige city map poster of Barcelona, Spain, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

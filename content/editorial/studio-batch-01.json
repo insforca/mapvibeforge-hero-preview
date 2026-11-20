@@ -1,0 +1,194 @@
+{
+  "new-york-vintage-noir": [
+    "Manhattan, Silver Print",
+    "The grid of Manhattan in graded blacks on warm darkroom white, Central Park a pale void at its heart. Broadway cuts the only diagonal, exactly as it does on the ground."
+  ],
+  "paris-vintage-noir": [
+    "Paris in Black and White",
+    "Haussmann's boulevards radiate from the Étoile in confident black lines while the Seine bends through the centre in soft grey. Monochrome suits a city that already looks like a photograph."
+  ],
+  "los-angeles-vintage-noir": [
+    "Los Angeles, After Dark Room",
+    "Freeways loop around downtown in heavy black strokes, the street grid fading to grey toward the hills. A city usually shown in colour reads like a film still."
+  ],
+  "berlin-vintage-noir": [
+    "Berlin, Graphite",
+    "Rings and radials of the old and new city drawn in graphite tones, with the Tiergarten as a quiet pale field. Restrained enough for a study, structured enough for an architect's wall."
+  ],
+  "kyoto-japanese-ink": [
+    "Kyoto Ink Grid",
+    "The ancient chessboard of Kyoto's streets, laid out in the eighth century, drawn in ink greys with the main avenues picked out in vermilion. The mountains close the plan to the north and east."
+  ],
+  "los-angeles-japanese-ink": [
+    "Los Angeles in Sumi",
+    "A sprawling city reduced to fine grey lines, with only the great boulevards and freeways marked in red. The calm palette makes the scale of the grid feel almost meditative."
+  ],
+  "paris-japanese-ink": [
+    "Paris, Ink and Paper",
+    "The Seine and the périphérique frame a web of grey streets, with a single vermilion line tracing the main routes. A quieter Paris, closer to a sketchbook than a postcard."
+  ],
+  "amsterdam-japanese-ink": [
+    "Amsterdam, Brushed",
+    "The concentric canal belt rendered in soft ink greys, the IJ a pale band along the north. The red main roads read like a seal stamped on the page."
+  ],
+  "amsterdam-blueprint": [
+    "Amsterdam Waterworks",
+    "Deep navy fills the IJ, the harbour basins and every canal of the ring, so the water becomes the drawing. Pale blue streets trace the city that was built around it."
+  ],
+  "lisbon-blueprint": [
+    "Lisbon, Tagus Blue",
+    "The Tagus estuary spreads in dark navy below a city of pale blue avenues climbing north from the river. The 25 de Abril bridge crosses the water like a ruled line."
+  ],
+  "sydney-blueprint": [
+    "Sydney Harbour Plan",
+    "The drowned valleys of Port Jackson cut into the land in deep navy, every cove and headland sharply defined. Streets in pale blue fill the peninsulas between them."
+  ],
+  "copenhagen-blueprint": [
+    "Copenhagen, Harbour Blue",
+    "The harbour, canals and the Øresund edge drawn in navy, with the old city and Amager in pale blue lines. A plan for anyone who measures a city by its waterfront."
+  ],
+  "rome-warm-beige": [
+    "Rome in Travertine",
+    "Sand and ivory tones for the city of travertine, with the Tiber winding through in soft brown. The palette disappears into a warm room and lets the old street pattern speak."
+  ],
+  "paris-warm-beige": [
+    "Paris, Linen",
+    "Brown lines on a sand ground, the Seine and the Bois in muted tones. Paris without the drama, made for a calm, neutral interior."
+  ],
+  "barcelona-warm-beige": [
+    "Barcelona, Sand",
+    "The Eixample grid, the old town and the waterfront in sand and soft brown. Cerdà's planned blocks look almost woven at this scale."
+  ],
+  "berlin-warm-beige": [
+    "Berlin, Linen Weave",
+    "Berlin's broad ring roads in warm brown over ivory, the Spree and the Tiergarten in muted sand. A gentle take on a city usually shown in steel and concrete."
+  ],
+  "lisbon-terracotta": [
+    "Lisbon Rooftops",
+    "Clay-red avenues on a sand ground, with the Tagus in a soft sea green. The colours of the city's tiled roofs, carried into the map."
+  ],
+  "barcelona-terracotta": [
+    "Barcelona Terracotta",
+    "The diagonal of the Diagonal and the regular blocks of the Eixample in clay red, running down to a pale sea. Warm, Mediterranean and unmistakably Barcelona."
+  ],
+  "rome-terracotta": [
+    "Rome, Burnt Sienna",
+    "Streets in the reds and ochres of Roman plaster, the Tiber a pale thread through the centre. A map that belongs next to old wood and linen."
+  ],
+  "los-angeles-terracotta": [
+    "Los Angeles, Adobe",
+    "Freeways and boulevards in clay red on sand, echoing the city's Spanish Revival roofs. The grid stretches out like warm desert tile."
+  ],
+  "amsterdam-copper-patina": [
+    "Amsterdam Verdigris",
+    "Copper lines on pale verdigris, with the canal ring in soft green-grey. The palette of old roofs and gables, laid flat."
+  ],
+  "copenhagen-copper-patina": [
+    "Copenhagen Green Copper",
+    "The city of green copper spires in its own colours: copper main roads, verdigris water, a pale patina ground. It reads like an aged instrument."
+  ],
+  "berlin-copper-patina": [
+    "Berlin, Patina",
+    "The radial roads of Berlin in copper over cool green-grey. A heritage palette that softens a famously hard-edged city."
+  ],
+  "kyoto-copper-patina": [
+    "Kyoto, Bronze Roofs",
+    "Kyoto's grid in copper and verdigris, the colours of temple roofs and old bronze. The rivers run as pale green lines down the length of the city."
+  ],
+  "barcelona-mediterranean-vibes": [
+    "Barcelona, Aegean Ink",
+    "Aegean navy streets over cream, the sea a clear pale blue along the coast. Bright and crisp, made for white walls and strong light."
+  ],
+  "lisbon-mediterranean-vibes": [
+    "Lisbon Light",
+    "Navy avenues on a cream ground and a pale blue Tagus, as clean as Lisbon light in summer. The city's hills show in how the streets bend to climb them."
+  ],
+  "sydney-mediterranean-vibes": [
+    "Sydney, Salt and Navy",
+    "The harbour coves in soft blue, the streets in navy over cream. A coastal palette for a city defined by its water."
+  ],
+  "rome-mediterranean-vibes": [
+    "Rome, Summer Blue",
+    "Rome drawn in Aegean navy on cream, with the Tiber in pale blue. An unexpected, fresh palette for the oldest street pattern in the library."
+  ],
+  "barcelona-capri-shores": [
+    "Barcelona Cobalt",
+    "Cobalt streets on warm cream, the Mediterranean in pale sea blue. The colours of painted shutters and harbour light."
+  ],
+  "sydney-capri-shores": [
+    "Sydney, Cobalt Coves",
+    "Bright cobalt streets wrap around the coves and bays of the harbour, the water a soft sea blue. Sunlit and coastal."
+  ],
+  "los-angeles-capri-shores": [
+    "Los Angeles, Pacific Cobalt",
+    "The great grid of Los Angeles in cobalt on cream, freeways weaving through it. Bright, open and made for a sunlit room."
+  ],
+  "new-york-capri-shores": [
+    "New York, Harbour Blue",
+    "Manhattan's grid in cobalt with the Hudson and East River in pale blue. A lighter, summer version of a city usually drawn in black."
+  ],
+  "new-york-old-navy": [
+    "Manhattan, Navy and Gold",
+    "Deep navy rivers close in on a Manhattan picked out in gold. Formal and nautical, the city as an island first."
+  ],
+  "copenhagen-old-navy": [
+    "Copenhagen, Admiralty",
+    "The harbour and the Øresund in deep navy, streets traced in gold. A map with the gravity of an old naval chart."
+  ],
+  "amsterdam-old-navy": [
+    "Amsterdam, Gilded Canals",
+    "Navy canals and harbour basins with every street in gold. The Golden Age city, drawn in its own colours."
+  ],
+  "sydney-old-navy": [
+    "Sydney, Gold Coast Lines",
+    "Port Jackson in deep navy, its shores and streets drawn in gold. Quietly luxurious, at home in a study or library."
+  ],
+  "copenhagen-sage": [
+    "Copenhagen, Sage",
+    "Soft green streets over a misty ground, the harbour in pale grey-green. Calm, botanical and very Scandinavian."
+  ],
+  "kyoto-sage": [
+    "Kyoto Garden Plan",
+    "The grid of Kyoto in moss and sage, as quiet as a temple garden. The rivers run as soft green-grey lines through the city."
+  ],
+  "amsterdam-sage": [
+    "Amsterdam, Moss",
+    "The canal ring in sage tones with the IJ a misty band to the north. A soft, natural palette for plants, linen and daylight."
+  ],
+  "berlin-sage": [
+    "Berlin, Linden Green",
+    "Berlin's rings and avenues in soft green, the Tiergarten and the Spree barely tinted. Named for the lime trees that line its most famous street."
+  ],
+  "london-old-navy": [
+    "London, Navy and Gold",
+    "The Thames sweeps through the centre in deep navy, from Westminster to the Isle of Dogs, while every street is traced in gold. Formal and nautical, a London for the study wall."
+  ],
+  "london-vintage-noir": [
+    "London, Silver Gelatin",
+    "A dense, unplanned web of streets in graded blacks, the river a soft grey band through the middle. Monochrome shows how London grew from villages rather than a plan."
+  ],
+  "london-blueprint": [
+    "London, Thames Blue",
+    "The Thames in deep navy, its every bend from Battersea to Greenwich sharply drawn, with the streets in pale technical blue. A map for engineers and river walkers."
+  ],
+  "london-warm-beige": [
+    "London, Parchment",
+    "Brown streets on a sand ground, the Royal Parks and the river in muted tones. A gentle, neutral London for a calm room."
+  ],
+  "tokyo-japanese-ink": [
+    "Tokyo Ink",
+    "Central Tokyo in ink greys around the moat of the Imperial Palace, with the main roads in vermilion. Dense and orderly, like a page of calligraphy."
+  ],
+  "tokyo-vintage-noir": [
+    "Tokyo, Black and White",
+    "The Imperial Palace grounds sit as a pale void at the centre while rail lines and expressways converge on Tokyo Station. A city of overlapping networks, drawn in silver tones."
+  ],
+  "tokyo-sage": [
+    "Tokyo Garden",
+    "Soft greens for central Tokyo, the palace gardens and the bay barely tinted. A calm reading of one of the busiest cities on earth."
+  ],
+  "tokyo-terracotta": [
+    "Tokyo, Fired Clay",
+    "Clay-red roads run out from the palace across central Tokyo toward the bay. Warm and earthy, like glazed ceramics."
+  ]
+}

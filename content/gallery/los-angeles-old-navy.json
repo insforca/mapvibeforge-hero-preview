@@ -1,0 +1,20 @@
+{
+  "slug": "los-angeles-old-navy",
+  "status": "draft",
+  "title": "Los Angeles in Old Navy",
+  "subtitle": "Los Angeles · Old Navy · Flat",
+  "city": "los-angeles",
+  "style": "old-navy",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/los-angeles-old-navy.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACwAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JZQC/OBtga5XXHWUxwAD+6y58O9ZhSO6+wn3BJM52f8CgQT3XaqrV/7b5r3u2B8gxKzLhVPu/AAEaO0Uh4MpqAAA="
+  },
+  "description": "Los Angeles, United States, drawn in the Old Navy palette from MapVibe Studio. Navy water and gold streets, formal and nautical.",
+  "alt": "Old Navy city map poster of Los Angeles, United States, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

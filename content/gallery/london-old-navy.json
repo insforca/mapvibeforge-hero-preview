@@ -1,0 +1,19 @@
+{
+  "slug": "london-old-navy",
+  "status": "approved",
+  "title": "London, Navy and Gold",
+  "subtitle": "London · Old Navy · Flat",
+  "city": "london",
+  "style": "old-navy",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/london-old-navy.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAABQAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JZwC/OCHfjkbLIAD+7VcN3zWsBYozDUaKjYSRKuGPG2sJT+QruzvlB9IPUE4VAWIAAA=="
+  },
+  "description": "The Thames sweeps through the centre in deep navy, from Westminster to the Isle of Dogs, while every street is traced in gold. Formal and nautical, a London for the study wall.",
+  "alt": "Old Navy city map poster of London, United Kingdom, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

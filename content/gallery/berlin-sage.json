@@ -1,0 +1,19 @@
+{
+  "slug": "berlin-sage",
+  "status": "approved",
+  "title": "Berlin, Linden Green",
+  "subtitle": "Berlin · Sage · Flat",
+  "city": "berlin",
+  "style": "sage",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/berlin-sage.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAwAwCdASoMABEAPu1kqU2ppaOiMAgBMB2JZwC3uCz+WgoAAP7vk1zLbax6zO9n1LgvTvQAAAA="
+  },
+  "description": "Berlin's rings and avenues in soft green, the Tiergarten and the Spree barely tinted. Named for the lime trees that line its most famous street.",
+  "alt": "Sage city map poster of Berlin, Germany, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

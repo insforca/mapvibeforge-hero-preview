@@ -1,0 +1,20 @@
+{
+  "slug": "barcelona-old-navy",
+  "status": "draft",
+  "title": "Barcelona in Old Navy",
+  "subtitle": "Barcelona · Old Navy · Flat",
+  "city": "barcelona",
+  "style": "old-navy",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/barcelona-old-navy.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAwCdASoMABEAPu1iqU2ppaQiMAgBMB2JYgAAYf/f+Ug1f++TayrgAM4/pCBDuMMos3s5fxD9qQLZhi5UBXOnMq9fqxPunTpZ7n653AWBUKvagAA="
+  },
+  "description": "Barcelona, Spain, drawn in the Old Navy palette from MapVibe Studio. Navy water and gold streets, formal and nautical.",
+  "alt": "Old Navy city map poster of Barcelona, Spain, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

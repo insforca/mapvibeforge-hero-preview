@@ -1,0 +1,19 @@
+{
+  "slug": "amsterdam-japanese-ink",
+  "status": "approved",
+  "title": "Amsterdam, Brushed",
+  "subtitle": "Amsterdam · Japanese Ink · Flat",
+  "city": "amsterdam",
+  "style": "japanese-ink",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/amsterdam-japanese-ink.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAQAwCdASoMABEAPu1iqk2ppaQiMAgBMB2JZ2llVR0V8gAA/u9ovPjlh0xdhl66H7EA//2wplXoXn1GH3kAAA=="
+  },
+  "description": "The concentric canal belt rendered in soft ink greys, the IJ a pale band along the north. The red main roads read like a seal stamped on the page.",
+  "alt": "Japanese Ink city map poster of Amsterdam, Netherlands, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

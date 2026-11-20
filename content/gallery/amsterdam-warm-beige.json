@@ -1,0 +1,20 @@
+{
+  "slug": "amsterdam-warm-beige",
+  "status": "draft",
+  "title": "Amsterdam in Warm Beige",
+  "subtitle": "Amsterdam · Warm Beige · Flat",
+  "city": "amsterdam",
+  "style": "warm-beige",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/amsterdam-warm-beige.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAQAwCdASoMABEAPu1iqk4ppaQiMAgBMB2JZ2ZAV5kV8gAA/u9CUnWiU8mFT/N1jXvfUgPr9WCzR0Lr1DFwAA=="
+  },
+  "description": "Amsterdam, Netherlands, drawn in the Warm Beige palette from MapVibe Studio. Sand and ivory tones for warm, neutral interiors.",
+  "alt": "Warm Beige city map poster of Amsterdam, Netherlands, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

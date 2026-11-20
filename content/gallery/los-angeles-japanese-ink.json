@@ -1,0 +1,19 @@
+{
+  "slug": "los-angeles-japanese-ink",
+  "status": "approved",
+  "title": "Los Angeles in Sumi",
+  "subtitle": "Los Angeles · Japanese Ink · Flat",
+  "city": "los-angeles",
+  "style": "japanese-ink",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/los-angeles-japanese-ink.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JZwCo9CHfL5+yYFqdAAD+7Vko+SfI4bgzCp6L5xrQoDMKGz+5ZPZtdS5jnXk+AAA="
+  },
+  "description": "A sprawling city reduced to fine grey lines, with only the great boulevards and freeways marked in red. The calm palette makes the scale of the grid feel almost meditative.",
+  "alt": "Japanese Ink city map poster of Los Angeles, United States, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

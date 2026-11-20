@@ -1,0 +1,19 @@
+{
+  "slug": "barcelona-terracotta",
+  "status": "approved",
+  "title": "Barcelona Terracotta",
+  "subtitle": "Barcelona · Terracotta · Flat",
+  "city": "barcelona",
+  "style": "terracotta",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/barcelona-terracotta.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACwAwCdASoMABEAPu1iqk2ppaQiMAgBMB2JYwAAW+kIeTDt5rzaYgD+6oQLwHaBBAEPgsgWR0d7P3idSUOmx580AAA="
+  },
+  "description": "The diagonal of the Diagonal and the regular blocks of the Eixample in clay red, running down to a pale sea. Warm, Mediterranean and unmistakably Barcelona.",
+  "alt": "Terracotta city map poster of Barcelona, Spain, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

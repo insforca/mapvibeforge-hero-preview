@@ -1,0 +1,20 @@
+{
+  "slug": "tokyo-old-navy",
+  "status": "draft",
+  "title": "Tokyo in Old Navy",
+  "subtitle": "Tokyo · Old Navy · Flat",
+  "city": "tokyo",
+  "style": "old-navy",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/tokyo-old-navy.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAwCdASoMABEAPu1iqU2ppaQiMAgBMB2JZQAAW/EoQJDBABoEAAD+7Vl2BDfec3ib3tchJjzswH/spbFii2ovM7TcJE76d6o7l3OrErby6EBeKAA="
+  },
+  "description": "Tokyo, Japan, drawn in the Old Navy palette from MapVibe Studio. Navy water and gold streets, formal and nautical.",
+  "alt": "Old Navy city map poster of Tokyo, Japan, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

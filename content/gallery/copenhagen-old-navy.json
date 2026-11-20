@@ -1,0 +1,19 @@
+{
+  "slug": "copenhagen-old-navy",
+  "status": "approved",
+  "title": "Copenhagen, Admiralty",
+  "subtitle": "Copenhagen · Old Navy · Flat",
+  "city": "copenhagen",
+  "style": "old-navy",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/copenhagen-old-navy.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JZQCuHB9iuPzS5emaPgAA/utfViE3MO6Sd6GJOtSo+dyL3sF2DEm6bxrlC6UWBwNTO7FFvDwACIanZ4B9WV5fk7/e5pg94hHgAA=="
+  },
+  "description": "The harbour and the Øresund in deep navy, streets traced in gold. A map with the gravity of an old naval chart.",
+  "alt": "Old Navy city map poster of Copenhagen, Denmark, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

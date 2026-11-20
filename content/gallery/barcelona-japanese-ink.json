@@ -1,0 +1,20 @@
+{
+  "slug": "barcelona-japanese-ink",
+  "status": "draft",
+  "title": "Barcelona in Japanese Ink",
+  "subtitle": "Barcelona · Japanese Ink · Flat",
+  "city": "barcelona",
+  "style": "japanese-ink",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/barcelona-japanese-ink.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAAAwAwCdASoMABEAPu1iqk2ppaQiMAgBMB2JZwC+SDJZuj4AAP7vaTyr0eqro7Tjkz47RlBmJKXsAAAA"
+  },
+  "description": "Barcelona, Spain, drawn in the Japanese Ink palette from MapVibe Studio. Ink greys on paper with a single vermilion accent on the main roads.",
+  "alt": "Japanese Ink city map poster of Barcelona, Spain, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

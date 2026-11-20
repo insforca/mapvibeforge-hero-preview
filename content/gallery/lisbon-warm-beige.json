@@ -1,0 +1,20 @@
+{
+  "slug": "lisbon-warm-beige",
+  "status": "draft",
+  "title": "Lisbon in Warm Beige",
+  "subtitle": "Lisbon · Warm Beige · Flat",
+  "city": "lisbon",
+  "style": "warm-beige",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/lisbon-warm-beige.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAgCdASoMABEAPu1iqU2ppaOiMAgBMB2JZQCw7C0kAAD+7sg12h4/knnFpWu1lI8f2qvHWzcxzX4SAAA="
+  },
+  "description": "Lisbon, Portugal, drawn in the Warm Beige palette from MapVibe Studio. Sand and ivory tones for warm, neutral interiors.",
+  "alt": "Warm Beige city map poster of Lisbon, Portugal, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

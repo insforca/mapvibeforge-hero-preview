@@ -1,0 +1,20 @@
+{
+  "slug": "copenhagen-capri-shores",
+  "status": "draft",
+  "title": "Copenhagen in Capri Shores",
+  "subtitle": "Copenhagen · Capri Shores · Flat",
+  "city": "copenhagen",
+  "style": "capri-shores",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/copenhagen-capri-shores.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAABQAwCdASoMABEAPu1iqk4ppaQiMAgBMB2JZwDDNCICgl/E8AD+7UcVDM61+0JYBBAAz1nrgKeGP5zuYWAAAA=="
+  },
+  "description": "Copenhagen, Denmark, drawn in the Capri Shores palette from MapVibe Studio. Cobalt streets and pale sea blue on a warm cream ground.",
+  "alt": "Capri Shores city map poster of Copenhagen, Denmark, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

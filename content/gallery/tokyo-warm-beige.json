@@ -1,0 +1,20 @@
+{
+  "slug": "tokyo-warm-beige",
+  "status": "draft",
+  "title": "Tokyo in Warm Beige",
+  "subtitle": "Tokyo · Warm Beige · Flat",
+  "city": "tokyo",
+  "style": "warm-beige",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/tokyo-warm-beige.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAgCdASoMABEAPu1iqU2ppaQiMAgBMB2JZwCo9C1yAAD+7xn5l7ExA4lPdwGfzzqmkgVzwOibQAAA"
+  },
+  "description": "Tokyo, Japan, drawn in the Warm Beige palette from MapVibe Studio. Sand and ivory tones for warm, neutral interiors.",
+  "alt": "Warm Beige city map poster of Tokyo, Japan, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

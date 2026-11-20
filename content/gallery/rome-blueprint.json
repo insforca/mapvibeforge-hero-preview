@@ -1,0 +1,20 @@
+{
+  "slug": "rome-blueprint",
+  "status": "draft",
+  "title": "Rome in Blueprint",
+  "subtitle": "Rome · Blueprint · Flat",
+  "city": "rome",
+  "style": "blueprint",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/rome-blueprint.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACwAwCdASoMABEAPu1iqU2ppaQiMAgBMB2JZwAASpIGuw9dffxUQAD+tWl5ndPXwICisGoo/vttjv4S5fIYUKi39Bil4XUwUJNdB+pBpUJa4QQRDxX+dBNZ5qRog1JkeWd6AAAA"
+  },
+  "description": "Rome, Italy, drawn in the Blueprint palette from MapVibe Studio. Deep navy water and pale blue streets, crisp as a technical drawing.",
+  "alt": "Blueprint city map poster of Rome, Italy, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

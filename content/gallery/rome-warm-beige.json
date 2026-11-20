@@ -1,0 +1,19 @@
+{
+  "slug": "rome-warm-beige",
+  "status": "approved",
+  "title": "Rome in Travertine",
+  "subtitle": "Rome · Warm Beige · Flat",
+  "city": "rome",
+  "style": "warm-beige",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/rome-warm-beige.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAgCdASoMABEAPu1iqk2ppaQiMAgBMB2JZwC7ADKUAAD+77BAtWsgu+La+Wp12VRsY5x6V/IAAA=="
+  },
+  "description": "Sand and ivory tones for the city of travertine, with the Tiber winding through in soft brown. The palette disappears into a warm room and lets the old street pattern speak.",
+  "alt": "Warm Beige city map poster of Rome, Italy, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

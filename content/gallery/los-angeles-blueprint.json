@@ -1,0 +1,20 @@
+{
+  "slug": "los-angeles-blueprint",
+  "status": "draft",
+  "title": "Los Angeles in Blueprint",
+  "subtitle": "Los Angeles · Blueprint · Flat",
+  "city": "los-angeles",
+  "style": "blueprint",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/los-angeles-blueprint.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAwCdASoMABEAPu1iqU2ppaQiMAgBMB2JZwAATtztAQAA/usufD6mrfqvRb39jW7SuBmT+sk7JZ8SyHrKYmJ+i1TJDePbX4u38Ltt1Y9y23ryxp7MJeAA"
+  },
+  "description": "Los Angeles, United States, drawn in the Blueprint palette from MapVibe Studio. Deep navy water and pale blue streets, crisp as a technical drawing.",
+  "alt": "Blueprint city map poster of Los Angeles, United States, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

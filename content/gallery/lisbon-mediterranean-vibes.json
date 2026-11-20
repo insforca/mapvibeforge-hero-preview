@@ -1,0 +1,19 @@
+{
+  "slug": "lisbon-mediterranean-vibes",
+  "status": "approved",
+  "title": "Lisbon Light",
+  "subtitle": "Lisbon · Mediterranean Vibes · Flat",
+  "city": "lisbon",
+  "style": "mediterranean-vibes",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/lisbon-mediterranean-vibes.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAABQAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JQBjehDw4nWLW/gD+7VnGUsLoC0PXICJtDqtHTkM38+T3g0azp56uzUAAAA=="
+  },
+  "description": "Navy avenues on a cream ground and a pale blue Tagus, as clean as Lisbon light in summer. The city's hills show in how the streets bend to climb them.",
+  "alt": "Mediterranean Vibes city map poster of Lisbon, Portugal, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "london-warm-beige",
+  "status": "approved",
+  "title": "London, Parchment",
+  "subtitle": "London · Warm Beige · Flat",
+  "city": "london",
+  "style": "warm-beige",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/london-warm-beige.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAwAwCdASoMABEAPu1iqU2ppaQiMAgBMB2JZwDE2DKHloIAAP7vbwBiicYNVv5fkpgn4AUgcAA="
+  },
+  "description": "Brown streets on a sand ground, the Royal Parks and the river in muted tones. A gentle, neutral London for a calm room.",
+  "alt": "Warm Beige city map poster of London, United Kingdom, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

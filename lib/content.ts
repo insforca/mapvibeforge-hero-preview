@@ -107,7 +107,8 @@ function load() {
     if (e.space && !known.space.has(e.space)) throw new Error(`content/gallery/${file}: unknown space "${e.space}"`)
     entries.push(e)
   }
-  entries.sort((a, b) => (a.order ?? 1e9) - (b.order ?? 1e9) || a.slug.localeCompare(b.slug))
+  // Real images first, then illustrations; stable by order, then slug.
+  entries.sort((a, b) => Number(!a.image) - Number(!b.image) || (a.order ?? 1e9) - (b.order ?? 1e9) || a.slug.localeCompare(b.slug))
   return { taxonomy, entries }
 }
 

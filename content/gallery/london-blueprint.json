@@ -1,0 +1,19 @@
+{
+  "slug": "london-blueprint",
+  "status": "approved",
+  "title": "London, Thames Blue",
+  "subtitle": "London · Blueprint · Flat",
+  "city": "london",
+  "style": "blueprint",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/london-blueprint.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAwAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JaQAAW+k8zzwAAP7tOyILdWETTHPu7sAWol5fYKe3ayreP2MoYWDM2bnGvV2HkAA="
+  },
+  "description": "The Thames in deep navy, its every bend from Battersea to Greenwich sharply drawn, with the streets in pale technical blue. A map for engineers and river walkers.",
+  "alt": "Blueprint city map poster of London, United Kingdom, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

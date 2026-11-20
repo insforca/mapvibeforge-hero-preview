@@ -1,0 +1,20 @@
+{
+  "slug": "sydney-terracotta",
+  "status": "draft",
+  "title": "Sydney in Terracotta",
+  "subtitle": "Sydney · Terracotta · Flat",
+  "city": "sydney",
+  "style": "terracotta",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/sydney-terracotta.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAACwAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JZwCzgCHfGHBo9N1GAAD+6rRU5QnYDWBAmRVc1rxu1mmNd6ylKAAA"
+  },
+  "description": "Sydney, Australia, drawn in the Terracotta palette from MapVibe Studio. Clay and sand, the colours of Mediterranean rooftops.",
+  "alt": "Terracotta city map poster of Sydney, Australia, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

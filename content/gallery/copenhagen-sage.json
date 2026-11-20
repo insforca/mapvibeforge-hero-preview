@@ -1,0 +1,19 @@
+{
+  "slug": "copenhagen-sage",
+  "status": "approved",
+  "title": "Copenhagen, Sage",
+  "subtitle": "Copenhagen · Sage · Flat",
+  "city": "copenhagen",
+  "style": "sage",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/copenhagen-sage.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAACQAwCdASoMABEAPu1kqU2ppaQiMAgBMB2JZwDImCICgmBHGiw4AP7tRxUM2YxWjbsmUtfwJJpTyVkXmZAPfyAA"
+  },
+  "description": "Soft green streets over a misty ground, the harbour in pale grey-green. Calm, botanical and very Scandinavian.",
+  "alt": "Sage city map poster of Copenhagen, Denmark, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

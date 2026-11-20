@@ -1,0 +1,20 @@
+{
+  "slug": "lisbon-capri-shores",
+  "status": "draft",
+  "title": "Lisbon in Capri Shores",
+  "subtitle": "Lisbon · Capri Shores · Flat",
+  "city": "lisbon",
+  "style": "capri-shores",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/lisbon-capri-shores.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADQAgCdASoMABEAPu1kqU2ppaOiMAgBMB2JQBjehbHAAP7uyDXGYS0u5N/dkjFfkVkA/sJVgGQl+hOKAAA="
+  },
+  "description": "Lisbon, Portugal, drawn in the Capri Shores palette from MapVibe Studio. Cobalt streets and pale sea blue on a warm cream ground.",
+  "alt": "Capri Shores city map poster of Lisbon, Portugal, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

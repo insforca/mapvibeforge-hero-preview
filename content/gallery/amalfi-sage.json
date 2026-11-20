@@ -1,0 +1,20 @@
+{
+  "slug": "amalfi-sage",
+  "status": "draft",
+  "title": "Amalfi in Sage",
+  "subtitle": "Amalfi · Sage · Flat",
+  "city": "amalfi",
+  "style": "sage",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/amalfi-sage.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAABwAgCdASoMABEALrV2u12jqampiYC0SygACDqAAP7wMQGm62YBfG077/St9+9X+2ZLrnAA"
+  },
+  "description": "Amalfi, Italy, drawn in the Sage palette from MapVibe Studio. Soft green and mist, calm and botanical.",
+  "alt": "Sage city map poster of Amalfi, Italy, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: almost all sea, very few streets. Re-export closer in."
+}

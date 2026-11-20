@@ -1,0 +1,19 @@
+{
+  "slug": "copenhagen-blueprint",
+  "status": "approved",
+  "title": "Copenhagen, Harbour Blue",
+  "subtitle": "Copenhagen · Blueprint · Flat",
+  "city": "copenhagen",
+  "style": "blueprint",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/copenhagen-blueprint.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADQAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JZQDKACPz9i86Fz96nwAA/utfVh/6FifcFCVkHZNNHO4h8wKkCW/hSgdlS5JBSv1KeSh7Dn0lHYGL5VPvXrk9J9E+ig6sxz8+6QzZgAA="
+  },
+  "description": "The harbour, canals and the Øresund edge drawn in navy, with the old city and Amager in pale blue lines. A plan for anyone who measures a city by its waterfront.",
+  "alt": "Blueprint city map poster of Copenhagen, Denmark, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

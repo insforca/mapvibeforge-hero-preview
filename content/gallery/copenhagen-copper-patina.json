@@ -1,0 +1,19 @@
+{
+  "slug": "copenhagen-copper-patina",
+  "status": "approved",
+  "title": "Copenhagen Green Copper",
+  "subtitle": "Copenhagen · Copper Patina · Flat",
+  "city": "copenhagen",
+  "style": "copper-patina",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/copenhagen-copper-patina.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JZwAAXE7djt45g4W+qYAA/u1HFQyMQuIPv2Om78H6XMBEvAAAAA=="
+  },
+  "description": "The city of green copper spires in its own colours: copper main roads, verdigris water, a pale patina ground. It reads like an aged instrument.",
+  "alt": "Copper Patina city map poster of Copenhagen, Denmark, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

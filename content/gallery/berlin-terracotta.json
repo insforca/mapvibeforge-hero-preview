@@ -1,0 +1,20 @@
+{
+  "slug": "berlin-terracotta",
+  "status": "draft",
+  "title": "Berlin in Terracotta",
+  "subtitle": "Berlin · Terracotta · Flat",
+  "city": "berlin",
+  "style": "terracotta",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/berlin-terracotta.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAgCdASoMABEAPu1iqU2ppaOiMAgBMB2JZwAAifQAAP7vsBbT6Rf03Orys4K1hyR+VbtJPIAAAA=="
+  },
+  "description": "Berlin, Germany, drawn in the Terracotta palette from MapVibe Studio. Clay and sand, the colours of Mediterranean rooftops.",
+  "alt": "Terracotta city map poster of Berlin, Germany, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

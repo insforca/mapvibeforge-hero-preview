@@ -1,0 +1,19 @@
+{
+  "slug": "amsterdam-blueprint",
+  "status": "approved",
+  "title": "Amsterdam Waterworks",
+  "subtitle": "Amsterdam · Blueprint · Flat",
+  "city": "amsterdam",
+  "style": "blueprint",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/amsterdam-blueprint.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAACwAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JZwAAXoR1k25Hktu1IAD83XnaoqPQdwBu5/nL4yZtxm/LX9aKLv51eGRtOhMhXZk2GPSsqrfN0phdQS1W2lNbTnMFs92SGNfJ972mvL1dh5AA"
+  },
+  "description": "Deep navy fills the IJ, the harbour basins and every canal of the ring, so the water becomes the drawing. Pale blue streets trace the city that was built around it.",
+  "alt": "Blueprint city map poster of Amsterdam, Netherlands, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "los-angeles-sage",
+  "status": "draft",
+  "title": "Los Angeles in Sage",
+  "subtitle": "Los Angeles · Sage · Flat",
+  "city": "los-angeles",
+  "style": "sage",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/los-angeles-sage.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAgCdASoMABEAPu1iqU2ppaQiMAgBMB2JZwC3uC0kAAD+70IuuNhpDEpe3u05MHm6ZNvVg1vL1Qvj/F9A5Di5F5WHqoAA"
+  },
+  "description": "Los Angeles, United States, drawn in the Sage palette from MapVibe Studio. Soft green and mist, calm and botanical.",
+  "alt": "Sage city map poster of Los Angeles, United States, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

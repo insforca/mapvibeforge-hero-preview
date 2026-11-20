@@ -1,0 +1,20 @@
+{
+  "slug": "barcelona-vintage-noir",
+  "status": "draft",
+  "title": "Barcelona in Vintage Noir",
+  "subtitle": "Barcelona · Vintage Noir · Flat",
+  "city": "barcelona",
+  "style": "vintage-noir",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/barcelona-vintage-noir.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAAAwAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JZwDE2DJZvFnAAP7vIm8GJZUpkBk2l8nD098m05cwAfOgAAA="
+  },
+  "description": "Barcelona, Spain, drawn in the Vintage Noir palette from MapVibe Studio. Black streets on warm silver-gelatin white: the city in classic monochrome.",
+  "alt": "Vintage Noir city map poster of Barcelona, Spain, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

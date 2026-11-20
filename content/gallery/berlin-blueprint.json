@@ -1,0 +1,20 @@
+{
+  "slug": "berlin-blueprint",
+  "status": "draft",
+  "title": "Berlin in Blueprint",
+  "subtitle": "Berlin · Blueprint · Flat",
+  "city": "berlin",
+  "style": "blueprint",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/berlin-blueprint.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JZwAAYfdjepa2BLLqAAD+6IBYbJxnfMffBo/Y1/oeFAWkweC+zHStC2r6S2HkAAA="
+  },
+  "description": "Berlin, Germany, drawn in the Blueprint palette from MapVibe Studio. Deep navy water and pale blue streets, crisp as a technical drawing.",
+  "alt": "Blueprint city map poster of Berlin, Germany, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

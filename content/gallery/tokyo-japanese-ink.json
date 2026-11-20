@@ -1,0 +1,19 @@
+{
+  "slug": "tokyo-japanese-ink",
+  "status": "approved",
+  "title": "Tokyo Ink",
+  "subtitle": "Tokyo · Japanese Ink · Flat",
+  "city": "tokyo",
+  "style": "japanese-ink",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/tokyo-japanese-ink.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAQAwCdASoMABEAPu1iqk2ppaQiMAgBMB2JZ2JsVR0V8gAA/u8hErTEwkjpPQny6pJ4W0fCsi2esDGHHeQAAA=="
+  },
+  "description": "Central Tokyo in ink greys around the moat of the Imperial Palace, with the main roads in vermilion. Dense and orderly, like a page of calligraphy.",
+  "alt": "Japanese Ink city map poster of Tokyo, Japan, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

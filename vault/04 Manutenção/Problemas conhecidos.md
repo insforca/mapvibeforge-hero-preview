@@ -11,7 +11,9 @@ Gravidade: 🔴 parte em produção · 🟠 prejudica SEO ou utilizadores · �
 |---|---|---|---|
 | 🟠 | O CTA perde a cidade e a paleta | tema Shopify de mapvibestudio.com | o iframe do editor é criado só com `?shopify=1&sku=`; script pronto em [[Shopify deep links]] |
 | 🔴 | Loja com encomendas pausadas | mapvibestudio.com | aviso "Back soon — Orders reopen soon"; o funil leva a uma loja que não vende |
-| 🟠 | Só um estilo tem entradas | `content/gallery/` | as 13 entradas publicadas são todas `fine-line-minimal`; as outras 21 páginas de estilo ficam `noindex` até terem entradas |
+| 🟠 | Estilos da biblioteca sem entradas | `content/gallery/` | as 10 paletas do Studio e a linha fina já têm entradas; os outros 11 estilos (antigos, séc. XX, contemporâneos) ficam `noindex` até terem |
+| 🟠 | O Studio troca o nome da cidade pelo bairro | `mapvibe-studio` (geocodificação inversa) | Tóquio → "Chiyoda", Londres → "City of Westminster", mesmo com `?city=`; o export corrige o rótulo, mas o cliente que chega pelo CTA vê o bairro |
+| 🟡 | Blueprint e Old Navy | `mapvibe-studio` | o tema define fundo azul-escuro, mas o editor mostra terra creme; confirmar qual é o correcto |
 | 🟠 | 7 entradas em rascunho | `content/gallery/` | Berlim, Copenhaga, Los Angeles, Sydney, Amalfi (desenho genérico), Quioto (desenho de Tóquio), Lisboa (desenho de Roma) |
 | 🟠 | Títulos de catálogo | `content/gallery/` | "New York City Map Print" e afins; trocar por títulos editoriais ([[Spec de lançamento]] §5) |
 | 🟠 | Sem imagem OpenGraph | `app/layout.tsx` | falta uma imagem por omissão e uma por entrada |

@@ -1,0 +1,19 @@
+{
+  "slug": "amsterdam-sage",
+  "status": "approved",
+  "title": "Amsterdam, Moss",
+  "subtitle": "Amsterdam · Sage · Flat",
+  "city": "amsterdam",
+  "style": "sage",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/amsterdam-sage.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAQAwCdASoMABEAPu1iqk4ppaQiMAgBMB2JZ2ZAWUETx+AA/u8aCSVZUkz4jH1WTG3xWj+1ykLNHQuvit6iJIAA"
+  },
+  "description": "The canal ring in sage tones with the IJ a misty band to the north. A soft, natural palette for plants, linen and daylight.",
+  "alt": "Sage city map poster of Amsterdam, Netherlands, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

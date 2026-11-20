@@ -1,0 +1,19 @@
+{
+  "slug": "sydney-blueprint",
+  "status": "approved",
+  "title": "Sydney Harbour Plan",
+  "subtitle": "Sydney · Blueprint · Flat",
+  "city": "sydney",
+  "style": "blueprint",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/sydney-blueprint.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAACQAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JZwC7ABwpz+cIhIzAAP7I/Id43fIOiXjKKDsngbY3UKiD7ZCV/xcSzUWalWlSaX6Egw1YClcgK+5SysJ7x57RW170rgQclpwTljwAAAA="
+  },
+  "description": "The drowned valleys of Port Jackson cut into the land in deep navy, every cove and headland sharply defined. Streets in pale blue fill the peninsulas between them.",
+  "alt": "Blueprint city map poster of Sydney, Australia, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

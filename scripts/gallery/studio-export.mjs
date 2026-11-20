@@ -45,6 +45,7 @@ function jobs() {
   if (flag('all')) return taxonomy.cities.flatMap((c) => studioThemes.map((t) => ({ city: c, theme: t })))
   const city = taxonomy.cities.find((c) => c.slug === opt('city'))
   const theme = opt('theme')
+  if (city && !theme) return studioThemes.map((t) => ({ city, theme: t }))
   if (!city || !theme) {
     console.error('Need --city <slug> --theme <studio theme id>, or --all.\nCities:', taxonomy.cities.map((c) => c.slug).join(', '), '\nThemes:', studioThemes.join(', '))
     process.exit(1)
@@ -77,6 +78,12 @@ async function exportOne(page, { city, theme }) {
     content: `.map-controls, .mvs-map-primary-controls, .maplibregl-ctrl, .maplibregl-ctrl-attrib,
       .mvs-modal-backdrop, .mvs-modal, .updates-modal-backdrop, .updates-modal { display: none !important; }`,
   })
+  // The Studio reverse-geocodes the label to the district (e.g. "Chiyoda" for Tokyo).
+  // Customers can retype it in the editor; we set it to the city name for the gallery.
+  await page.evaluate((name) => {
+    const el = document.querySelector('.mvs-poster-city')
+    if (el && el.textContent.trim().toLowerCase() !== name.toLowerCase()) el.textContent = name
+  }, city.name)
   // The poster is the smallest ancestor of the map that also holds the poster text.
   const found = await page.evaluate(() => {
     let el = document.querySelector('.maplibregl-map')

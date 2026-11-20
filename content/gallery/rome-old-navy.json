@@ -1,0 +1,20 @@
+{
+  "slug": "rome-old-navy",
+  "status": "draft",
+  "title": "Rome in Old Navy",
+  "subtitle": "Rome · Old Navy · Flat",
+  "city": "rome",
+  "style": "old-navy",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/rome-old-navy.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAACwAwCdASoMABEAPu1iqU2ppaQiMAgBMB2JZwAASVxawk7LE8XI0AD+tWl5ndQmeJWQLG0FBDYNh3MuPgvfR8Nl9DSDYitEUqhBNKEpqsG9PZIBqbYcbS6QCrpK7d6mu8QAfoiRBQYoAA=="
+  },
+  "description": "Rome, Italy, drawn in the Old Navy palette from MapVibe Studio. Navy water and gold streets, formal and nautical.",
+  "alt": "Old Navy city map poster of Rome, Italy, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

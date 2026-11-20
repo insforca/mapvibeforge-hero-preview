@@ -1,0 +1,20 @@
+{
+  "slug": "kyoto-old-navy",
+  "status": "draft",
+  "title": "Kyoto in Old Navy",
+  "subtitle": "Kyoto · Old Navy · Flat",
+  "city": "kyoto",
+  "style": "old-navy",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/kyoto-old-navy.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAgCdASoMABEAPu1iqk2ppaQiMAgBMB2JZwDE2DKUAAD+70Fg3GIVclHwbpZ+L5SXkh65vxfWzckbgAA="
+  },
+  "description": "Kyoto, Japan, drawn in the Old Navy palette from MapVibe Studio. Navy water and gold streets, formal and nautical.",
+  "alt": "Old Navy city map poster of Kyoto, Japan, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

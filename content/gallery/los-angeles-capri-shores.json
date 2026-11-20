@@ -1,0 +1,19 @@
+{
+  "slug": "los-angeles-capri-shores",
+  "status": "approved",
+  "title": "Los Angeles, Pacific Cobalt",
+  "subtitle": "Los Angeles · Capri Shores · Flat",
+  "city": "los-angeles",
+  "style": "capri-shores",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/los-angeles-capri-shores.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JZwAAXBt72j3RuTTyQAD+7VkrYuffWDWEwqgJAOCtdfTD3HmlZTTSm2QeIV79u/aJDAAA"
+  },
+  "description": "The great grid of Los Angeles in cobalt on cream, freeways weaving through it. Bright, open and made for a sunlit room.",
+  "alt": "Capri Shores city map poster of Los Angeles, United States, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

@@ -1,7 +1,7 @@
 {
   "slug": "paris-vintage-noir",
-  "status": "draft",
-  "title": "Paris in Vintage Noir",
+  "status": "approved",
+  "title": "Paris in Black and White",
   "subtitle": "Paris · Vintage Noir · Flat",
   "city": "paris",
   "style": "vintage-noir",
@@ -13,8 +13,7 @@
     "height": 1413,
     "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABwAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JZwDA3B4bXl91UYAA/ugxkJiZnzd/9KpKv1sUOVv2oIAld3uHU8yQtqvb1T9OBCic2CPlBQAAAA=="
   },
-  "description": "Paris, France, drawn in the Vintage Noir palette from MapVibe Studio. Black streets on warm silver-gelatin white: the city in classic monochrome.",
+  "description": "Haussmann's boulevards radiate from the Étoile in confident black lines while the Seine bends through the centre in soft grey. Monochrome suits a city that already looks like a photograph.",
   "alt": "Vintage Noir city map poster of Paris, France, with the city name and coordinates at the foot of the print",
-  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
-  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
 }

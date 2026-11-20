@@ -1,0 +1,20 @@
+{
+  "slug": "tokyo-blueprint",
+  "status": "draft",
+  "title": "Tokyo in Blueprint",
+  "subtitle": "Tokyo · Blueprint · Flat",
+  "city": "tokyo",
+  "style": "blueprint",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/tokyo-blueprint.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JZwAAW+yqNBAEhGjjWAAA/u1HYgwZyIgYzrxkQnuMeEwLOKVrYox37QZB5nahqiZi9TxfuBp7OMkmh43qkOAA"
+  },
+  "description": "Tokyo, Japan, drawn in the Blueprint palette from MapVibe Studio. Deep navy water and pale blue streets, crisp as a technical drawing.",
+  "alt": "Blueprint city map poster of Tokyo, Japan, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "copenhagen-japanese-ink",
+  "status": "draft",
+  "title": "Copenhagen in Japanese Ink",
+  "subtitle": "Copenhagen · Japanese Ink · Flat",
+  "city": "copenhagen",
+  "style": "japanese-ink",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/copenhagen-japanese-ink.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAgCdASoMABEAPu1iqk4ppaQiMAgBMB2JZwDCgDKUAAD+79cxAh+SeRXrEC9nWhLOUa4dN58NAAAA"
+  },
+  "description": "Copenhagen, Denmark, drawn in the Japanese Ink palette from MapVibe Studio. Ink greys on paper with a single vermilion accent on the main roads.",
+  "alt": "Japanese Ink city map poster of Copenhagen, Denmark, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

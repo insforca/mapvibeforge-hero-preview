@@ -1,0 +1,20 @@
+{
+  "slug": "amalfi-vintage-noir",
+  "status": "draft",
+  "title": "Amalfi in Vintage Noir",
+  "subtitle": "Amalfi · Vintage Noir · Flat",
+  "city": "amalfi",
+  "style": "vintage-noir",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/amalfi-vintage-noir.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAAAQAwCdASoMABEAPu1krU2ppaSiMAgBMB2JZ2kfWIeV8gAA/u70LqIEE4htq2sP0Pz/YewONAAAAA=="
+  },
+  "description": "Amalfi, Italy, drawn in the Vintage Noir palette from MapVibe Studio. Black streets on warm silver-gelatin white: the city in classic monochrome.",
+  "alt": "Vintage Noir city map poster of Amalfi, Italy, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: almost all sea, very few streets. Re-export closer in."
+}

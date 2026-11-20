@@ -1,0 +1,20 @@
+{
+  "slug": "amalfi-terracotta",
+  "status": "draft",
+  "title": "Amalfi in Terracotta",
+  "subtitle": "Amalfi · Terracotta · Flat",
+  "city": "amalfi",
+  "style": "terracotta",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/amalfi-terracotta.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAABQAwCdASoMABEAPu1mqk2ppaQiMAgBMB2JYwCw7CHfj86goAD+6mZxzJXOdVwREphW/qIoe1kRVJ6fEAAAAA=="
+  },
+  "description": "Amalfi, Italy, drawn in the Terracotta palette from MapVibe Studio. Clay and sand, the colours of Mediterranean rooftops.",
+  "alt": "Terracotta city map poster of Amalfi, Italy, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: almost all sea, very few streets. Re-export closer in."
+}

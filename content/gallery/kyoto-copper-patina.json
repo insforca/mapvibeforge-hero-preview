@@ -1,0 +1,19 @@
+{
+  "slug": "kyoto-copper-patina",
+  "status": "approved",
+  "title": "Kyoto, Bronze Roofs",
+  "subtitle": "Kyoto · Copper Patina · Flat",
+  "city": "kyoto",
+  "style": "copper-patina",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/kyoto-copper-patina.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAgCdASoMABEAPu1kq04ppaQiMAgBMB2JZwC3uC0kAAD+79eystZ5idZzSyLynorq0AAA"
+  },
+  "description": "Kyoto's grid in copper and verdigris, the colours of temple roofs and old bronze. The rivers run as pale green lines down the length of the city.",
+  "alt": "Copper Patina city map poster of Kyoto, Japan, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

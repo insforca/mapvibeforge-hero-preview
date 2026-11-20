@@ -1,0 +1,20 @@
+{
+  "slug": "barcelona-blueprint",
+  "status": "draft",
+  "title": "Barcelona in Blueprint",
+  "subtitle": "Barcelona · Blueprint · Flat",
+  "city": "barcelona",
+  "style": "blueprint",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/barcelona-blueprint.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAwCdASoMABEAPu1iqU2ppaQiMAgBMB2JQBlAA9KoMRhY4HNgKwQAAOJ/vNN5mh3MdQ0tz+bBTbq2L0db4Vd+0u7h2SK4/btZ96J9g/3bArq4O7RoAA=="
+  },
+  "description": "Barcelona, Spain, drawn in the Blueprint palette from MapVibe Studio. Deep navy water and pale blue streets, crisp as a technical drawing.",
+  "alt": "Blueprint city map poster of Barcelona, Spain, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

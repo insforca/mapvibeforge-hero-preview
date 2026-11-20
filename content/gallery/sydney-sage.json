@@ -1,0 +1,20 @@
+{
+  "slug": "sydney-sage",
+  "status": "draft",
+  "title": "Sydney in Sage",
+  "subtitle": "Sydney · Sage · Flat",
+  "city": "sydney",
+  "style": "sage",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/sydney-sage.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAgCdASoMABEAPu1iqU2ppaQiMAgBMB2JZwAAg+XlQAD+70mkZwa4JpNvG65EkVBaOv8HiS8AAA=="
+  },
+  "description": "Sydney, Australia, drawn in the Sage palette from MapVibe Studio. Soft green and mist, calm and botanical.",
+  "alt": "Sage city map poster of Sydney, Australia, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

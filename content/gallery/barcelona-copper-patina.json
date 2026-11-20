@@ -1,0 +1,20 @@
+{
+  "slug": "barcelona-copper-patina",
+  "status": "draft",
+  "title": "Barcelona in Copper Patina",
+  "subtitle": "Barcelona · Copper Patina · Flat",
+  "city": "barcelona",
+  "style": "copper-patina",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/barcelona-copper-patina.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAAAwAwCdASoMABEAPu1kqU2ppaQiMAgBMB2JYwAAW+i/VaLoAP7qglbDx8tkY3BMe9/uV65t7ipFFSKKkUd7e7uAAAA="
+  },
+  "description": "Barcelona, Spain, drawn in the Copper Patina palette from MapVibe Studio. Copper main roads over pale verdigris, like an old rooftop.",
+  "alt": "Copper Patina city map poster of Barcelona, Spain, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

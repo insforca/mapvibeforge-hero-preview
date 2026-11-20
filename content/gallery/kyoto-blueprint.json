@@ -1,0 +1,20 @@
+{
+  "slug": "kyoto-blueprint",
+  "status": "draft",
+  "title": "Kyoto in Blueprint",
+  "subtitle": "Kyoto · Blueprint · Flat",
+  "city": "kyoto",
+  "style": "blueprint",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/kyoto-blueprint.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAABQAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JZwDDNCHgGFZ3AAD+7VaFoL0JiECb037xb+OqJ6SRd8QA"
+  },
+  "description": "Kyoto, Japan, drawn in the Blueprint palette from MapVibe Studio. Deep navy water and pale blue streets, crisp as a technical drawing.",
+  "alt": "Blueprint city map poster of Kyoto, Japan, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

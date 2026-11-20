@@ -1,0 +1,19 @@
+{
+  "slug": "kyoto-sage",
+  "status": "approved",
+  "title": "Kyoto Garden Plan",
+  "subtitle": "Kyoto · Sage · Flat",
+  "city": "kyoto",
+  "style": "sage",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/kyoto-sage.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAgCdASoMABEAPu1oqk6ppiQiMAgBMB2JZwC+SC0kAAD+79eystaQUbCQJBvrZxeXYAAA"
+  },
+  "description": "The grid of Kyoto in moss and sage, as quiet as a temple garden. The rivers run as soft green-grey lines through the city.",
+  "alt": "Sage city map poster of Kyoto, Japan, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "amalfi-mediterranean-vibes",
+  "status": "draft",
+  "title": "Amalfi in Mediterranean Vibes",
+  "subtitle": "Amalfi · Mediterranean Vibes · Flat",
+  "city": "amalfi",
+  "style": "mediterranean-vibes",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/amalfi-mediterranean-vibes.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAwAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JQBOgBDv4/I+wAP7eU6sZoc1+0+iL+/dqgX9LtMfQtIqMGeAAAA=="
+  },
+  "description": "Amalfi, Italy, drawn in the Mediterranean Vibes palette from MapVibe Studio. Cream and Aegean navy, bright and coastal.",
+  "alt": "Mediterranean Vibes city map poster of Amalfi, Italy, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: almost all sea, very few streets. Re-export closer in."
+}

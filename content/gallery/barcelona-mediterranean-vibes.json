@@ -1,0 +1,19 @@
+{
+  "slug": "barcelona-mediterranean-vibes",
+  "status": "approved",
+  "title": "Barcelona, Aegean Ink",
+  "subtitle": "Barcelona · Mediterranean Vibes · Flat",
+  "city": "barcelona",
+  "style": "mediterranean-vibes",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/barcelona-mediterranean-vibes.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAABwAwCdASoMABEAPu1kqk4ppaQiMAgBMB2JQBlABDwq291VSAAA/ugPPyjEVCqqEnJW1d9/wDzkewASgAlABKACU1x4AAAA"
+  },
+  "description": "Aegean navy streets over cream, the sea a clear pale blue along the coast. Bright and crisp, made for white walls and strong light.",
+  "alt": "Mediterranean Vibes city map poster of Barcelona, Spain, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

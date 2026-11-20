@@ -1,0 +1,19 @@
+{
+  "slug": "berlin-warm-beige",
+  "status": "approved",
+  "title": "Berlin, Linen Weave",
+  "subtitle": "Berlin · Warm Beige · Flat",
+  "city": "berlin",
+  "style": "warm-beige",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/berlin-warm-beige.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAgCdASoMABEAPu1iqk2ppaQiMAgBMB2JZwC+SDKUAAD+77AW0lvEMWercp3V977dmS+1RgAAAA=="
+  },
+  "description": "Berlin's broad ring roads in warm brown over ivory, the Spree and the Tiergarten in muted sand. A gentle take on a city usually shown in steel and concrete.",
+  "alt": "Warm Beige city map poster of Berlin, Germany, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

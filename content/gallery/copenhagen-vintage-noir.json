@@ -1,0 +1,20 @@
+{
+  "slug": "copenhagen-vintage-noir",
+  "status": "draft",
+  "title": "Copenhagen in Vintage Noir",
+  "subtitle": "Copenhagen · Vintage Noir · Flat",
+  "city": "copenhagen",
+  "style": "vintage-noir",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/copenhagen-vintage-noir.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAgCdASoMABEAPu1iqk4ppaQiMAgBMB2JZ2hwAD3wAAD+74x4/msDa99vXGnF3qj62+ZTwlrpoujHAAA="
+  },
+  "description": "Copenhagen, Denmark, drawn in the Vintage Noir palette from MapVibe Studio. Black streets on warm silver-gelatin white: the city in classic monochrome.",
+  "alt": "Vintage Noir city map poster of Copenhagen, Denmark, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

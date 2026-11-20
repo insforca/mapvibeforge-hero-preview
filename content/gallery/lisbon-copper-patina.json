@@ -1,0 +1,20 @@
+{
+  "slug": "lisbon-copper-patina",
+  "status": "draft",
+  "title": "Lisbon in Copper Patina",
+  "subtitle": "Lisbon · Copper Patina · Flat",
+  "city": "lisbon",
+  "style": "copper-patina",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/lisbon-copper-patina.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADQAgCdASoMABEAPu1kqU2ppaQiMAgBMB2JYwAAfEEAAP7uzFOZJ9V95xaUs5uLfzrHvSaKSBYj897LwAA="
+  },
+  "description": "Lisbon, Portugal, drawn in the Copper Patina palette from MapVibe Studio. Copper main roads over pale verdigris, like an old rooftop.",
+  "alt": "Copper Patina city map poster of Lisbon, Portugal, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

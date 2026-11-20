@@ -1,0 +1,20 @@
+{
+  "slug": "amalfi-blueprint",
+  "status": "draft",
+  "title": "Amalfi in Blueprint",
+  "subtitle": "Amalfi · Blueprint · Flat",
+  "city": "amalfi",
+  "style": "blueprint",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/amalfi-blueprint.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAABwAwCdASoMABEAPu1oqk6ppiQiMAgBMB2JQBdgBDiXVMmARAAA/ujD2Klt6uzZSA43Q/SVuPpUoYw1QOT9L36PgJRaoYAA"
+  },
+  "description": "Amalfi, Italy, drawn in the Blueprint palette from MapVibe Studio. Deep navy water and pale blue streets, crisp as a technical drawing.",
+  "alt": "Blueprint city map poster of Amalfi, Italy, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: almost all sea, very few streets. Re-export closer in."
+}

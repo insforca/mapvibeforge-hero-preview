@@ -1,0 +1,19 @@
+{
+  "slug": "los-angeles-terracotta",
+  "status": "approved",
+  "title": "Los Angeles, Adobe",
+  "subtitle": "Los Angeles · Terracotta · Flat",
+  "city": "los-angeles",
+  "style": "terracotta",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/los-angeles-terracotta.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACQAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JZwCdACHfL921PGrAAP7tWSnOJqxBn1Nb9P5rTFY64IpaI+haRPh3uRAAAA=="
+  },
+  "description": "Freeways and boulevards in clay red on sand, echoing the city's Spanish Revival roofs. The grid stretches out like warm desert tile.",
+  "alt": "Terracotta city map poster of Los Angeles, United States, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

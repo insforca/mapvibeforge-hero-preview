@@ -1,0 +1,20 @@
+{
+  "slug": "london-capri-shores",
+  "status": "draft",
+  "title": "London in Capri Shores",
+  "subtitle": "London · Capri Shores · Flat",
+  "city": "london",
+  "style": "capri-shores",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/london-capri-shores.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAgCdASoMABEAPu1kqU2ppaOiMAgBMB2JZwDE2C0kAAD+728AYonGDVaxk3APnwgVz6fgrHehQAAA"
+  },
+  "description": "London, United Kingdom, drawn in the Capri Shores palette from MapVibe Studio. Cobalt streets and pale sea blue on a warm cream ground.",
+  "alt": "Capri Shores city map poster of London, United Kingdom, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

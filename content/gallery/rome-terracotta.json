@@ -1,0 +1,19 @@
+{
+  "slug": "rome-terracotta",
+  "status": "approved",
+  "title": "Rome, Burnt Sienna",
+  "subtitle": "Rome · Terracotta · Flat",
+  "city": "rome",
+  "style": "terracotta",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/rome-terracotta.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAgCdASoMABEAPu1iqU2ppaOiMAgBMB2JZwDCgDKUAAD+77BAtDbkaVOv2cxZxgh+c+m0LeAAAA=="
+  },
+  "description": "Streets in the reds and ochres of Roman plaster, the Tiber a pale thread through the centre. A map that belongs next to old wood and linen.",
+  "alt": "Terracotta city map poster of Rome, Italy, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

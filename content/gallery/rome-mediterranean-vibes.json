@@ -1,0 +1,19 @@
+{
+  "slug": "rome-mediterranean-vibes",
+  "status": "approved",
+  "title": "Rome, Summer Blue",
+  "subtitle": "Rome · Mediterranean Vibes · Flat",
+  "city": "rome",
+  "style": "mediterranean-vibes",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/rome-mediterranean-vibes.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAgCdASoMABEAPu1iqU2ppaOiMAgBMB2JZwC7AC0kAAD+742CATCONG9zWk1Y758hrUcOnkV2OUAA"
+  },
+  "description": "Rome drawn in Aegean navy on cream, with the Tiber in pale blue. An unexpected, fresh palette for the oldest street pattern in the library.",
+  "alt": "Mediterranean Vibes city map poster of Rome, Italy, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

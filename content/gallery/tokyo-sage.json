@@ -1,0 +1,19 @@
+{
+  "slug": "tokyo-sage",
+  "status": "approved",
+  "title": "Tokyo Garden",
+  "subtitle": "Tokyo · Sage · Flat",
+  "city": "tokyo",
+  "style": "sage",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/tokyo-sage.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAgCdASoMABEAPu1iqk4ppaQiMAgBMB2JZwDImC2OAAD+7xn5mRot5Tgut/cX/7qHqpBOFiLQzmgA"
+  },
+  "description": "Soft greens for central Tokyo, the palace gardens and the bay barely tinted. A calm reading of one of the busiest cities on earth.",
+  "alt": "Sage city map poster of Tokyo, Japan, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

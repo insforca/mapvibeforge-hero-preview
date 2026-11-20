@@ -1,0 +1,19 @@
+{
+  "slug": "tokyo-vintage-noir",
+  "status": "approved",
+  "title": "Tokyo, Black and White",
+  "subtitle": "Tokyo · Vintage Noir · Flat",
+  "city": "tokyo",
+  "style": "vintage-noir",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/tokyo-vintage-noir.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAgCdASoMABEAPu1iqU2ppaOiMAgBMB2JZ2JsAD3wAAD+7srEeb6XRYiT6ZS6QrvfeqPvth6L9i+ymFAAAA=="
+  },
+  "description": "The Imperial Palace grounds sit as a pale void at the centre while rail lines and expressways converge on Tokyo Station. A city of overlapping networks, drawn in silver tones.",
+  "alt": "Vintage Noir city map poster of Tokyo, Japan, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

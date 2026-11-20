@@ -1,0 +1,20 @@
+{
+  "slug": "berlin-japanese-ink",
+  "status": "draft",
+  "title": "Berlin in Japanese Ink",
+  "subtitle": "Berlin · Japanese Ink · Flat",
+  "city": "berlin",
+  "style": "japanese-ink",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/berlin-japanese-ink.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAgCdASoMABEAPu1iqU2ppaQiMAgBMB2JZwC3uDKUAAD+75NiMtu1j68mPoXOF8B3WZN1UQEGAA=="
+  },
+  "description": "Berlin, Germany, drawn in the Japanese Ink palette from MapVibe Studio. Ink greys on paper with a single vermilion accent on the main roads.",
+  "alt": "Japanese Ink city map poster of Berlin, Germany, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

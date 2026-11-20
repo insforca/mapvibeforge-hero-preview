@@ -1,0 +1,19 @@
+{
+  "slug": "tokyo-terracotta",
+  "status": "approved",
+  "title": "Tokyo, Fired Clay",
+  "subtitle": "Tokyo · Terracotta · Flat",
+  "city": "tokyo",
+  "style": "terracotta",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/tokyo-terracotta.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAgCdASoMABEAPu1iqk4ppaQiMAgBMB2JZQC2yDKUAAD+7xuXUX6pAY2+ojd/z3pTP2dwu3VPSUGXIAAAAA=="
+  },
+  "description": "Clay-red roads run out from the palace across central Tokyo toward the bay. Warm and earthy, like glazed ceramics.",
+  "alt": "Terracotta city map poster of Tokyo, Japan, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "lisbon-vintage-noir",
+  "status": "draft",
+  "title": "Lisbon in Vintage Noir",
+  "subtitle": "Lisbon · Vintage Noir · Flat",
+  "city": "lisbon",
+  "style": "vintage-noir",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/lisbon-vintage-noir.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAgCdASoMABEAPu1iqk2ppaQiMAgBMB2JZwAAifQAAP7uxL/ZTMuWkeHaBi5eqP0u0/Arn06kxQAA"
+  },
+  "description": "Lisbon, Portugal, drawn in the Vintage Noir palette from MapVibe Studio. Black streets on warm silver-gelatin white: the city in classic monochrome.",
+  "alt": "Vintage Noir city map poster of Lisbon, Portugal, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

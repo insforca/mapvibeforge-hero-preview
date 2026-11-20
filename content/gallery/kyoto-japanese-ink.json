@@ -1,0 +1,19 @@
+{
+  "slug": "kyoto-japanese-ink",
+  "status": "approved",
+  "title": "Kyoto Ink Grid",
+  "subtitle": "Kyoto · Japanese Ink · Flat",
+  "city": "kyoto",
+  "style": "japanese-ink",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/kyoto-japanese-ink.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAgCdASoMABEAPu1mq04ppaQiMAgBMB2JZwC3uDKUAAD+79e09PWwLU+y2RpOFc+ISAAA"
+  },
+  "description": "The ancient chessboard of Kyoto's streets, laid out in the eighth century, drawn in ink greys with the main avenues picked out in vermilion. The mountains close the plan to the north and east.",
+  "alt": "Japanese Ink city map poster of Kyoto, Japan, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
+}

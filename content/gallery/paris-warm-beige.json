@@ -1,7 +1,7 @@
 {
   "slug": "paris-warm-beige",
-  "status": "draft",
-  "title": "Paris in Warm Beige",
+  "status": "approved",
+  "title": "Paris, Linen",
   "subtitle": "Paris · Warm Beige · Flat",
   "city": "paris",
   "style": "warm-beige",
@@ -13,8 +13,7 @@
     "height": 1413,
     "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAABQAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JZwC+SCHe7QxSYAD+6n3sfDr8iCQGOYejtfJjYUVv853tUYAAAA=="
   },
-  "description": "Paris, France, drawn in the Warm Beige palette from MapVibe Studio. Sand and ivory tones for warm, neutral interiors.",
+  "description": "Brown lines on a sand ground, the Seine and the Bois in muted tones. Paris without the drama, made for a calm, neutral interior.",
   "alt": "Warm Beige city map poster of Paris, France, with the city name and coordinates at the foot of the print",
-  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
-  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors"
 }

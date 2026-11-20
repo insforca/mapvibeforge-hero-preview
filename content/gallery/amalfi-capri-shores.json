@@ -1,0 +1,20 @@
+{
+  "slug": "amalfi-capri-shores",
+  "status": "draft",
+  "title": "Amalfi in Capri Shores",
+  "subtitle": "Amalfi · Capri Shores · Flat",
+  "city": "amalfi",
+  "style": "capri-shores",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/amalfi-capri-shores.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAgCdASoMABEAPu1krU2ppaSiMAgBMB2JQBTihbHAAP7uLZYYJ+TbWuvLTr0a38P9z6eRmj0QAA=="
+  },
+  "description": "Amalfi, Italy, drawn in the Capri Shores palette from MapVibe Studio. Cobalt streets and pale sea blue on a warm cream ground.",
+  "alt": "Capri Shores city map poster of Amalfi, Italy, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: almost all sea, very few streets. Re-export closer in."
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "los-angeles-mediterranean-vibes",
+  "status": "draft",
+  "title": "Los Angeles in Mediterranean Vibes",
+  "subtitle": "Los Angeles · Mediterranean Vibes · Flat",
+  "city": "los-angeles",
+  "style": "mediterranean-vibes",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/los-angeles-mediterranean-vibes.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAgCdASoMABEAPu1iqU2ppaOiMAgBMB2JZwAAhAwAAP7vQi642GkWA84+R9E+jjG4hgQiW9WDxq5M6n99qAWCdJwsR03kl4AAAA=="
+  },
+  "description": "Los Angeles, United States, drawn in the Mediterranean Vibes palette from MapVibe Studio. Cream and Aegean navy, bright and coastal.",
+  "alt": "Mediterranean Vibes city map poster of Los Angeles, United States, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

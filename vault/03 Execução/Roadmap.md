@@ -13,7 +13,8 @@ Ao fechar uma tarefa: `- [x]`, data e commit curto, ex. `✅ 2026-11-20 · a1b2c
 
 - [ ] Colar o script de [[Shopify deep links]] no tema Shopify (passa `city`, `style`… ao iframe do editor).
 - [x] Exportação do Studio para PNG por script: `scripts/gallery/studio-export.mjs` (Studio local em `localhost:5179`) + `studio-ingest.mjs` ✅ 2026-11-20
-- [ ] Rever as entradas `studio-render` em rascunho: títulos e textos editoriais, aprovar.
+- [x] 140 pósteres do Studio exportados (14 cidades × 10 paletas); 48 aprovados com texto editorial (`content/editorial/studio-batch-01.json`) ✅ 2026-11-20
+- [ ] Amalfi: voltar a exportar mais perto (hoje é quase só mar). Restantes 82 rascunhos: escolher e escrever texto.
 - [ ] Pipeline da galeria: `plan → map → scene → review → composite → derive → metadata`.
 - [ ] ~150 entradas: 22 estilos/paletas, 5 formatos, ≥ 6 espaços, 10–12 cidades.
 - [ ] Títulos editoriais para as 13 entradas actuais, ou substituí-las.

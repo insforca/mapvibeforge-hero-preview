@@ -1,0 +1,20 @@
+{
+  "slug": "kyoto-vintage-noir",
+  "status": "draft",
+  "title": "Kyoto in Vintage Noir",
+  "subtitle": "Kyoto · Vintage Noir · Flat",
+  "city": "kyoto",
+  "style": "vintage-noir",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/kyoto-vintage-noir.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAgCdASoMABEAPu1kqU2ppaQiMAgBMB2JZwDA3DKUAAD+79e09qO2RIHoDE4l+c+M8gAA"
+  },
+  "description": "Kyoto, Japan, drawn in the Vintage Noir palette from MapVibe Studio. Black streets on warm silver-gelatin white: the city in classic monochrome.",
+  "alt": "Vintage Noir city map poster of Kyoto, Japan, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

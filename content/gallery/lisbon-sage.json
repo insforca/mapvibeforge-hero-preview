@@ -1,0 +1,20 @@
+{
+  "slug": "lisbon-sage",
+  "status": "draft",
+  "title": "Lisbon in Sage",
+  "subtitle": "Lisbon · Sage · Flat",
+  "city": "lisbon",
+  "style": "sage",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/lisbon-sage.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAgCdASoMABEAPu1kqk4ppaQiMAgBMB2JZQDImDCSYAD+7pm8fwMOZ9yb+7JSpLwIfa1k2Sb0tOy0hxoAAA=="
+  },
+  "description": "Lisbon, Portugal, drawn in the Sage palette from MapVibe Studio. Soft green and mist, calm and botanical.",
+  "alt": "Sage city map poster of Lisbon, Portugal, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

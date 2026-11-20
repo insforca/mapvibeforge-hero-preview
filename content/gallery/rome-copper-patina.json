@@ -1,0 +1,20 @@
+{
+  "slug": "rome-copper-patina",
+  "status": "draft",
+  "title": "Rome in Copper Patina",
+  "subtitle": "Rome · Copper Patina · Flat",
+  "city": "rome",
+  "style": "copper-patina",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/rome-copper-patina.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAgCdASoMABEAPu1iqk4ppaQiMAgBMB2JZwAAhAwAAP7vsEC1ayC74tr508EWk4Vz4wl4AAA="
+  },
+  "description": "Rome, Italy, drawn in the Copper Patina palette from MapVibe Studio. Copper main roads over pale verdigris, like an old rooftop.",
+  "alt": "Copper Patina city map poster of Rome, Italy, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}

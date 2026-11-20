@@ -1,0 +1,20 @@
+{
+  "slug": "tokyo-capri-shores",
+  "status": "draft",
+  "title": "Tokyo in Capri Shores",
+  "subtitle": "Tokyo · Capri Shores · Flat",
+  "city": "tokyo",
+  "style": "capri-shores",
+  "format": "flat",
+  "source": "studio-render",
+  "image": {
+    "src": "/gallery/studio/tokyo-capri-shores.webp",
+    "width": 1000,
+    "height": 1413,
+    "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAgCdASoMABEAPu1kqU4ppaOiMAgBMB2JZwAAeyAA/u8Z+ZkS699RG7+3/B+kDcxzlHXi4AA="
+  },
+  "description": "Tokyo, Japan, drawn in the Capri Shores palette from MapVibe Studio. Cobalt streets and pale sea blue on a warm cream ground.",
+  "alt": "Capri Shores city map poster of Tokyo, Japan, with the city name and coordinates at the foot of the print",
+  "credit": "MapVibe Studio · map data © OpenStreetMap contributors",
+  "note": "Draft: templated title and description. Write an editorial title and two unique sentences before approving."
+}
